@@ -1,5 +1,7 @@
 :imagesdir:
 
+= Hiring Process Design
+
 Hiring is not what it used to be; you’re trying to hire the best people, but so is everybody else. The melee that ensues can be tough to navigate at the best of times, and without a well thought out hiring strategy you’re going to make it much harder than it needs to be for smart people to figure out why your company is the one where they want to be working.
 
 Demand for quality tech candidates currently far outstrips supply and it’s not going to change any time soon. Now more than ever, securing a steady supply of talent is a strategic and competitive necessity. As an adaptation, we have seen a strong indicator of successful hiring as being a transformation from a *filtering mindset* (how can I make sure that people are good enough to work at my company), to an *attraction mindset* (how can I make sure that everything about my company is awesome enough so that all of the best people will want to work there).
@@ -8,7 +10,7 @@ A lot has been written about how to do this most effectively and a whole bunch o
 
 {nbsp} +
 
-=== How to use this guide
+== How to use this guide
 
 '''
 
@@ -19,11 +21,12 @@ Once you’ve become acquainted with some of your options, you should be able to
 {nbsp} +
 
 image::design.png[]
+
 NOTE: This is the usual order, but there is nothing preventing you from making minor changes to the sequence above
 
 {nbsp} +
 
-=== General tips:
+== General tips
 
 '''
 
@@ -32,4 +35,4 @@ NOTE: This is the usual order, but there is nothing preventing you from making m
 * Be extremely responsive with candidates - you should never be the bottleneck in your own hiring process.
 Optimise for speed. Your goal should be to put an offer of employment in the hands of somebody who meets your criteria as quickly as possible.
 * Remember that drop-off will occur throughout every stage of the process, so it’s important to maintain a strong pipeline of candidates in various stages of the interview process.
-* The golden thread that should run through your entire process is the candidate experience. Always assume that the person you’re interviewing is going to tell their friends/community members about their experience interviewing at your company. 
+* The golden thread that should run through your entire process is the candidate experience. Always assume that the person you’re interviewing is going to tell their friends/community members about their experience interviewing at your company.
