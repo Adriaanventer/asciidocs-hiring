@@ -1,0 +1,39 @@
+== Culture fit
+
+'''
+
+Performance metrics, sales figures and stock prices all fluctuate, and after all is said and done the one differentiating factor that you have as a company is your culture. Your culture is the set of (usually) unwritten rules that your company has collectively determined for how you are all going to work together.
+
+As companies grow, they tend to get better at explicating their own cultures, but in the beginning when you’re still figuring things out it often comes down to unwritten rules and implicit patterns of doing things. Because of this ephemeral nature, it can be hard to make sure early on that new hires align with and augment your existing culture; which is why it’s so incredibly important to have a method in place that you use to try and tease out what the values and motivations are of people you’re looking to employ.
+
+{nbsp} +
+
+=== Structured interview
+
+The easiest way to get answers is to ask questions, you just need to make sure that you’re asking the right ones. If cross-team collaboration is central to your culture, an effective way of determining whether somebody would tick this box would be to ask them to relate to you specific instances in their career where they collaborated across different teams. If you choose this approach, it will be super important that you clearly explicate beforehand what your culture is, and what kinds of questions you’ll be including in this interview.
+
+{nbsp} +
+
+=== Meet the team
+
+The opinions of people that have been living and breathing the culture already can be a really useful barometer when assessing overall fit. Carrying this out in a structured way will usually involve some planning, where short slots are booked with a number of members of team for them to have informal discussions. These are not only useful for you, but for the candidate as well, as they give them an opportunity to pose questions that they might not feel comfortable asking in a traditional interview scenario. If you decide to go down this route, remember to take some time to debrief everyone involved and gather their feedback.
+
+{nbsp} +
+
+=== Simulation day
+
+A simulation day involves a candidate taking time to come to your office for a full day or two to do real work with the rest of your team. Doing this can give you an insane level of insight into how they would approach solving real business problems and integrate into the rest of your team, while also giving the candidate a window into what a typical workday at your company can look like.
+
+This comes at a pretty steep cost in terms of both time, planning and dedicated team resources during the course of the simulation days. It can be really tricky to design a good simulation day, however we’ve run a lot of these as part of our own hiring process and would be more than happy to help you design your own.
+
+{nbsp} +
+
+=== Founder chat
+
+While a company’s culture cannot be created overnight by any single person, the leaders and founders have the most influence in setting the tone and deciding on the direction that it takes. Every hire that you make shapes this fledgling culture, doubly so in a company’s early stages. In order to be able to make informed decisions about who should be allowed to influence this growth, founders should be talking to every new hire.
+
+As important as this discussion is as an assessment tool, a culture is made from the values of more than just the founders, so It’s important to be cognisant of just how much stock you’re putting in just one or two people’s opinions when doing something like this. A pretty bad situation would be one where you’ve hired a number of people and the only thing that they have in common is the shared trait of “well the founders liked them”, so if you’re able to diversify the number of people you get input from, you should definitely do so.
+
+Once your team and hiring process start to scale significantly, it can be very easy for a founder’s limited availability to become a bottleneck. We often see this happening around the 50 hire mark, however we’ve seen examples of companies where the founders personally chat with everyone well past hire number one hundred. If this situation arises, keep in mind that there are other options available outside of shepherding two people into a coffee shop booth; tools like Skype or Google Hangouts can make it a lot easier to fit meetings like these into people schedules.
+
+{nbsp} +

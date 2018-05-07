@@ -1,0 +1,27 @@
+== Reference checks
+
+'''
+
+The first step here should have happened before the interview process even began. You need to have a decision in place where you set out whether or not you do background checks for everyone you hire, just for some people (maybe they’re working on-site at a client) or nobody at all. Whatever you decide, it’s important that you stick to it. It’s scarily easy to get swept up in the smiles and good vibes that are in the air after interviewing somebody that really fits in with the team and seems to tick every box that you threw at them, but that’s not necessarily a good reason to short circuit your own process.
+
+{nbsp} +
+
+=== Calling references
+
+Before you dial a single digit into the phone, it’s really important that you articulate just what it is that you’re hoping to achieve by contacting somebodies references. Are you looking to enlist third parties to provide you with information in order to help you make a hiring decision, or have you already made a decision and you’re doing a quick check for any serious red flags?
+
+In general, try to avoid calling a reference before you’ve spoken to the candidate yourself. It might feel useful to have a heads up before they’ve even come in for an interview, but remember that you’ve just potentially coloured your own first impression of this person with somebody else’s opinion.
+
+It should go without saying that you should always be respectful of the private nature of the candidate’s job search. *NEVER* phone somebody’s current workplace without their explicit permission, and don’t solicit your own personal network for information without doing your own homework. The world is a small place, even more so in tech. People can be connected in unexpected ways, so it’s advised to limit your reference checks to people that the person that you’re hiring has provided for this purpose.
+
+{nbsp} +
+
+=== Criminal and credit
+
+If you’re hiring in a fintech or financial services space, you probably already know all about these kinds of checks. If you’re operating in a different space you’ll need to decide how important clear credit and police records are in your particular context.
+
+No matter which side of the isle you’re on, an important consideration should be how these checks impact your hiring process and the candidate experience. Be sure to give people an adequate heads up as to why you’re running these potentially invasive background checks on them, and always provide an opportunity for the other person to be up-front about any irregularities that might come up.
+
+NOTE: *Protip:* Getting set up to do these yourself is cheaper and easier than you think. All you need to do is buy a fingerprint scanner, install some software and get somebody from your team to do a super short course from MIE.
+
+{nbsp} +

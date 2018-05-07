@@ -1,0 +1,31 @@
+== Initial conversation
+
+'''
+
+Good news; they like you, or at least they’re interesting in talking to you to find out more about what you do. At this point, all you probably know about the candidate so far is what you’ve read on their profile, and their knowledge about you is probably derived entirely from a combination of your website and OfferZen profile, which is usually not quite the full story.
+
+How you approach this part of the hiring process will fall somewhere on a spectrum, with you trying to filter out people who ‘aren’t good enough’ on one end and ‘convincing people that your company is the best’ on the other.
+
+If you consider this in the broader context of tech hiring in its current state, it should be obvious that your goal ought to be trying to adopt more of a selling mindset. There are potentially a host of other competing organisations all trying to tap into the same talent pool as you are and if you’re not making an effort to convince candidates why they should choose to work with you, you’ll quickly start losing out to companies who are.
+
+Your goal at this point in the hiring process should be to maximise knowledge on both sides of the table; candidates should know as much about the work that you do, and you need to know as much as you can about them so as to be able to figure out whether or not they’ll be able to make an impact in your team.
+
+NOTE: When considering how to structure your initial conversations with people, the medium is an important factor. A face to face discussion should always be first prize, but keep in mind that it can be tough for somebody to find time to do this. Always offer to meet somebody at a location that is most convenient for them, even if it entails a bit of a drive (remember that your selection efforts up until now should mean that you think that this person is at least solid enough to warrant this kind of effort).
+
+{nbsp} +
+
+=== Screening call
+
+This kind of conversation typically revolves around extracting as much information from a candidate as possible with the goal of being able to qualify whether or not they should be allowed to proceed to the next stage of the interview process. The types of questions asked during this kind of interaction will usually be focussed around the candidate’s educational background, their past work experience and filling in any gaps that were left after reading their profile. It’s also very important to provide an opportunity towards the end for the person you’re talking to to ask any questions that they might have.
+
+While this approach can give you a great deal of information in a relatively short amount of time, it can easily leave candidates feeling like they’ve just sat through an interrogation and will potentially do very little to promote a positive candidate experience.
+
+{nbsp} +
+
+=== Sales call
+
+On the other end of the spectrum to the traditional screening call, we find something that is closer to a sales call. Rather than looking for reasons to filter somebody out, the goal here is to effectively sell the role, the company and its mission as well as the interview process itself.
+
+Getting buy-in like this is extra important if your hiring process has multiple steps. It’s pretty optimistic to assume that somebody will take time off from their current job to finish your 3 hour technical assessment and sit through an on-site panel interview with your whole management team without any work from your end to sell the idea of working at your company and being part of your team as being worth all that effort.
+
+This should generally be the strategy that you adopt if you’re trying to build a hiring process that promotes a positive candidate experience. Remember that there’s nothing wrong with asking a few questions during a chat like this, as long as you remember that it’s just as important to sell the role and your company to the person you’re talking to.

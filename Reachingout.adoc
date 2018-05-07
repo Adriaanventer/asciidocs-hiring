@@ -1,0 +1,53 @@
+== Reaching out
+
+'''
+
+The first step of your hiring process should be to focus inwardly and decide who is going to be running it. If you can’t settle on a single person to care about the whole process, then be sure to go into detail in terms of which people are going to take ownership of the individual parts of the process. We have found that the person closest to the role that you’re hiring for should conduct the initial outreach (IE, if you’re hiring a developer, the dev manager or head of product should be reaching out).
+
+Depending on how strong your brand is, this initial message could potentially be the first time the person you’re reaching out to has heard of your company, so it’s super important that you’re able to convey your employer value proposition (reasons why your company is an awesome place to work) concisely and convincingly.
+
+There are a couple of different styles of outreach that we have seen in the wild on OfferZen, we suggest picking the one that aligns best with your culture and goals.
+
+[NOTE]
+====
+An employer value proposition is the name given to a broad category of things describing the reasons why somebody would work for your company rather than another one. It is explicitly different to your actual product, meaning you can have an awesome offering but a terrible employer value proposition if you don’t make an effort to provide people with a great place to work. Components of your employee value proposition include:
+
+* Financial benefits
+* Perks
+* Career development opportunities
+* Work content (is it meaning and aligned with an employee’s goals/interests?)
+====
+
+{nbsp} +
+
+=== Super personal message
+
+Nothing gives a somebody the warm fuzzies like seeing a message from an interested company that addresses them as individual. Making specific references to parts of a person’s profile that you found particularly interesting is a great way to prove to somebody that you’re serious about engaging with them meaningfully.
+
+Keep in mind that personalising every message can take time, so be mindful not to let that affect the number of people that you reach out to. Ultimately you should be looking to strike a balance between thoughtful, personalised outreach and building a healthy candidate pipeline. If you’re concerned about time, try creating a template or two that you partially customise for different scenarios.
+
+TIP: *Example:* “Hey there. I was reading your profile and the part about wanting to be part of a smaller, more independant team really resonated with me. I’m especially interested to hear more about the raspberry pi side project that you mentioned - which model did you end up using? Would you be keen to jump on a quick call so that I can tell you more about the role?
+
+{nbsp} +
+
+=== Short message
+
+If you feel that your brand speaks for itself, you can sometimes get away with a really short message without too much background. While this might work some of the time, you run the risk of overestimating the reach of your fame. Some people might think twice about making time in their calendar’s to meet up for coffee with somebody from a company they’ve never heard of prior to being contacted with a cryptic one-liner.
+
+If you’re going to adopt this strategy for your opening conversation, make sure that you provide other ways for candidates to find out more about you. Making sure your company’s OfferZen page is up to date is a great first step towards this. Including links to any press articles that were written about you as well as any public Github repos will be super helpful to convey to people some of the interesting stuff that you do.
+
+If you’re sending a super short message just because it’s quicker, consider if the time you’re saving is worth potentially underselling your company and losing out on hires.
+
+TIP: *Example:* “Hi, I’m the head of product at OfferZen and I’d love to chat to you about an opening that we have for a senior Ruby Dev. Check out our profile and send me your contact details so that I can give you a call to tell you more if you’re interested :)”
+
+{nbsp} +
+
+=== Long message
+
+Your company does a lot of cool stuff and you want to tell people about all of it, in detail. While there’s nothing inherently wrong with being radically transparent about everything you do from the very beginning, it’s important that this doesn’t take the form of an impenetrable wall of text.
+
+Introductions like these can be particularly effective if you think that it’s unlikely that people will have heard of your company before or if you’re concerned that your company ‘isn’t sexy enough’. Most people are primarily interested in having the opportunity to solve interesting problems with an awesome team; selling that you’re able to provide this to somebody as early on in the process as possible can be a great way to get buy-in for the rest of the hiring process.
+
+Similar to a highly personalised message, these longer messages can take time to put together. To make it quicker it can be helpful to create one or two really high quality messages to use as templates that you can adapt to specific conversations where appropriate.
+
+TIP: *Example:* “Hi there, we’re in the process of rebuilding our existing e-commerce platform and think that you would be a great addition to our team. A lot of the work that my team does isn’t public facing, but we’re doing plenty of interesting things behind the scenes. We’re working on rebuilding our backend using Clojure and are looking for people who are interested in learning more about functional programming in general as this is the direction that we’re looking to take going forward. We’ve received a lot of funding recently and are looking to build a world class team, product and work environment. If you’re interested in finding out more, please respond with your contact number and email address so that I can set up some time for us to chat.”

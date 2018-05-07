@@ -1,6 +1,7 @@
-:imagesdir:
+== Hiring Process Design
 
-= Hiring Process Design
+
+'''
 
 Hiring is not what it used to be; you’re trying to hire the best people, but so is everybody else. The melee that ensues can be tough to navigate at the best of times, and without a well thought out hiring strategy you’re going to make it much harder than it needs to be for smart people to figure out why your company is the one where they want to be working.
 
@@ -10,9 +11,7 @@ A lot has been written about how to do this most effectively and a whole bunch o
 
 {nbsp} +
 
-== How to use this guide
-
-'''
+=== How to use this guide
 
 We’ve learned that an effective hiring process can be built from a number of basic building blocks. The goal of the following guide is to present some of the common ‘blocks’, explain their pro’s and con’s and describe when best to implement them.
 
@@ -26,10 +25,7 @@ NOTE: This is the usual order, but there is nothing preventing you from making m
 
 {nbsp} +
 
-== General tips
-
-'''
-
+=== General tips
 
 * Try to have one person take ownership of hiring for any given role. This will help with accountability and minimise the chances of balls being dropped.
 * Be extremely responsive with candidates - you should never be the bottleneck in your own hiring process.
