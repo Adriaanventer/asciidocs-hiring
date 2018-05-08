@@ -1,3 +1,5 @@
+:imagesdir: ./images
+
 = Hiring Process Design
 
 {nbsp} +
