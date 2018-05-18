@@ -1,10 +1,9 @@
 :imagesdir: ./images
+:toc: left
 
 = Hiring Process Design
 
 {nbsp} +
-
-'''
 
 Hiring is not what it used to be; you’re trying to hire the best people, but so is everybody else. The melee that ensues can be tough to navigate at the best of times, and without a well thought out hiring strategy you’re going to make it much harder than it needs to be for smart people to figure out why your company is the one where they want to be working.
 
@@ -24,6 +23,8 @@ Once you’ve become acquainted with some of your options, you should be able to
 
 image::design.png[]
 
+{nbsp} +
+
 NOTE: This is the usual order, but there is nothing preventing you from making minor changes to the sequence above
 
 {nbsp} +
@@ -39,8 +40,6 @@ Optimise for speed. Your goal should be to put an offer of employment in the han
 {nbsp} +
 
 == Reaching out
-
-'''
 
 The first step of your hiring process should be to focus inwardly and decide who is going to be running it. If you can’t settle on a single person to care about the whole process, then be sure to go into detail in terms of which people are going to take ownership of the individual parts of the process. We have found that the person closest to the role that you’re hiring for should conduct the initial outreach (IE, if you’re hiring a developer, the dev manager or head of product should be reaching out).
 
@@ -94,15 +93,38 @@ TIP: *Example:* “Hi there, we’re in the process of rebuilding our existing e
 
 {nbsp} +
 
-== Initial conversation
+== Interviewing
 
-'''
 
 Good news; they like you, or at least they’re interesting in talking to you to find out more about what you do. At this point, all you probably know about the candidate so far is what you’ve read on their profile, and their knowledge about you is probably derived entirely from a combination of your website and OfferZen profile, which is usually not quite the full story.
 
+To move forward, your goal should be to engage in a conversation where you tell the person you’re hoping to hire about your company and why it’s a great place to work, while they explain to you how they can help you with your mission. The interview stage is the most important and nuanced part of the hiring process and it will almost always be the point where the vast majority of information is shared between your company and the prospective hire, and it is this information that will determine whether a potential offer is made, or accepted.
+
+We can subdivide the interview process into a few discrete phases:
+
+* *The initial conversation* - the first structured outreach between your company and the candidate.
+* *The technical assessment* - determining whether the person in question has the technical background to add value to your team.
+* *The culture/team fit assessment* - determining whether or not there is resonance between the person’s goals/motivations and company’s mission and team environment.
+
+There are a number of ways in which you can undertake each of these steps, but a few interviewing best practices apply universally:
+
+* Geoff Smart and Randy Street in their book, *“Who”*, popularised the concept of a scorecard. This is essentially *an internal job specification that you create with the goal of giving you a more objective idea of the job entails,* and what a successful applicant should look like. This tool can be really useful in organising your thoughts on just who it is you’re trying to hire and will make asking focussed interview questions a lot easier. A scorecard consists of a few key components:
+** *Mission* - a description of the high level goal of the position.
+** *Outcomes* - what are you expecting of the person who excels in this role? Try to keep these as objective and measurable as possible.
+** *Competencies* - what kind of skills are necessary in order to achieve the outcomes that you defined.
+* Asking questions about how somebody would hypothetically approach certain situations in the workplace is not the most effective way of interviewing someone. *In reality, you can derive much more effective insights by focussing on what somebody actually did in a given situation:*
+** What were you hired to do?
+** What did you accomplish?
+** What mistakes did you make in this job?
+** Who did you work with and what do think of them?
+** Why did you leave this job?
+* *Be organised.* An interview is a pretty big time investment from both sides, so make the most of it by having a structured agenda for what you’re hoping to accomplish. *Everyone involved (ideally not more than 2-3 people) should know what their roles are,* and the order of proceedings should be explained to interviewee at the outset.
+
+== Initial conversation
+
 How you approach this part of the hiring process will fall somewhere on a spectrum, with you trying to filter out people who ‘aren’t good enough’ on one end and ‘convincing people that your company is the best’ on the other.
 
-If you consider this in the broader context of tech hiring in its current state, it should be obvious that your goal ought to be trying to adopt more of a selling mindset. There are potentially a host of other competing organisations all trying to tap into the same talent pool as you are and if you’re not making an effort to convince candidates why they should choose to work with you, you’ll quickly start losing out to companies who are.
+If you consider this in the broader context of tech hiring in its current state, it should be obvious that your goal ought to be trying to adopt more of a selling mindset. *There are potentially a host of other competing organisations all trying to tap into the same talent pool as you are and if you’re not making an effort to convince candidates why they should choose to work with you, you’ll quickly start losing out to companies who are.*
 
 Your goal at this point in the hiring process should be to maximise knowledge on both sides of the table; candidates should know as much about the work that you do, and you need to know as much as you can about them so as to be able to figure out whether or not they’ll be able to make an impact in your team.
 
@@ -110,7 +132,7 @@ NOTE: When considering how to structure your initial conversations with people, 
 
 {nbsp} +
 
-=== Screening call
+=== Screening chat
 
 This kind of conversation typically revolves around extracting as much information from a candidate as possible with the goal of being able to qualify whether or not they should be allowed to proceed to the next stage of the interview process. The types of questions asked during this kind of interaction will usually be focussed around the candidate’s educational background, their past work experience and filling in any gaps that were left after reading their profile. It’s also very important to provide an opportunity towards the end for the person you’re talking to to ask any questions that they might have.
 
@@ -118,7 +140,7 @@ While this approach can give you a great deal of information in a relatively sho
 
 {nbsp} +
 
-=== Sales call
+=== Sales chat
 
 On the other end of the spectrum to the traditional screening call, we find something that is closer to a sales call. Rather than looking for reasons to filter somebody out, the goal here is to effectively sell the role, the company and its mission as well as the interview process itself.
 
@@ -129,8 +151,6 @@ This should generally be the strategy that you adopt if you’re trying to build
 {nbsp} +
 
 == Technical Assessment
-
-'''
 
 If your goal is to build a high quality product, everybody on your team should be up to snuff from a technical perspective. Anyone who isn’t pulling their weight can be a drain on the rest of team and will severely limit your ability to move quickly, which is why an effective technical assessment process is so important.
 
@@ -146,7 +166,7 @@ Proper briefing is also super important when conducting any kind of technical as
 
 This is potentially the most abstract of the options available to you when looking to assess technical ability. While it can be the most convenient from a candidate experience perspective, it’s also extremely reliant on the person running the interview being highly technical themselves.
 
-The effectiveness of a technical interview hinges entirely on the strength of the questions that you ask as assessment tools. While it might feel good to ask a trick question that somebody outside of your building or specific might struggle to answer, you generally want to stick to questions that will allow candidates to showcase their own skill.
+The effectiveness of a technical interview hinges entirely on the strength of the questions that you ask as assessment tools. While it might feel good to ask a trick question that somebody outside of your building might struggle to answer, you generally want to stick to questions that will allow candidates to showcase their own skill.
 
 If you decide to adopt this strategy, it’s massively important that the interviewer has a good grasp of the problem that they’re asking the interviewee to solve. Somebody who doesn’t have a solid understanding of the problem themselves will struggle to move the discussion forward which will greatly limit the amount of information that you’re able to gather about somebody’s technical abilities.
 
@@ -206,13 +226,52 @@ You might be saving time in the short term by relying solely on your finely hone
 
 {nbsp} +
 
-== Culture fit
+[cols="1,2,2,2", options="header"]
+.Technical assessment comparison
+|===
+|Assessment
+|What does it assess?
+|Company time investment
+|Candidate experience
 
-'''
+|*Technical Interview*
+|Ability to communicate problem solving process as well as high level. technical understanding of topics.
+|Dependant on the number of team members involved.
+|Dependant on the skill and level of preparation of the interviewer.
+
+|*Whiteboard*
+|Ability to logically structure a solution and communicate ones thought process.
+|No setup time outside of coming up with the problem. Can be conducted by a single member of the development team.
+|Generally positive as long as there is a proper briefing around expected parameters (eg code vs pseudocode).
+
+|*Paper Programming*
+|Similar to whiteboard assessment, but more difficult to communicate around how the solution was obtained.
+|Minimal. Test can be written and then assessed at a later date.
+|Potentially frustrating to write out code without an IDE, especially if using a specific language rather an pseudocode.
+
+|*Pair Programming*
+|Ability to solve problems collaboratively and communicate decision making.
+|Potentially high. A number of members of your development team will potentially be working with the candidate.
+|Can be quite daunting if it isn’t explained that the person they’re paired up with isn’t necessarily assessing them.
+
+|*Online Test*
+|Proficiency in a specific language and it’s syntax. Useful for measuring computer science fundamentals.
+|Minimal. Best practice would be to have a dev team member at least double check the results of the marking algorithm.
+|Quite impersonal, but potentially convenient due to being able to fit it into their own schedule.
+
+|*Take-home Project*
+|Ability to assess a project brief and model a solution in code. Ability to budget time to have the project completed before the deadline.
+|Up front time investment to set a sane assessment as well as rubric for scoring it. Assessing the project and delivering useful feedback can be time consuming.
+|Dependant on the quality of the briefing. A poorly briefed project can result in candidates spending too much time answering questions which might not be relevant, which is frustrating.
+|===
+
+{nbsp} +
+
+== Culture fit
 
 Performance metrics, sales figures and stock prices all fluctuate, and after all is said and done the one differentiating factor that you have as a company is your culture. Your culture is the set of (usually) unwritten rules that your company has collectively determined for how you are all going to work together.
 
-As companies grow, they tend to get better at explicating their own cultures, but in the beginning when you’re still figuring things out it often comes down to unwritten rules and implicit patterns of doing things. Because of this ephemeral nature, it can be hard to make sure early on that new hires align with and augment your existing culture; which is why it’s so incredibly important to have a method in place that you use to try and tease out what the values and motivations are of people you’re looking to employ.
+As companies grow, they tend to get better at explicating their own cultures, but in the beginning when you’re still figuring things out it often comes down to unwritten rules and implicit patterns of doing things. Because of this ephemeral nature, it can be hard to make sure early on that new hires align with and augment your existing culture; which is why it’s so incredibly important to have a method in place that you use to try and tease out what the values and motivations are of people you’re looking to employ. You can do this in an interview setting in a few different ways:
 
 {nbsp} +
 
@@ -248,8 +307,6 @@ Once your team and hiring process start to scale significantly, it can be very e
 
 == Team fit
 
-'''
-
 Team fit can be thought of as a subset of company culture, or depending how small your company is, the same thing altogether. The mindset behind these kinds of discussions tend to be more granular than determining alignment between a candidate’s career goals and a company’s mission, with more focus being put on smaller scale team dynamics.
 
 TIP: *Protip:* You’ve spent a lot of time trying to hire the best possible team, why not show them off? Smart people tend to want to hang out and solve problems with other smart people, so showing that you can provide this kind of environment can be a super compelling reason to join a company.
@@ -283,6 +340,8 @@ The first step here should have happened before the interview process even began
 Before you dial a single digit into the phone, it’s really important that you articulate just what it is that you’re hoping to achieve by contacting somebodies references. Are you looking to enlist third parties to provide you with information in order to help you make a hiring decision, or have you already made a decision and you’re doing a quick check for any serious red flags?
 
 In general, try to avoid calling a reference before you’ve spoken to the candidate yourself. It might feel useful to have a heads up before they’ve even come in for an interview, but remember that you’ve just potentially coloured your own first impression of this person with somebody else’s opinion.
+
+Remember that when doing reference calls, your goal shouldn’t be to simply confirm what it is you’ve already learned about somebody during an interview. A useful mindset to adopt would be one of *“everything we’ve heard about the candidate so far is great, but we just want to make sure that we haven’t missed anything”.*
 
 It should go without saying that you should always be respectful of the private nature of the candidate’s job search. *NEVER* phone somebody’s current workplace without their explicit permission, and don’t solicit your own personal network for information without doing your own homework. The world is a small place, even more so in tech. People can be connected in unexpected ways, so it’s advised to limit your reference checks to people that the person that you’re hiring has provided for this purpose.
 
@@ -346,8 +405,6 @@ NOTE: *Protip:* If you know that you’re not going to be able to provide a cont
 
 == Onboarding
 
-'''
-
 It’s done. It’s in the bag. Once the offer has been signed it’s all too easy to hang up your hiring hat, pat yourself on the back and wait until the person you just hired shows up for their first day of work before you speak to them again.
 
 *This is an enormous mistake.* In reality, your onboarding process should start the second that the contract is signed. According to our data, one third of candidates who drop out before starting their new jobs, cite a lack of communication or miscommunication as a major contributing factor. You just spent an enormous chunk of time assessing this person and convincing them to join your team, don’t leave the door open to counter offers and cold feet by leaving them out of the loop now.
@@ -378,9 +435,33 @@ Getting somebody to start working for you as soon as they’ve signed your contr
 
 {nbsp} +
 
-== In closing
+== Putting it all together
 
-'''
+{nbsp} +
+
+=== Example hiring process for smaller startup
+
+1. *Schedule a coffee appointment with the candidate.* Make sure that conversation isn’t you asking them to answer questions for you. Spend time ‘selling the role” to the candidate and give them the chance to ask any questions that they want to.
+2. *Schedule an on-site interview to assess technical and cultural fit.*
+a. *Assign a short technical project prior to the interview date.* A technical interview can then be conducted on the day with the project as a focus of discussion.
+b. If the technical assessment comes back positive, *schedule a follow up meeting determine cultural alignment.* In the early stages of your company it’s incredibly important that the founders have an active hand in who joins the team, so a *quick founders chat* is scheduled. At the same time, schedule some time for the candidate to meet with the team leads and senior team members.
+3. *Ask the candidate for 2 references that you can call.* Make sure to probe beyond the usual glowing recommendations that are sure to come from somebody who has been asked to serve as a reference.
+4. If the candidate possesses the competencies to meet the outcomes that you set out in your scorecard and the reference calls don’t raise any red flags, have who was involved in the interview process *give the candidate a call to tell them the good news and that you’re putting together an offer* (be prepared to answer questions). *This should then be followed up with an official offer as soon as possible.*
+5. As soon as the candidate accepts the offer and a start date has been agreed on, *their future team-lead should give them a call to discuss how they can start preparing for day one.* This includes *getting set up with a laptop* and *access for accounts* they’re going to be using. This person is now part of the team, so it’s the team lead’s responsibility to make sure that they’re invited to any team events that are scheduled prior to their start date.
+
+=== Example hiring process for larger company
+
+1. *Schedule some time with the candidate for a quick phone call to introduce yourself and your company.* It’s important that you convey your employer value proposition during this call (why should somebody want to work at your company), while also clarifying any details about the candidate that weren’t obvious from their profiles.
+2. *If both parties are happy to proceed, assign the candidate an online technical test.* Make sure that they understand how to access the test, and are well briefed beforehand on any time limits or special criteria. Once they have submitted the test, get somebody from your dev team to sanity check the results.
+3. Due to the company’s size, the founders are not involved in hiring every new team member. *If the results of the technical assessment were satisfactory, arrange for the candidate to come in for an on site structured interview with the hiring team and at least one technical team member who will run through a quick technical interview to cover anything that wasn’t included in the online test.* Ensure that everybody is well briefed beforehand; the interviewers on what they will be assessing, and the candidate on who they will be meeting as well as what kinds of questions they can expect.
+4. If the feedback from the technical and culture interviews is good, *call at least 2 references,* making sure to focus on gathering disconfirming information, rather than simply asking them to list what they liked about the person. Because of your work in the finance sector, organise to have criminal and credit checks run on the candidate via fingerprint scan. Give them a call beforehand to give them context on why this needs to be done, and to pass along how they will be carried out.
+5. If the candidate possesses the competencies to meet the outcomes that you set out in your scorecard and the reference calls and other checks don’t raise any red flags, *have who was involved in the interview process give the candidate a call to tell them the good news and that you’re putting together an offer* (be prepared to answer questions). This should then be followed up with an official offer as soon as possible.
+6. As soon as the candidate accepts the offer and a start date has been agreed on, *their future team-lead should give them a call to discuss how they can start preparing for day one.* This includes *getting set up with a laptop* and *access for accounts* they’re going to be using. This person is now part of the team, so it’s the team lead’s responsibility to make sure that they’re invited to any team events that are scheduled prior to their start date.
+
+NOTE: The final phases of these two processes are quite similar. We find that regardless of company size, after the candidate has come in for an interview *most of your success in hiring will hinge on how quickly and effectively you can execute your own internal processes.* Once you have determined that somebody can meet your technical requirements and will be a good addition to your company culture, there shouldn’t be any reason to delay making an offer.
+
+
+== In closing
 
 Whatever hiring process you end up designing for yourself should have the dual goals of being able to effectively move people through it’s stages quickly and efficiently, while also providing an awesome experience to the person going through it.
 
