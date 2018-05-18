@@ -1,0 +1,254 @@
+/* Blue themed stylesheet */
+html, body, form, fieldset, table, tr, td, img, h1, h2, h3, h4, h5, {
+    margin: 0;
+    padding: 0;
+    font-family: 100%/150% "Proxima Nova";
+}
+
+
+body{
+   background:#fff;
+   color:rgba(0,0,0,.8);
+   padding:0;
+   margin:0;
+   font-family: "Proxima Nova";
+   font-weight:400;
+   font-style:normal;
+   line-height:1;
+   position:relative;
+   cursor:auto;
+   tab-size:4;
+   -moz-osx-font-smoothing:grayscale;
+   -webkit-font-smoothing:antialiased;
+   width: 880px;
+   margin: 0 auto;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 52px;
+  color: #231F20;
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bolder;
+  line-height: 35px;
+  color: #5598DD;
+  padding-bottom: 24px;
+  border: none;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 35px;
+  color: #343951;
+  border: none;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #A7ACB0;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #A7ACB0;
+  margin: 0;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #343951;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: lighter;
+
+}
+
+hr {
+  border: 1px solid #EBF1F6;
+  margin: 20px 0px 80px 0px;
+}
+
+img {
+  max-width: 880px;
+}
+
+strong {
+  color: #343951;
+}
+
+/* Header */
+
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){
+   border-bottom: none;
+   padding: 0;
+ }
+
+#header>h1:first-child {
+    margin-top: 80px;
+    margin-bottom:30px;
+}
+
+ #header .details {
+   border: none;
+   font-size: 24px;
+   font-weight: 300;
+   color: #A7ACB0;
+   font-family: "Proxima Nova";
+ }
+
+ .paragraph {
+   display: flex;
+   align-items: center;
+   font-family: "Proxima Nova";
+ }
+
+
+/* Sections */
+.sect1+.sect1 {
+  border: none;
+}
+
+// Quoteblock
+div.quoteblock {
+  padding-left: 0;
+  margin-left: 60px;
+  margin-right: 0;
+  border: none;
+  color: none;
+
+  p {
+    color: #5598DD;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 500;
+  }
+}
+
+/* Note */
+.admonitionblock.note .icon {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #231F20;
+}
+
+.admonitionblock.note .title {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #231F20;
+  line-height: 24px;
+  font-family: "Proxima Nova";
+}
+
+.admonitionblock.note td.content {
+  font-size: 18px;
+  color: #343951;
+  border-left: none;
+  vertical-align: top;
+  padding-left: 18px;
+  line-height: 24px;
+
+}
+
+/* Example */
+
+.dlist.example {
+  background: #F5F5F5;
+  border-radius: 4px;
+  padding: 12px;
+
+  dt.hdlist1 {
+      padding-left: 24px;
+      font-weight: 600;
+      color: #5C5C5C;
+      font-size: 18px;
+      padding-bottom: 12px;
+
+      dd {
+        margin: 0;
+        padding-left: 24px;
+        padding-right: 24px;
+
+        p {
+          line-height: 24px;
+        }
+      }
+   }
+}
+
+
+
+/* Tip */
+.admonitionblock.tip {
+    background-color: #E5F0FD;
+    padding: 24px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+
+    .icon {
+      font-size: 18px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #231F20;
+
+      .title {
+        color: #343951;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 24px;
+      }
+    }
+
+    .content {
+      font-size: 18px;
+      color: #343951;
+      border-left: none;
+      vertical-align: top;
+      padding: 0;
+      line-height: 24px;
+    }
+}
+
+/* Lists */
+.ulist>ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul>li p {
+  margin-bottom: 24px;
+  line-height: 30px;
+}
+
+li {
+  margin-left: 0;
+  display: flex;
+}
+
+li::before {
+  content: "\002022";
+  color: #D2D8DC; /* or whatever color you prefer */
+  padding-right: 20px;
+}
+
+/* Image */
