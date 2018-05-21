@@ -31,12 +31,13 @@ body {
   margin: 0 auto; }
 
 h1 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 52px;
   color: #231F20;
   border: none;
   margin-bottom: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  margin-top: 80px; }
 
 h2 {
   font-size: 28px;
@@ -91,7 +92,12 @@ strong {
 
 div #toc {
   position: absolute;
-  margin-top: 300px; }
+  margin-top: 380px; }
+  div #toc #toctitle {
+    font-size: 18px;
+    color: #5598DD;
+    text-transform: uppercase;
+    font-weight: 600; }
 
 #header > h1:only-child, body.toc2 #header > h1:nth-last-child(2) {
   border-bottom: none;
@@ -111,12 +117,17 @@ div #toc {
 .author p {
   display: flex;
   align-items: center;
-  font-family: "Proxima Nova"; }
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 16px; }
   .author p img {
     margin-right: 14px; }
 
 .toc-divider {
   margin-top: 900px; }
+
+.imageblock {
+  margin-top: 80px; }
 
 /* Sections */
 .sect1 + .sect1 {
