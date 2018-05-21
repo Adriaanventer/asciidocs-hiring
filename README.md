@@ -4,13 +4,15 @@
 [role="example"]
 EXAMPLE::
 
-<!-- Creating an Tip -->
-<!-- Use [role="tip"] to name a note-->
-TIP:
 
-<!-- Creating an Note -->
-<!-- Use [role="note"] to name a note-->
+TIP:
+<!-- Creating an Tip -->
+Place [role="tip"] above TIP:
+
+
 NOTE:
+<!-- Creating an Note -->
+Place [role="note"] above NOTE:
 
 <!-- Creating an Quote -->
 

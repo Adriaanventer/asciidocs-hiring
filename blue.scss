@@ -1,10 +1,12 @@
-/* Blue themed stylesheet */
+/* Blue themed Asciidoc */
+
 html, body, form, fieldset, table, tr, td, img, h1, h2, h3, h4, h5, {
     margin: 0;
     padding: 0;
     font-family: 100%/150% "Proxima Nova";
 }
 
+////////// Body Styles //////////
 
 body{
    background:#fff;
@@ -80,20 +82,29 @@ p {
 
 }
 
+img {
+  max-width: 880px;
+}
+
 hr {
   border: 1px solid #EBF1F6;
   margin: 20px 0px 80px 0px;
-}
-
-img {
-  max-width: 880px;
 }
 
 strong {
   color: #343951;
 }
 
-/* Header */
+
+// Table of content
+
+div #toc {
+    position: absolute;
+    margin-top: 300px;
+  }
+////////// Header //////////
+
+
 
 #header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){
    border-bottom: none;
@@ -113,17 +124,32 @@ strong {
    font-family: "Proxima Nova";
  }
 
- .paragraph {
+ .author {
+   p{
    display: flex;
    align-items: center;
    font-family: "Proxima Nova";
+
+    img {
+      margin-right: 14px;
+    }
+   }
  }
+
+ .toc-divider {
+     margin-top: 900px;
+ }
+
 
 
 /* Sections */
 .sect1+.sect1 {
   border: none;
 }
+
+////////// Tables //////////
+
+////////// Inline Elements //////////
 
 // Quoteblock
 div.quoteblock {
@@ -194,8 +220,6 @@ div.quoteblock {
    }
 }
 
-
-
 /* Tip */
 .admonitionblock.tip {
     background-color: #E5F0FD;
@@ -225,30 +249,29 @@ div.quoteblock {
       vertical-align: top;
       padding: 0;
       line-height: 24px;
-    }
+  }
 }
 
 /* Lists */
-.ulist>ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul>li p {
-  margin-bottom: 24px;
-  line-height: 30px;
-}
-
-li {
-  margin-left: 0;
-  display: flex;
-}
-
-li::before {
-  content: "\002022";
-  color: #D2D8DC; /* or whatever color you prefer */
-  padding-right: 20px;
-}
-
-/* Image */
+// Custom bullet points added for ul
+// .ulist>ul {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
+//
+// ul>li p {
+//   margin-bottom: 24px;
+//   line-height: 30px;
+// }
+//
+// li {
+//   margin-left: 0;
+//   display: flex;
+// }
+//
+// li::before {
+//   content: "\002022";
+//   color: #D2D8DC;
+//   padding-right: 20px;
+// }
