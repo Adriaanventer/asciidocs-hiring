@@ -1,10 +1,12 @@
+Asciidoctor Demo
+================
+How to build a hiring process that helps you hire tech talent quickly
 :imagesdir: ./images
 :toc:
 
+[role="logo"]
 image::OfferZen_logo.png[Logo,151,31]
 
-= Hiring Process Design
-==== How to build a hiring process that helps you hire tech talent quickly
 
 [role="author"]
 image:AdriaanPortrait.png[Adriaan,44,44,role="left"] Adriaan Venter
@@ -78,7 +80,8 @@ If you’re going to adopt this strategy for your opening conversation, make sur
 
 If you’re sending a super short message just because it’s quicker, consider if the time you’re saving is worth potentially underselling your company and losing out on hires.
 
-TIP: *Example:* “Hi, I’m the head of product at OfferZen and I’d love to chat to you about an opening that we have for a senior Ruby Dev. Check out our profile and send me your contact details so that I can give you a call to tell you more if you’re interested :)”
+[role="example"]
+EXAMPLE:: “Hi, I’m the head of product at OfferZen and I’d love to chat to you about an opening that we have for a senior Ruby Dev. Check out our profile and send me your contact details so that I can give you a call to tell you more if you’re interested 😀”
 
 
 
@@ -90,7 +93,8 @@ Introductions like these can be particularly effective if you think that it’s 
 
 Similar to a highly personalised message, these longer messages can take time to put together. To make it quicker it can be helpful to create one or two really high quality messages to use as templates that you can adapt to specific conversations where appropriate.
 
-TIP: *Example:* “Hi there, we’re in the process of rebuilding our existing e-commerce platform and think that you would be a great addition to our team. A lot of the work that my team does isn’t public facing, but we’re doing plenty of interesting things behind the scenes. We’re working on rebuilding our backend using Clojure and are looking for people who are interested in learning more about functional programming in general as this is the direction that we’re looking to take going forward. We’ve received a lot of funding recently and are looking to build a world class team, product and work environment. If you’re interested in finding out more, please respond with your contact number and email address so that I can set up some time for us to chat.”
+[role="example"]
+EXAMPLE:: “Hi there, we’re in the process of rebuilding our existing e-commerce platform and think that you would be a great addition to our team. A lot of the work that my team does isn’t public facing, but we’re doing plenty of interesting things behind the scenes. We’re working on rebuilding our backend using Clojure and are looking for people who are interested in learning more about functional programming in general as this is the direction that we’re looking to take going forward. We’ve received a lot of funding recently and are looking to build a world class team, product and work environment. If you’re interested in finding out more, please respond with your contact number and email address so that I can set up some time for us to chat.”
 
 
 
@@ -226,9 +230,8 @@ While doing nothing is always an option, it is very seldom the most effective on
 You might be saving time in the short term by relying solely on your finely honed intuition, but we strongly recommend doing some form of due diligence to ensure that the person that you’re adding to your team is able to contribute meaningfully, shore up existing weakness and help you build an awesome product and team.
 
 
-
+==== Technical assessment comparison
 [cols="1,2,2,2", options="header"]
-.Technical assessment comparison
 |===
 |Assessment
 |What does it assess?
@@ -310,7 +313,7 @@ Once your team and hiring process start to scale significantly, it can be very e
 
 Team fit can be thought of as a subset of company culture, or depending how small your company is, the same thing altogether. The mindset behind these kinds of discussions tend to be more granular than determining alignment between a candidate’s career goals and a company’s mission, with more focus being put on smaller scale team dynamics.
 
-TIP: *Protip:* You’ve spent a lot of time trying to hire the best possible team, why not show them off? Smart people tend to want to hang out and solve problems with other smart people, so showing that you can provide this kind of environment can be a super compelling reason to join a company.
+TIP: You’ve spent a lot of time trying to hire the best possible team, why not show them off? Smart people tend to want to hang out and solve problems with other smart people, so showing that you can provide this kind of environment can be a super compelling reason to join a company.
 
 
 
@@ -327,13 +330,9 @@ If you really want to get a feel for somebody, put them at a dinner table with t
 These kinds of engagements can give you a lot of opportunities to get to know somebody, as long as you’re careful to limit the scope of what you’re assessing to things that are relevant to your company and culture. You might find it strange that somebody dips their chips in their milkshake, but it’s definitely not a reason to turn somebody down at this stage of the hiring process.
 
 
-
 == Reference checks
 
-'''
-
 The first step here should have happened before the interview process even began. You need to have a decision in place where you set out whether or not you do background checks for everyone you hire, just for some people (maybe they’re working on-site at a client) or nobody at all. Whatever you decide, it’s important that you stick to it. It’s scarily easy to get swept up in the smiles and good vibes that are in the air after interviewing somebody that really fits in with the team and seems to tick every box that you threw at them, but that’s not necessarily a good reason to short circuit your own process.
-
 
 
 === Calling references
@@ -354,13 +353,11 @@ If you’re hiring in a fintech or financial services space, you probably alread
 
 No matter which side of the isle you’re on, an important consideration should be how these checks impact your hiring process and the candidate experience. Be sure to give people an adequate heads up as to why you’re running these potentially invasive background checks on them, and always provide an opportunity for the other person to be up-front about any irregularities that might come up.
 
-NOTE: *Protip:* Getting set up to do these yourself is cheaper and easier than you think. All you need to do is buy a fingerprint scanner, install some software and get somebody from your team to do a super short course from MIE.
+TIP: Getting set up to do these yourself is cheaper and easier than you think. All you need to do is buy a fingerprint scanner, install some software and get somebody from your team to do a super short course from MIE.
 
 
 
 == Making an offer
-
-'''
 
 In tech hiring, you should always assume that you’re competing for the attention of any given candidate with a host of other companies who are just as determined as you are to hire the best people. This means that it should be your goal throughout this whole process to set yourself up to make a hire/not-hire decision as quickly as possible.
 
@@ -400,7 +397,7 @@ We’ve already established that you should be trying your best to get an offer 
 
 The motivation behind this is mostly psychological; a contract can be seen as a bigger sign of commitment from a company than an offer letter (just remember to sign it before you send it through).
 
-NOTE: *Protip:* If you know that you’re not going to be able to provide a contract super quickly, be upfront and say this rather than creating expectations for something that you can’t deliver.
+TIP: If you know that you’re not going to be able to provide a contract super quickly, be upfront and say this rather than creating expectations for something that you can’t deliver.
 
 
 
@@ -460,7 +457,6 @@ b. If the technical assessment comes back positive, *schedule a follow up meetin
 6. As soon as the candidate accepts the offer and a start date has been agreed on, *their future team-lead should give them a call to discuss how they can start preparing for day one.* This includes *getting set up with a laptop* and *access for accounts* they’re going to be using. This person is now part of the team, so it’s the team lead’s responsibility to make sure that they’re invited to any team events that are scheduled prior to their start date.
 
 NOTE: The final phases of these two processes are quite similar. We find that regardless of company size, after the candidate has come in for an interview *most of your success in hiring will hinge on how quickly and effectively you can execute your own internal processes.* Once you have determined that somebody can meet your technical requirements and will be a good addition to your company culture, there shouldn’t be any reason to delay making an offer.
-
 
 == In closing
 

@@ -5,7 +5,8 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.7.1">
-<title>Hiring Process Design</title>
+<meta name="author" content="How to build a hiring process that helps you hire tech talent quickly">
+<title>Asciidoctor Demo</title>
 <style>
 /* Blue themed Asciidoc */
 html, body, form, fieldset, table, tr, td, img, h1, h2, h3, h4, h5 {
@@ -37,13 +38,14 @@ h1 {
   border: none;
   margin-bottom: 0;
   padding-bottom: 0;
-  margin-top: 80px; }
+  margin-top: 90px; }
 
 h2 {
   font-size: 28px;
   font-weight: bolder;
   line-height: 35px;
   color: #5598DD;
+  padding-top: 40px;
   padding-bottom: 24px;
   border: none;
   margin: 0; }
@@ -55,14 +57,15 @@ h3 {
   color: #343951;
   border: none;
   margin: 0;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+  margin-top: 40px; }
 
 h4 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 35px;
   color: #A7ACB0;
-  margin-top: 0;
+  margin-top: 12px;
   margin-bottom: 40px; }
 
 h5 {
@@ -78,41 +81,67 @@ p {
   color: #343951;
   font-size: 18px;
   line-height: 30px;
-  font-weight: lighter; }
+  font-weight: 400;
+  margin-top: 0px; }
 
 img {
-  max-width: 880px; }
+  max-width: 880px;
+  padding: 24px 0px; }
 
 hr {
   border: 1px solid #EBF1F6;
-  margin: 20px 0px 80px 0px; }
+  margin: 12px 0px 20px 0px; }
 
 strong {
   color: #343951; }
 
+.ulist ul {
+  padding-left: 15px; }
+
 div #toc {
   position: absolute;
-  margin-top: 380px; }
+  margin-top: 140px; }
   div #toc #toctitle {
     font-size: 18px;
     color: #5598DD;
     text-transform: uppercase;
-    font-weight: 600; }
+    font-weight: 700; }
+  div #toc ul {
+    padding-left: 15px;
+    color: #343951; }
+    div #toc ul li a {
+      font-size: 18px;
+      font-weight: 500;
+      color: #343951;
+      line-height: 26px; }
+    div #toc ul li ul {
+      padding-left: 24px;
+      color: #9B9B9B; }
+      div #toc ul li ul li a {
+        font-size: 18px;
+        font-weight: 300;
+        color: #343951;
+        text-decoration: none;
+        line-height: 24px; }
 
-#header > h1:only-child, body.toc2 #header > h1:nth-last-child(2) {
-  border-bottom: none;
-  padding: 0; }
+div#header {
+  position: absolute;
+  margin-top: 40px; }
+  div#header h1 {
+    margin-top: 70px; }
+  div#header .details {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #A7ACB0;
+    margin-top: 12px;
+    margin-bottom: 40px; }
 
-#header > h1:first-child {
+.imageblock.logo {
   margin-top: 80px;
-  margin-bottom: 30px; }
-
-#header .details {
-  border: none;
-  font-size: 24px;
-  font-weight: 300;
-  color: #A7ACB0;
-  font-family: "Proxima Nova"; }
+  margin-bottom: 220px; }
+  .imageblock.logo img {
+    padding: 0px; }
 
 .author p {
   display: flex;
@@ -121,13 +150,13 @@ div #toc {
   font-weight: 700;
   font-size: 14px; }
   .author p img {
-    margin-right: 14px; }
+    margin-right: 14px;
+    padding: 0px; }
 
 .toc-divider {
-  margin-top: 900px; }
-
-.imageblock {
-  margin-top: 80px; }
+  margin-top: 1186px;
+  border-top: 2px solid #EBF1F6;
+  padding-top: 34px; }
 
 /* Sections */
 .sect1 + .sect1 {
@@ -146,45 +175,47 @@ div.quoteblock {
     font-weight: 500; }
 
 /* Note */
-.admonitionblock.note .icon {
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #231F20; }
-
-.admonitionblock.note .title {
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #231F20;
-  line-height: 24px;
-  font-family: "Proxima Nova"; }
-
-.admonitionblock.note td.content {
-  font-size: 18px;
-  color: #343951;
-  border-left: none;
-  vertical-align: top;
-  padding-left: 18px;
-  line-height: 24px; }
+.admonitionblock.note.note {
+  padding: 24px 0px; }
+  .admonitionblock.note.note td.icon {
+    vertical-align: top; }
+    .admonitionblock.note.note td.icon .title {
+      font-size: 16px;
+      font-weight: 700;
+      font-family: "Proxima Nova";
+      line-height: 30px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #231F20; }
+  .admonitionblock.note.note td.content {
+    font-size: 18px;
+    color: #343951;
+    border-left: none;
+    vertical-align: top;
+    padding-left: 18px;
+    line-height: 30px; }
+    .admonitionblock.note.note td.content .ulist ul li p {
+      margin-bottom: 0px; }
 
 /* Example */
 .dlist.example {
   background: #F5F5F5;
   border-radius: 4px;
-  padding: 12px; }
-  .dlist.example dt.hdlist1 {
+  padding: 12px;
+  margin-top: 24px;
+  margin-bottom: 40px; }
+  .dlist.example dl dt.hdlist1 {
     padding-left: 24px;
     font-weight: 600;
     color: #5C5C5C;
     font-size: 18px;
     padding-bottom: 12px; }
-    .dlist.example dt.hdlist1 dd {
-      margin: 0;
-      padding-left: 24px;
-      padding-right: 24px; }
-      .dlist.example dt.hdlist1 dd p {
-        line-height: 24px; }
+  .dlist.example dl dd {
+    width: 810px;
+    padding-left: 0;
+    margin-left: 24px; }
+    .dlist.example dl dd p {
+      line-height: 30px; }
 
 /* Tip */
 .admonitionblock.tip {
@@ -197,21 +228,44 @@ div.quoteblock {
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #231F20; }
+    font-weight: 600;
+    position: absolute; }
     .admonitionblock.tip .icon .title {
       color: #343951;
       text-transform: uppercase;
       text-decoration: none;
-      line-height: 24px; }
+      padding-right: 12px;
+      font-family: "Proxima Nova";
+      line-height: 30px; }
+    .admonitionblock.tip .icon .title:after {
+      content: ":"; }
   .admonitionblock.tip .content {
     font-size: 18px;
     color: #343951;
     border-left: none;
     vertical-align: top;
     padding: 0;
-    line-height: 24px; }
+    line-height: 30px;
+    text-indent: 4%; }
 
 /* Lists */
+ol.arabic {
+  color: #5EA5EE;
+  font-size: 22px;
+  font-weight: 800; }
+  ol.arabic li {
+    padding-left: 20px; }
+    ol.arabic li ol.loweralpha {
+      color: #A6ACAF;
+      font-size: 20px; }
+      ol.arabic li ol.loweralpha li {
+        padding-left: 12px; }
+
+table.tableblock.frame-all.grid-all.stretch {
+  border: 1px solid grey;
+  padding: 20px; }
+  table.tableblock.frame-all.grid-all.stretch caption.title {
+    text-align: left; }
 
 /*# sourceMappingURL=blue.css.map */
 
@@ -219,12 +273,13 @@ div.quoteblock {
 </head>
 <body class="article">
 <div id="header">
+<h1>Asciidoctor Demo</h1>
+<div class="details">
+<span id="author" class="author">How to build a hiring process that helps you hire tech talent quickly</span><br>
+</div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
-<ul class="sectlevel0">
-<li><a href="#_hiring_process_design">Hiring Process Design</a>
-<ul class="sectlevel3">
-<li><a href="#_how_to_build_a_hiring_process_that_helps_you_hire_tech_talent_quickly">How to build a hiring process that helps you hire tech talent quickly</a></li>
+<ul class="sectlevel1">
 <li><a href="#_how_to_use_this_guide">How to use this guide</a></li>
 <li><a href="#_general_tips">General tips</a></li>
 <li><a href="#_reaching_out">Reaching out</a>
@@ -295,19 +350,16 @@ div.quoteblock {
 </li>
 <li><a href="#_in_closing">In closing</a></li>
 </ul>
-</li>
-</ul>
 </div>
 </div>
 <div id="content">
-<div class="imageblock">
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock logo">
 <div class="content">
 <img src="./images/OfferZen_logo.png" alt="Logo" width="151" height="31">
 </div>
 </div>
-<h1 id="_hiring_process_design" class="sect0">Hiring Process Design</h1>
-<div class="sect3">
-<h4 id="_how_to_build_a_hiring_process_that_helps_you_hire_tech_talent_quickly">How to build a hiring process that helps you hire tech talent quickly</h4>
 <div class="paragraph author">
 <p><span class="image left"><img src="./images/AdriaanPortrait.png" alt="Adriaan" width="44" height="44"></span> Adriaan Venter</p>
 </div>
@@ -320,6 +372,7 @@ div.quoteblock {
 </div>
 <div class="paragraph">
 <p>A lot has been written about how to do this most effectively and a whole bunch of companies have tried many different things. Over the last 2 years we’ve been lucky enough to not only be able to have conversations with over 700 of SA’s top tech companies about their hiring processes, but to see them play out from both the company’s and candidate’s perspectives.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -442,17 +495,13 @@ Optimise for speed. Your goal should be to put an offer of employment in the han
 <div class="paragraph">
 <p>If you’re sending a super short message just because it’s quicker, consider if the time you’re saving is worth potentially underselling your company and losing out on hires.</p>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Tip</div>
-</td>
-<td class="content">
-<strong>Example:</strong> “Hi, I’m the head of product at OfferZen and I’d love to chat to you about an opening that we have for a senior Ruby Dev. Check out our profile and send me your contact details so that I can give you a call to tell you more if you’re interested :)”
-</td>
-</tr>
-</table>
+<div class="dlist example">
+<dl>
+<dt class="hdlist1">EXAMPLE</dt>
+<dd>
+<p>“Hi, I’m the head of product at OfferZen and I’d love to chat to you about an opening that we have for a senior Ruby Dev. Check out our profile and send me your contact details so that I can give you a call to tell you more if you’re interested 😀”</p>
+</dd>
+</dl>
 </div>
 </div>
 <div class="sect2">
@@ -466,17 +515,13 @@ Optimise for speed. Your goal should be to put an offer of employment in the han
 <div class="paragraph">
 <p>Similar to a highly personalised message, these longer messages can take time to put together. To make it quicker it can be helpful to create one or two really high quality messages to use as templates that you can adapt to specific conversations where appropriate.</p>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Tip</div>
-</td>
-<td class="content">
-<strong>Example:</strong> “Hi there, we’re in the process of rebuilding our existing e-commerce platform and think that you would be a great addition to our team. A lot of the work that my team does isn’t public facing, but we’re doing plenty of interesting things behind the scenes. We’re working on rebuilding our backend using Clojure and are looking for people who are interested in learning more about functional programming in general as this is the direction that we’re looking to take going forward. We’ve received a lot of funding recently and are looking to build a world class team, product and work environment. If you’re interested in finding out more, please respond with your contact number and email address so that I can set up some time for us to chat.”
-</td>
-</tr>
-</table>
+<div class="dlist example">
+<dl>
+<dt class="hdlist1">EXAMPLE</dt>
+<dd>
+<p>“Hi there, we’re in the process of rebuilding our existing e-commerce platform and think that you would be a great addition to our team. A lot of the work that my team does isn’t public facing, but we’re doing plenty of interesting things behind the scenes. We’re working on rebuilding our backend using Clojure and are looking for people who are interested in learning more about functional programming in general as this is the direction that we’re looking to take going forward. We’ve received a lot of funding recently and are looking to build a world class team, product and work environment. If you’re interested in finding out more, please respond with your contact number and email address so that I can set up some time for us to chat.”</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -701,8 +746,9 @@ The automatic scoring systems that many of these online testing tools use often 
 <div class="paragraph">
 <p>You might be saving time in the short term by relying solely on your finely honed intuition, but we strongly recommend doing some form of due diligence to ensure that the person that you’re adding to your team is able to contribute meaningfully, shore up existing weakness and help you build an awesome product and team.</p>
 </div>
+<div class="sect3">
+<h4 id="_technical_assessment_comparison">Technical assessment comparison</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Technical assessment comparison</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 28.5714%;">
@@ -756,6 +802,7 @@ The automatic scoring systems that many of these online testing tools use often 
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 </div>
 </div>
@@ -816,7 +863,7 @@ The automatic scoring systems that many of these online testing tools use often 
 <div class="title">Tip</div>
 </td>
 <td class="content">
-<strong>Protip:</strong> You’ve spent a lot of time trying to hire the best possible team, why not show them off? Smart people tend to want to hang out and solve problems with other smart people, so showing that you can provide this kind of environment can be a super compelling reason to join a company.
+You’ve spent a lot of time trying to hire the best possible team, why not show them off? Smart people tend to want to hang out and solve problems with other smart people, so showing that you can provide this kind of environment can be a super compelling reason to join a company.
 </td>
 </tr>
 </table>
@@ -841,7 +888,6 @@ The automatic scoring systems that many of these online testing tools use often 
 <div class="sect1">
 <h2 id="_reference_checks">Reference checks</h2>
 <div class="sectionbody">
-<hr>
 <div class="paragraph">
 <p>The first step here should have happened before the interview process even began. You need to have a decision in place where you set out whether or not you do background checks for everyone you hire, just for some people (maybe they’re working on-site at a client) or nobody at all. Whatever you decide, it’s important that you stick to it. It’s scarily easy to get swept up in the smiles and good vibes that are in the air after interviewing somebody that really fits in with the team and seems to tick every box that you threw at them, but that’s not necessarily a good reason to short circuit your own process.</p>
 </div>
@@ -868,14 +914,14 @@ The automatic scoring systems that many of these online testing tools use often 
 <div class="paragraph">
 <p>No matter which side of the isle you’re on, an important consideration should be how these checks impact your hiring process and the candidate experience. Be sure to give people an adequate heads up as to why you’re running these potentially invasive background checks on them, and always provide an opportunity for the other person to be up-front about any irregularities that might come up.</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<div class="title">Tip</div>
 </td>
 <td class="content">
-<strong>Protip:</strong> Getting set up to do these yourself is cheaper and easier than you think. All you need to do is buy a fingerprint scanner, install some software and get somebody from your team to do a super short course from MIE.
+Getting set up to do these yourself is cheaper and easier than you think. All you need to do is buy a fingerprint scanner, install some software and get somebody from your team to do a super short course from MIE.
 </td>
 </tr>
 </table>
@@ -886,7 +932,6 @@ The automatic scoring systems that many of these online testing tools use often 
 <div class="sect1">
 <h2 id="_making_an_offer">Making an offer</h2>
 <div class="sectionbody">
-<hr>
 <div class="paragraph">
 <p>In tech hiring, you should always assume that you’re competing for the attention of any given candidate with a host of other companies who are just as determined as you are to hire the best people. This means that it should be your goal throughout this whole process to set yourself up to make a hire/not-hire decision as quickly as possible.</p>
 </div>
@@ -931,14 +976,14 @@ The automatic scoring systems that many of these online testing tools use often 
 <div class="paragraph">
 <p>The motivation behind this is mostly psychological; a contract can be seen as a bigger sign of commitment from a company than an offer letter (just remember to sign it before you send it through).</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<div class="title">Tip</div>
 </td>
 <td class="content">
-<strong>Protip:</strong> If you know that you’re not going to be able to provide a contract super quickly, be upfront and say this rather than creating expectations for something that you can’t deliver.
+If you know that you’re not going to be able to provide a contract super quickly, be upfront and say this rather than creating expectations for something that you can’t deliver.
 </td>
 </tr>
 </table>
@@ -1072,7 +1117,7 @@ The final phases of these two processes are quite similar. We find that regardle
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-05-21 17:05:50 SAST
+Last updated 2018-05-22 16:41:19 SAST
 </div>
 </div>
 </body>
