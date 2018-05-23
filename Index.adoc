@@ -5,19 +5,21 @@
 
 {nbsp} +
 
-Hiring is not what it used to be; you’re trying to hire the best people, but so is everybody else. The melee that ensues can be tough to navigate at the best of times, and without a well thought out hiring strategy you’re going to make it much harder than it needs to be for smart people to figure out why your company is the one where they want to be working.
+Hiring is hard; you’re trying to get the best people, but so is everybody else. The melee that ensues can be tough to navigate at the best of times, and having a well thought out hiring strategy is critical to success.
 
-Demand for quality tech candidates currently far outstrips supply and it’s not going to change any time soon. Now more than ever, securing a steady supply of talent is a strategic and competitive necessity. As an adaptation, we have seen a strong indicator of successful hiring as being a transformation from a *filtering mindset* (how can I make sure that people are good enough to work at my company), to an *attraction mindset* (how can I make sure that everything about my company is awesome enough so that all of the best people will want to work there).
+Demand for quality tech candidates currently far outstrips supply and it’s not going to change any time soon. Now more than ever, securing a steady supply of talent is a strategic and competitive necessity. As an adaptation, We have seen successful companies adapt a new mindset. *Instead of filtering to ensure that people are good enough to work at the company, they ask themselves how they can attract top talent.*
 
-A lot has been written about how to do this most effectively and a whole bunch of companies have tried many different things. Over the last 2 years we’ve been lucky enough to not only be able to have conversations with over 700 of SA’s top tech companies about their hiring processes, but to see them play out from both the company’s and candidate’s perspectives.
+Over the last 2 years we’ve been able to have conversations with over 800 of SA’s top tech companies about their hiring processes. During these discussions we’ve been able to gather an enormous amount of data on how to design an effective hiring process while also seeing them play out from the candidate’s perspective.
+
 
 {nbsp} +
 
 == How to use this guide
 
-We’ve learned that an effective hiring process can be built from a number of basic building blocks. The goal of the following guide is to present some of the common ‘blocks’, explain their pro’s and con’s and describe when best to implement them.
+We’ve learned that an effective hiring process can be built from a number of basic building blocks. The goal of the following guide is to present some of the common blocks, explain their pros and cons and clarify when best to implement them.
 
 Once you’ve become acquainted with some of your options, you should be able to synthethise an approach for each of the following parts of the hiring process:
+
 
 {nbsp} +
 
@@ -32,20 +34,22 @@ NOTE: This is the usual order, but there is nothing preventing you from making m
 == General tips
 
 * Try to have one person take ownership of hiring for any given role. This will help with accountability and minimise the chances of balls being dropped.
-* Be extremely responsive with candidates - you should never be the bottleneck in your own hiring process.
-Optimise for speed. Your goal should be to put an offer of employment in the hands of somebody who meets your criteria as quickly as possible.
-* Remember that drop-off will occur throughout every stage of the process, so it’s important to maintain a strong pipeline of candidates in various stages of the interview process.
-* The golden thread that should run through your entire process is the candidate experience. Always assume that the person you’re interviewing is going to tell their friends/community members about their experience interviewing at your company.
+* *Be extremely responsive with candidates;* you should never be the bottleneck in your own hiring process.
+* Optimise for speed. If somebody meets your hiring criteria, your goal should be to put an offer of employment in their hands as quickly as possible.
+* Remember that drop-off will occur throughout every stage of the process, so it’s important to maintain a strong pipeline of candidates.
+* The golden thread that should run through your entire process is the candidate experience. *Always assume that the person you’re interviewing is going to tell their friends/community members about their experience interviewing at your company.*
+
 
 {nbsp} +
 
 == Reaching out
 
-The first step of your hiring process should be to focus inwardly and decide who is going to be running it. If you can’t settle on a single person to care about the whole process, then be sure to go into detail in terms of which people are going to take ownership of the individual parts of the process. We have found that the person closest to the role that you’re hiring for should conduct the initial outreach (IE, if you’re hiring a developer, the dev manager or head of product should be reaching out).
+The first step of your hiring process should be to focus inwardly and decide who is going to be running it. If you can’t settle on a single person to care about the whole process, then be sure to go into detail in terms of which people are going to take ownership of the individual parts of the process. We have found that the person closest to the role in question should conduct the initial outreach. If you’re hiring a developer, the dev manager or head of product should be reaching out if possible.
 
-Depending on how strong your brand is, this initial message could potentially be the first time the person you’re reaching out to has heard of your company, so it’s super important that you’re able to convey your employer value proposition (reasons why your company is an awesome place to work) concisely and convincingly.
+Depending on how strong your brand is, the initial message could potentially be the first time the person you’re reaching out to has heard of your company. This means that it’s super important for you to be able to convey your employer value proposition concisely and convincingly.
 
-There are a couple of different styles of outreach that we have seen in the wild on OfferZen, we suggest picking the one that aligns best with your culture and goals.
+We’ve seen companies on OfferZen reach out in a couple of different ways, namely: the super personal message, the short message and the long message. We suggest picking the one that aligns best with your culture and goals.
+
 
 [NOTE]
 ====
@@ -61,9 +65,9 @@ An employer value proposition is the name given to a broad category of things de
 
 === Super personal message
 
-Nothing gives a somebody the warm fuzzies like seeing a message from an interested company that addresses them as individual. Making specific references to parts of a person’s profile that you found particularly interesting is a great way to prove to somebody that you’re serious about engaging with them meaningfully.
+*Nothing gives a somebody the warm fuzzies like seeing a message from an interesting company that addresses them as an individual.* Making specific references to parts of a person’s profile that you found particularly interesting is a great way to prove to somebody that you’re serious about engaging with them.
 
-Keep in mind that personalising every message can take time, so be mindful not to let that affect the number of people that you reach out to. Ultimately you should be looking to strike a balance between thoughtful, personalised outreach and building a healthy candidate pipeline. If you’re concerned about time, try creating a template or two that you partially customise for different scenarios.
+Keep in mind that personalising every message can take time, so be mindful not to let that affect the number of people that you reach out to. *Ultimately, you should be looking to strike a balance between thoughtful, personalised outreach and building a healthy candidate pipeline.* If you’re concerned about time, try creating a template or two that you partially customise for different scenarios.
 
 TIP: *Example:* “Hey there. I was reading your profile and the part about wanting to be part of a smaller, more independant team really resonated with me. I’m especially interested to hear more about the raspberry pi side project that you mentioned - which model did you end up using? Would you be keen to jump on a quick call so that I can tell you more about the role?
 
@@ -71,11 +75,12 @@ TIP: *Example:* “Hey there. I was reading your profile and the part about want
 
 === Short message
 
-If you feel that your brand speaks for itself, you can sometimes get away with a really short message without too much background. While this might work some of the time, you run the risk of overestimating the reach of your fame. Some people might think twice about making time in their calendar’s to meet up for coffee with somebody from a company they’ve never heard of prior to being contacted with a cryptic one-liner.
+*If you feel that your brand speaks for itself, you can sometimes get away with a really short message without too much background.* While this might work some of the time, you run the risk of overestimating the reach of your fame. Some people might think twice about making time in their calendars to meet up for coffee with somebody from a company they’ve never heard of prior to being contacted with a cryptic one-liner.
 
-If you’re going to adopt this strategy for your opening conversation, make sure that you provide other ways for candidates to find out more about you. Making sure your company’s OfferZen page is up to date is a great first step towards this. Including links to any press articles that were written about you as well as any public Github repos will be super helpful to convey to people some of the interesting stuff that you do.
+If you’re going to adopt this strategy for your opening conversation, *make sure that you provide other ways for candidates to find out more about you.* Taking time to update your company’s OfferZen page is is a great first step towards this. Including links to any press articles that were written about you as well as any public Github repos will be super helpful to convey some of the interesting stuff that you do.
 
 If you’re sending a super short message just because it’s quicker, consider if the time you’re saving is worth potentially underselling your company and losing out on hires.
+
 
 TIP: *Example:* “Hi, I’m the head of product at OfferZen and I’d love to chat to you about an opening that we have for a senior Ruby Dev. Check out our profile and send me your contact details so that I can give you a call to tell you more if you’re interested :)”
 
@@ -85,20 +90,32 @@ TIP: *Example:* “Hi, I’m the head of product at OfferZen and I’d love to c
 
 Your company does a lot of cool stuff and you want to tell people about all of it, in detail. While there’s nothing inherently wrong with being radically transparent about everything you do from the very beginning, it’s important that this doesn’t take the form of an impenetrable wall of text.
 
-Introductions like these can be particularly effective if you think that it’s unlikely that people will have heard of your company before or if you’re concerned that your company ‘isn’t sexy enough’. Most people are primarily interested in having the opportunity to solve interesting problems with an awesome team; selling that you’re able to provide this to somebody as early on in the process as possible can be a great way to get buy-in for the rest of the hiring process.
+*Introductions like these can be particularly effective if you think that it’s unlikely that people will have heard of your company before* or if you’re concerned that your company ‘isn’t sexy enough’. Most people are primarily interested in having the opportunity to solve interesting problems with an awesome team. Being able to convey to a candidate early on in the process that you’re able to provide this can be a great way to get buy-in for the rest of the hiring process.
 
-Similar to a highly personalised message, these longer messages can take time to put together. To make it quicker it can be helpful to create one or two really high quality messages to use as templates that you can adapt to specific conversations where appropriate.
+Similar to a highly personalised message, these longer messages can take time to put together. *To make it quicker, it can be helpful to create one or two really high quality messages to use as templates* that you can adapt to specific conversations where appropriate.
 
-TIP: *Example:* “Hi there, we’re in the process of rebuilding our existing e-commerce platform and think that you would be a great addition to our team. A lot of the work that my team does isn’t public facing, but we’re doing plenty of interesting things behind the scenes. We’re working on rebuilding our backend using Clojure and are looking for people who are interested in learning more about functional programming in general as this is the direction that we’re looking to take going forward. We’ve received a lot of funding recently and are looking to build a world class team, product and work environment. If you’re interested in finding out more, please respond with your contact number and email address so that I can set up some time for us to chat.”
+[TIP]
+====
 
+*Example:* “Hi there, we’re in the process of rebuilding our existing e-commerce platform and think that you would be a great addition to our team.
+
+A lot of the work that my team does isn’t public facing, but we’re doing plenty of interesting things behind the scenes. We’re working on rebuilding our backend using Clojure and are looking for people who are interested in learning more about functional programming in general as this is the direction that we’re looking to take in the future. We’ve received a lot of funding recently and are looking to build a world class team, product and work environment.
+
+If you’re interested in finding out more, please respond with your contact number and email address so that I can set up some time for us to chat.”
+
+
+====
 {nbsp} +
 
 == Interviewing
 
 
-Good news; they like you, or at least they’re interesting in talking to you to find out more about what you do. At this point, all you probably know about the candidate so far is what you’ve read on their profile, and their knowledge about you is probably derived entirely from a combination of your website and OfferZen profile, which is usually not quite the full story.
+Good news; they like you, or at least they’re interested in talking to you to find out more about what you do. At this point, all you probably know about the candidate is what you’ve read on their profile. Conversely, most of the candidate’s knowledge about you is probably derived from a combination of your website and OfferZen profile, which is usually not quite the full story.
 
-To move forward, your goal should be to engage in a conversation where you tell the person you’re hoping to hire about your company and why it’s a great place to work, while they explain to you how they can help you with your mission. The interview stage is the most important and nuanced part of the hiring process and it will almost always be the point where the vast majority of information is shared between your company and the prospective hire, and it is this information that will determine whether a potential offer is made, or accepted.
+To move forward, your goal should be to engage in a conversation where you tell the person you’re hoping to hire about your company and why it’s a great place to work, while they explain to you how they can help you with your mission. *The interview stage is the most important and nuanced part of the hiring process and it will almost always be the point where the vast majority of information is shared* between your company and the prospective hire, and it is this information that will determine whether a potential offer is made, or accepted.
+
+We can subdivide the interview process into a few discrete phases:
+
 
 We can subdivide the interview process into a few discrete phases:
 
@@ -108,7 +125,7 @@ We can subdivide the interview process into a few discrete phases:
 
 There are a number of ways in which you can undertake each of these steps, but a few interviewing best practices apply universally:
 
-* Geoff Smart and Randy Street in their book, *“Who”*, popularised the concept of a scorecard. This is essentially *an internal job specification that you create with the goal of giving you a more objective idea of the job entails,* and what a successful applicant should look like. This tool can be really useful in organising your thoughts on just who it is you’re trying to hire and will make asking focussed interview questions a lot easier. A scorecard consists of a few key components:
+* In their book “Who”, Geoff Smart and Randy Street popularised the concept of a scorecard. This is essentially an internal job specification that you create with the goal of giving you a more objective idea of the job entails, and what a successful applicant should look like. This tool can be really useful in organising your thoughts on just who it is you’re trying to hire and will make asking focussed interview questions a lot easier. A scorecard consists of a few key components:
 ** *Mission* - a description of the high level goal of the position.
 ** *Outcomes* - what are you expecting of the person who excels in this role? Try to keep these as objective and measurable as possible.
 ** *Competencies* - what kind of skills are necessary in order to achieve the outcomes that you defined.
@@ -118,7 +135,7 @@ There are a number of ways in which you can undertake each of these steps, but a
 ** What mistakes did you make in this job?
 ** Who did you work with and what do think of them?
 ** Why did you leave this job?
-* *Be organised.* An interview is a pretty big time investment from both sides, so make the most of it by having a structured agenda for what you’re hoping to accomplish. *Everyone involved (ideally not more than 2-3 people) should know what their roles are,* and the order of proceedings should be explained to interviewee at the outset.
+* *Be organised.* An interview is a pretty big time investment from both sides, so make the most of it by having a structured agenda for what you’re hoping to accomplish. *Everyone involved should know what their roles are,* and the order of proceedings should be explained to interviewee at the outset.
 
 == Initial conversation
 
@@ -134,7 +151,7 @@ NOTE: When considering how to structure your initial conversations with people, 
 
 === Screening chat
 
-This kind of conversation typically revolves around extracting as much information from a candidate as possible with the goal of being able to qualify whether or not they should be allowed to proceed to the next stage of the interview process. The types of questions asked during this kind of interaction will usually be focussed around the candidate’s educational background, their past work experience and filling in any gaps that were left after reading their profile. It’s also very important to provide an opportunity towards the end for the person you’re talking to to ask any questions that they might have.
+This kind of conversation typically revolves around extracting as much information from a candidate as possible. *The object of this exercise is usually enabling you to qualify whether or not they should be allowed to proceed to the next stage of the interview process.* The types of questions asked during this kind of interaction will usually be focussed around the candidate’s educational background, their past work experience and filling in any gaps that were left after reading their profile. It’s also very important to *provide an opportunity towards the end for the person you’re talking to to ask any questions that they might have.*
 
 While this approach can give you a great deal of information in a relatively short amount of time, it can easily leave candidates feeling like they’ve just sat through an interrogation and will potentially do very little to promote a positive candidate experience.
 
@@ -142,23 +159,25 @@ While this approach can give you a great deal of information in a relatively sho
 
 === Sales chat
 
-On the other end of the spectrum to the traditional screening call, we find something that is closer to a sales call. Rather than looking for reasons to filter somebody out, the goal here is to effectively sell the role, the company and its mission as well as the interview process itself.
+On the other end of the spectrum to the traditional screening call we find something that is closer to a sales call. *Rather than looking for reasons to filter somebody out, the goal here is to effectively sell the role, the company and its mission as well as the interview process itself.*
 
 Getting buy-in like this is extra important if your hiring process has multiple steps. It’s pretty optimistic to assume that somebody will take time off from their current job to finish your 3 hour technical assessment and sit through an on-site panel interview with your whole management team without any work from your end to sell the idea of working at your company and being part of your team as being worth all that effort.
 
-This should generally be the strategy that you adopt if you’re trying to build a hiring process that promotes a positive candidate experience. Remember that there’s nothing wrong with asking a few questions during a chat like this, as long as you remember that it’s just as important to sell the role and your company to the person you’re talking to.
+*This should generally be the strategy that you adopt if you’re trying to build a hiring process that promotes a positive candidate experience.* Remember that there’s nothing wrong with asking a few questions during a chat like this, as long as you keep in mind that it’s just as important to sell the role and your company to the person you’re talking to.
+
 
 {nbsp} +
 
 == Technical Assessment
 
-If your goal is to build a high quality product, everybody on your team should be up to snuff from a technical perspective. Anyone who isn’t pulling their weight can be a drain on the rest of team and will severely limit your ability to move quickly, which is why an effective technical assessment process is so important.
+If your goal is to build a high quality product, everybody on your team should be up to snuff from a technical perspective. *Anyone who isn’t pulling their weight can be a drain on the rest of team and will severely limit your ability to move quickly.* That’s why an effective technical assessment process is so important.
 
-The question that you should be asking yourself when deciding on how to do this is “am I trying to filter people out, or am I assessing to find out what people’s strengths are?”. Sequencing also becomes a consideration at this point; an assessment that is administered closer to the beginning of the process should be designed to determine whether somebody possesses the baseline competencies that are necessary for them to perform well in a given role, while one that is carried out towards the end can be more focussed on confirming what a candidate’s strengths are in order to ensure that they are given work that engages them from day one.
+When deciding on how to do this, the question that you should be asking yourself is: *“Am I trying to filter people out, or am I assessing to find out what people’s strengths are?”* Sequencing also becomes a consideration at this point. An assessment that is administered closer to the beginning of the process should be designed to determine whether somebody possesses the baseline competencies that are necessary for them to perform well in a given role, while one that is carried out towards the end can be more focussed on confirming what a candidate’s strengths are in order to ensure that they are given work that engages them from day one.
 
-Something that a lot of companies often forget at this stage, is just how competitive technical hiring can be. Any candidate that you’re talking to is most likely engaging with other companies as well and having a cumbersome, poorly designed technical assessment strategy is a good way to make sure that your process finds itself at the bottom of a candidate’s to-do list as they prioritise processes that are more respectful of their time.
+Something that a lot of companies often forget at this stage is just how competitive technical hiring can be. *Any candidate that you’re talking to is most likely engaging with other companies as well.* Having a cumbersome, poorly designed technical assessment strategy is a good way to make sure that your process finds itself at the bottom of a candidate’s to-do list as they prioritise processes that are more respectful of their time.
 
-Proper briefing is also super important when conducting any kind of technical assessment. A poorly briefed assessment project that you think shouldn’t take more than 4 hours, can end taking the whole weekend to complete if you’re not clear on exactly what the deliverables and goals of the project are.
+Proper briefing is also super important when conducting any kind of technical assessment. A poorly briefed assessment project that you think shouldn’t take more than 4 hours can end up taking the whole weekend to complete if you’re not clear on exactly what the deliverables and goals of the project are.
+
 
 {nbsp} +
 
@@ -166,17 +185,17 @@ Proper briefing is also super important when conducting any kind of technical as
 
 This is potentially the most abstract of the options available to you when looking to assess technical ability. While it can be the most convenient from a candidate experience perspective, it’s also extremely reliant on the person running the interview being highly technical themselves.
 
-The effectiveness of a technical interview hinges entirely on the strength of the questions that you ask as assessment tools. While it might feel good to ask a trick question that somebody outside of your building might struggle to answer, you generally want to stick to questions that will allow candidates to showcase their own skill.
+*The effectiveness of a technical interview hinges entirely on the strength of the questions that you ask as assessment tools.* While it might feel good to ask a trick question that somebody outside of your building might struggle to answer, you generally want to stick to questions that will allow candidates to showcase their own skill.
 
-If you decide to adopt this strategy, it’s massively important that the interviewer has a good grasp of the problem that they’re asking the interviewee to solve. Somebody who doesn’t have a solid understanding of the problem themselves will struggle to move the discussion forward which will greatly limit the amount of information that you’re able to gather about somebody’s technical abilities.
+If you decide to adopt this strategy, *it’s massively important that the interviewer has a good grasp of the problem that they’re asking the interviewee to solve.* Somebody who doesn’t have a solid understanding of the problem themselves will struggle to move the discussion forward which will greatly limit the amount of information that you’re able to gather about somebody’s technical abilities.
 
 {nbsp} +
 
 === Whiteboard
 
-The classic combination of whiteboard and marker can be a really useful to tool to determine somebody’s technical capabilities, as long as you make sure to be extra clear up front on what it is you’re assessing. Presenting somebody with an empty whiteboard and telling them to start designing solutions can be stressful at the best of times and will probably not result in them putting down their best work.
+The classic combination of whiteboard and marker can be a really useful to tool to determine somebody’s technical capabilities, as long as you *make sure to be extra clear up front on what it is you’re assessing.* Presenting somebody with an empty whiteboard and telling them to start designing solutions can be stressful at the best of times and will probably not result in them putting down their best work.
 
-The reality is that this kind of assessment is most effective at teasing out whether somebody can logically structure a solution to a given problem, which is something that should be made clear up front or even well in advance of the interview itself. Remember that your goal should be to assess somebody’s potential rather than ask them to showcase how well they can perform in a made-up test scenario; you’re conducting a technical assessment, not planning a technical ambush.
+The reality is that *this kind of assessment is most effective at teasing out whether somebody can logically structure a solution to a given problem,* which is something that should be made clear up front or even well in advance of the interview itself. Remember that your goal should be to assess somebody’s potential rather than ask them to showcase how well they can perform in a made-up test scenario; you’re conducting a technical assessment, not planning a technical ambush.
 
 {nbsp} +
 
@@ -190,7 +209,7 @@ It’s possible to negate these drawbacks by taking time to ask the candidate to
 
 === Take home project
 
-A take home project is exactly what it sounds like - a piece of work that you assign to a candidate to complete in their own time. As with all of the other types of assessment, it’s massively important to be explicit about what it is that you’re assessing, what the deliverables are and how long you expect somebody to set aside for the project.
+A take home project is exactly what it sounds like - a piece of work that you assign to a candidate to complete in their own time. As with all of the other types of assessment, it’s massively important to *be explicit about what it is that you’re assessing, what the deliverables are and how long you expect somebody to set aside for the project.*
 
 A well briefed assessment project can easily be used as a jumping off point for a technical discussion during an interview. Getting somebody to talk you through their solution can be incredibly insightful and can tell you a great deal about their decision making and communication style.
 
@@ -200,7 +219,7 @@ Making sure that you assign projects that are relevant to the work your company 
 
 === Online test
 
-If you’re trying to optimise your hiring process to be able to handle really high volumes of people, then an online test can be a good way to accomplish that. These kinds of assessments have the advantage of being able to be administered remotely, and are usually designed to be completed in the candidates own time within a specified time limit. This makes them much easier to fit into a schedule, provides a well defined block of time within which to focus while also preventing overly meticulous candidates from taking a weekend to complete what should be a 2 hour assessment.
+*If you’re trying to optimise your hiring process to be able to handle really high volumes of people, then an online test can be a good way to accomplish that.* These kinds of assessments have the advantage of being able to be administered remotely, and are usually designed to be completed in the candidates own time within a specified time limit. This makes them much easier to fit into a schedule, provides a well defined block of time within which to focus while also preventing overly meticulous candidates from taking a weekend to complete what should be a 2 hour assessment.
 
 The negative aspects of this approach are centred around the impersonal nature of the assessments and the way in which they’re deployed. If you decide to include this in your interview process, make sure that somebody takes ownership of it. It should be this person’s responsibility to maintain the integrity of the assessments (don’t send out the same test for months and years at a time, switch it up every now and then) while also moving people through the pipeline and being available as a human to talk to if the person taking the test has any questions.
 
@@ -214,7 +233,7 @@ NOTE: The automatic scoring systems that many of these online testing tools use 
 
 A pair programming assessment involves assigning somebody from your existing team sitting with and collaborating (either remotely, or by physically sitting at the same workstation) to solve a single problem. This technique can an extremely effective way to gauge a number of key metrics, from technical ability and problem solving skills, through to communication ability and collaboration. It does however come at a significant cost in terms of preparation and the involvement of multiple members of your existing team, so it’s not to be undertaken lightly.
 
-A common theme so far has been that briefing is critical to an effective technical assessment, and pair programming is no different. Well executed pair programming assessments will always be explicit up-front about the differentiation between the assessors and the people that the candidate will be programming with. Poorly run pair programming sessions can easily result in a candidate being hesitant to explore all of the solutions at their disposal, which is understandable when you consider how easy it is to feel like the person sitting next to you is judging your every keystroke.
+A common theme so far has been that briefing is critical to an effective technical assessment, and pair programming is no different. *Well executed pair programming assessments will always be explicit up-front about the differentiation between the assessors and the people that the candidate will be programming with.* Poorly run pair programming sessions can easily result in a candidate being hesitant to explore all of the solutions at their disposal, which is understandable when you consider how easy it is to feel like the person sitting next to you is judging your every keystroke.
 
 {nbsp} +
 
@@ -222,7 +241,7 @@ A common theme so far has been that briefing is critical to an effective technic
 
 While doing nothing is always an option, it is very seldom the most effective one. One bad hire early on can do a lot to kneecap your ability to hit product roadmap goals, not to mention the potential cascading negative effects on your company culture.
 
-You might be saving time in the short term by relying solely on your finely honed intuition, but we strongly recommend doing some form of due diligence to ensure that the person that you’re adding to your team is able to contribute meaningfully, shore up existing weakness and help you build an awesome product and team.
+*You might be saving time in the short term by relying solely on your finely honed intuition, but we strongly recommend doing some form of due diligence* to ensure that the person that you’re adding to your team is able to contribute meaningfully, shore up existing weakness and help you build an awesome product and team.
 
 {nbsp} +
 
@@ -269,9 +288,9 @@ You might be saving time in the short term by relying solely on your finely hone
 
 == Culture fit
 
-Performance metrics, sales figures and stock prices all fluctuate, and after all is said and done the one differentiating factor that you have as a company is your culture. Your culture is the set of (usually) unwritten rules that your company has collectively determined for how you are all going to work together.
+Performance metrics, sales figures and stock prices all fluctuate, but at the end of the day, the one differentiating factor that you have as a company is your culture. *Your culture is the set of (usually) unwritten rules that your company has collectively determined for how you are all going to work together.*
 
-As companies grow, they tend to get better at explicating their own cultures, but in the beginning when you’re still figuring things out it often comes down to unwritten rules and implicit patterns of doing things. Because of this ephemeral nature, it can be hard to make sure early on that new hires align with and augment your existing culture; which is why it’s so incredibly important to have a method in place that you use to try and tease out what the values and motivations are of people you’re looking to employ. You can do this in an interview setting in a few different ways:
+As companies grow, they tend to get better at explicating their own cultures, but in the beginning, when you’re still figuring things out, it often comes down to unwritten rules and implicit patterns of doing things. Because of this ephemeral nature, it can be hard to make sure early on that new hires align with and augment your existing culture. This is why it’s so incredibly important to have a method in place where you try and tease out the values and motivations are of people you’re looking to employ. You can do this in an interview setting in a few different ways:
 
 {nbsp} +
 
@@ -283,13 +302,13 @@ The easiest way to get answers is to ask questions, you just need to make sure t
 
 === Meet the team
 
-The opinions of people that have been living and breathing the culture already can be a really useful barometer when assessing overall fit. Carrying this out in a structured way will usually involve some planning, where short slots are booked with a number of members of team for them to have informal discussions. These are not only useful for you, but for the candidate as well, as they give them an opportunity to pose questions that they might not feel comfortable asking in a traditional interview scenario. If you decide to go down this route, remember to take some time to debrief everyone involved and gather their feedback.
+*The opinions of people that have been living and breathing the culture already can be a really useful barometer when assessing overall fit.* Carrying this out in a structured way will usually involve some planning, where short slots are booked with a number of members of team for them to have informal discussions. These are not only useful for you, but for the candidate as well, as they give them an opportunity to pose questions that they might not feel comfortable asking in a traditional interview scenario. If you decide to go down this route, remember to take some time to debrief everyone involved and gather their feedback.
 
 {nbsp} +
 
 === Simulation day
 
-A simulation day involves a candidate taking time to come to your office for a full day or two to do real work with the rest of your team. Doing this can give you an insane level of insight into how they would approach solving real business problems and integrate into the rest of your team, while also giving the candidate a window into what a typical workday at your company can look like.
+*A simulation day involves a candidate taking time to come to your office for a full day or two to do real work with the rest of your team.* Doing this can give you an insane level of insight into how they would approach solving real business problems and integrate into the rest of your team, while also giving the candidate a window into what a typical workday at your company can look like.
 
 This comes at a pretty steep cost in terms of both time, planning and dedicated team resources during the course of the simulation days. It can be really tricky to design a good simulation day, however we’ve run a lot of these as part of our own hiring process and would be more than happy to help you design your own.
 
@@ -297,11 +316,11 @@ This comes at a pretty steep cost in terms of both time, planning and dedicated 
 
 === Founder chat
 
-While a company’s culture cannot be created overnight by any single person, the leaders and founders have the most influence in setting the tone and deciding on the direction that it takes. Every hire that you make shapes this fledgling culture, doubly so in a company’s early stages. In order to be able to make informed decisions about who should be allowed to influence this growth, founders should be talking to every new hire.
+While a company’s culture cannot be created overnight by any single person, the leaders and founders have the most influence in setting the tone and deciding on the direction that it takes. *Every hire that you make shapes this fledgling culture, doubly so in a company’s early stages.* In order to be able to make informed decisions about who should be allowed to influence this growth, founders should be talking to every new hire.
 
-As important as this discussion is as an assessment tool, a culture is made from the values of more than just the founders, so It’s important to be cognisant of just how much stock you’re putting in just one or two people’s opinions when doing something like this. A pretty bad situation would be one where you’ve hired a number of people and the only thing that they have in common is the shared trait of “well the founders liked them”, so if you’re able to diversify the number of people you get input from, you should definitely do so.
+As important as this discussion is as an assessment tool, a culture is made from the values of more than just the founders, so it’s important to *be cognisant of just how much stock you’re putting in just one or two people’s opinions* when doing something like this. A pretty bad situation would be one where you’ve hired a number of people and the only thing that they have in common is the shared trait of “well the founders liked them”, so if you’re able to diversify the number of people you get input from, you should definitely do so.
 
-Once your team and hiring process start to scale significantly, it can be very easy for a founder’s limited availability to become a bottleneck. We often see this happening around the 50 hire mark, however we’ve seen examples of companies where the founders personally chat with everyone well past hire number one hundred. If this situation arises, keep in mind that there are other options available outside of shepherding two people into a coffee shop booth; tools like Skype or Google Hangouts can make it a lot easier to fit meetings like these into people schedules.
+*Once your team and hiring process start to scale significantly, it can be very easy for a founder’s limited availability to become a bottleneck.* We often see this happening around the 50 hire mark, however we’ve seen examples of companies where the founders personally chat with everyone well past hire number one hundred. If this situation arises, keep in mind that there are other options available outside of shepherding two people into a coffee shop booth; tools like Skype or Google Hangouts can make it a lot easier to fit meetings like these into people schedules.
 
 {nbsp} +
 
@@ -331,27 +350,27 @@ These kinds of engagements can give you a lot of opportunities to get to know so
 
 '''
 
-The first step here should have happened before the interview process even began. You need to have a decision in place where you set out whether or not you do background checks for everyone you hire, just for some people (maybe they’re working on-site at a client) or nobody at all. Whatever you decide, it’s important that you stick to it. It’s scarily easy to get swept up in the smiles and good vibes that are in the air after interviewing somebody that really fits in with the team and seems to tick every box that you threw at them, but that’s not necessarily a good reason to short circuit your own process.
+The first step here should have happened before the interview process even began. *You need to have a decision in place where you set out whether or not you do background checks for everyone you hire,* just for some people (maybe they’re working on-site at a client) or nobody at all. Whatever you decide, it’s important that you stick to it. It’s scarily easy to get swept up in the smiles and good vibes that are in the air after interviewing somebody that really fits in with the team and seems to tick every box imaginable, but that’s not necessarily a good reason to short circuit your own process.
 
 {nbsp} +
 
 === Calling references
 
-Before you dial a single digit into the phone, it’s really important that you articulate just what it is that you’re hoping to achieve by contacting somebodies references. Are you looking to enlist third parties to provide you with information in order to help you make a hiring decision, or have you already made a decision and you’re doing a quick check for any serious red flags?
+Before you dial a single digit into the phone, it’s really important that you articulate just what it is that you’re hoping to achieve by contacting somebody’s references. *Are you looking to enlist third parties to provide you with information in order to help you make a hiring decision, or have you already made a decision and you’re doing a quick check for any serious red flags?*
 
-In general, try to avoid calling a reference before you’ve spoken to the candidate yourself. It might feel useful to have a heads up before they’ve even come in for an interview, but remember that you’ve just potentially coloured your own first impression of this person with somebody else’s opinion.
+In general, *try to avoid speaking to a reference before you’ve spoken to the candidate yourself.* It might feel useful to have a heads up before they’ve even come in for an interview, but remember that you’ve just potentially coloured your own first impression of this person with somebody else’s opinion.
 
 Remember that when doing reference calls, your goal shouldn’t be to simply confirm what it is you’ve already learned about somebody during an interview. A useful mindset to adopt would be one of *“everything we’ve heard about the candidate so far is great, but we just want to make sure that we haven’t missed anything”.*
 
-It should go without saying that you should always be respectful of the private nature of the candidate’s job search. *NEVER* phone somebody’s current workplace without their explicit permission, and don’t solicit your own personal network for information without doing your own homework. The world is a small place, even more so in tech. People can be connected in unexpected ways, so it’s advised to limit your reference checks to people that the person that you’re hiring has provided for this purpose.
+It should go without saying that you should always be respectful of the private nature of the candidate’s job search. *NEVER* phone somebody’s current workplace without their explicit permission, and *don’t solicit your own personal network for information without doing your homework.* The world is a small place, even more so in tech. People can be connected in unexpected ways, so it’s advised to limit your reference checks to people that the person that you’re hiring has provided for this purpose.
 
 {nbsp} +
 
 === Criminal and credit
 
-If you’re hiring in a fintech or financial services space, you probably already know all about these kinds of checks. If you’re operating in a different space you’ll need to decide how important clear credit and police records are in your particular context.
+If you’re hiring in a fintech or financial services space, you probably already know something about these kinds of checks. If you’re operating in a different space you’ll need to *decide how important clear credit and police records are in your particular context.*
 
-No matter which side of the isle you’re on, an important consideration should be how these checks impact your hiring process and the candidate experience. Be sure to give people an adequate heads up as to why you’re running these potentially invasive background checks on them, and always provide an opportunity for the other person to be up-front about any irregularities that might come up.
+No matter which side of the isle you’re on, an important consideration should be how these checks impact your hiring process and the candidate experience. *Be sure to give people an adequate heads up as to why you’re running these potentially invasive background checks on them,* and always provide an opportunity for the other person to be up-front about any irregularities that might come up.
 
 NOTE: *Protip:* Getting set up to do these yourself is cheaper and easier than you think. All you need to do is buy a fingerprint scanner, install some software and get somebody from your team to do a super short course from MIE.
 
@@ -361,17 +380,17 @@ NOTE: *Protip:* Getting set up to do these yourself is cheaper and easier than y
 
 '''
 
-In tech hiring, you should always assume that you’re competing for the attention of any given candidate with a host of other companies who are just as determined as you are to hire the best people. This means that it should be your goal throughout this whole process to set yourself up to make a hire/not-hire decision as quickly as possible.
+*In tech hiring, you should always assume that you’re competing for the attention of any given candidate with a host of other companies who are just as determined as you are to hire the best people.* This means that it should be your goal throughout this whole process to set yourself up to make a hire/not-hire decision as quickly as possible.
 
-“Congratulations, we like you and want you to join our team” can be an awesome thing to hear after going through an interview process, but can also bring with it an interesting variety of follow-up questions, that if you’re not ready for can throw a rather large spanner in the works.
+“Congratulations, we like you and want you to join our team” can be an awesome thing to hear after going through an interview process, but can also bring with it an interesting variety of follow-up questions. If you haven’t prepared for these they can throw a rather large spanner in the works.
 
-Remember that at the end of the day, you’re asking somebody to commit a large portion of their waking hours to your company and your mission for the foreseeable future, so you should be prepared to make sure that the person has access to as much information as possible so that they can make the best possible decision.
+Remember that at the end of the day, you’re asking somebody to commit a large portion of their waking hours to your company and your mission for the foreseeable future, so you should *be prepared to make sure that the person has access to as much information as possible so that they can make the best decision.*
 
 {nbsp} +
 
 === Pre-offer call
 
-Telling somebody that you want them on your team is a big deal. Both parties have put in a lot of effort at this stage, so it makes sense to celebrate a bit - treat it like a victory lap. Like a lot of other important life events, this is news that deserves more than an email. Pick up the phone!
+*Telling somebody that you want them on your team is a big deal.* Both parties have put in a lot of effort at this stage, so it makes sense to celebrate a bit - treat it like a victory lap. Like a lot of other important life events, this is news that deserves more than an email. *Pick up the phone!*
 
 While delivering the good news, you’ll have a great opportunity to run them through the details of the offer and pre-empt any common questions: how many leave days are included, what kind of deductions can they expect on their payslip, potential start dates, etc. It’s really important to give the person a chance to ask any questions and to be very clear about when you’re expecting to receive a response.
 
@@ -381,7 +400,7 @@ While delivering the good news, you’ll have a great opportunity to run them th
 
 If for whatever reason you’re absolutely not able to contact somebody over the phone to tell them about an offer, you’ll need to adapt your strategy accordingly. Be as explicit in the email as possible about all of the information included in the offer and make sure that the person you’re making the offer to knows that you’d be more than happy to contact them to talk through the details.
 
-Lines of communication need to be wide open at this stage of the process and if you’ve had to fall back on email for an offer, be sure to keep trying the phone until you get hold of them.
+*Lines of communication need to be wide open at this stage of the process* and if you’ve had to fall back on email for an offer, be sure to keep trying the phone until you get hold of them.
 
 {nbsp} +
 
@@ -389,15 +408,15 @@ Lines of communication need to be wide open at this stage of the process and if 
 
 From time to time we’ll see companies sending out thinly-veiled non-offers that typically adopt the format of “If we were to make you an offer, would you accept?”. A message like this can be confusing to receive, especially if you’ve already got an offer on the table from another company and can come off as extremely non-committal
 
-While it’s understandable in the context of trying to avoid rejection, a general rule should be: if you’re in a position to make a hypothetical offer to somebody, you should also be in a position to make an actual one.
+While it’s understandable in the context of trying to avoid rejection, a general rule should be: *if you’re in a position to make a hypothetical offer to somebody, you should also be in a position to make an actual one.*
 
 {nbsp} +
 
 === Contract
 
-We’ve already established that you should be trying your best to get an offer in the hands of somebody who you want to hire in as little time as possible. Being able to do this quickly is the reason behind distinguishing between an offer letter and a contract, however if you can send somebody an actual employment contract in the same space of time as an offer, then it makes sense to do this.
+We’ve already established that *if you want to hire somebody, you should be trying your best to make this intention known to them as soon as possible.* Because contracts can take some time to be drafted, an offer letter can sometimes be used to signal this intention quickly, however if you can send somebody an actual employment contract in the same space of time as an offer, then it makes sense to do this.
 
-The motivation behind this is mostly psychological; a contract can be seen as a bigger sign of commitment from a company than an offer letter (just remember to sign it before you send it through).
+The motivation behind this is mostly psychological; *a contract can be seen as a bigger sign of commitment from a company than an offer letter* (just remember to sign it before you send it through).
 
 NOTE: *Protip:* If you know that you’re not going to be able to provide a contract super quickly, be upfront and say this rather than creating expectations for something that you can’t deliver.
 
@@ -405,23 +424,24 @@ NOTE: *Protip:* If you know that you’re not going to be able to provide a cont
 
 == Onboarding
 
-It’s done. It’s in the bag. Once the offer has been signed it’s all too easy to hang up your hiring hat, pat yourself on the back and wait until the person you just hired shows up for their first day of work before you speak to them again.
+It’s done. It’s in the bag. Once the offer has been signed, it’s all too easy to hang up your hiring hat, pat yourself on the back and wait until the person you just hired shows up for their first day of work before you speak to them again.
 
-*This is an enormous mistake.* In reality, your onboarding process should start the second that the contract is signed. According to our data, one third of candidates who drop out before starting their new jobs, cite a lack of communication or miscommunication as a major contributing factor. You just spent an enormous chunk of time assessing this person and convincing them to join your team, don’t leave the door open to counter offers and cold feet by leaving them out of the loop now.
+*This is an enormous mistake.* In reality, your onboarding process should start the second that the contract is signed. According to our data, *one third of candidates who drop out before starting their new jobs, cite a lack of communication or miscommunication as a major contributing factor.* You just spent an enormous chunk of time assessing this person and convincing them to join your team, don’t leave the door open to counter offers and cold feet by leaving them out of the loop now.
 
-Your mindset at this stage of the process should be focussed on how you can keep somebody engaged in the time between them signing the employment contract and walking through the door on their first day. The best way to do this is by maintaining open and and proactive lines of
+Your mindset at this stage of the process should be focussed on how you can keep somebody engaged in the time between them signing the employment contract and walking through the door on their first day. The best way to do this is by maintaining open and and proactive lines of communication.
+
 
 {nbsp} +
 
 === Welcome email
 
-The simplest tactic here could be an email the day of or soon after they accept your offer or sign the contract. Ideally this email should come from somebody on the team that they’re going to be joining and should outline how stoked everyone is to have them on their team, as well as details like start date confirmation, what to bring with on their first day and what the best ways are to prepare so that they can hit the ground running.
+The simplest tactic here could be an email the day of or soon after they accept your offer or sign the contract. Ideally, this email should come from somebody on the team that they’re going to be joining and should *outline how stoked everyone is to have them on the team,* as well as details like *start date confirmation, what to bring with on their first day and what the best ways are to prepare so that they can hit the ground running.*
 
 {nbsp} +
 
 === Access to accounts
 
-Once somebody has signed an employment contract, many companies will begin treating their new hires like fully fledged employees. Why not get them set up with their laptop and make sure they have access to all of the accounts that they’re going to be using on a daily basis. If you’re worried about giving somebody who isn’t settled in the building access to your entire code base, remember that it’s not an all or nothing decision. Give as much access as you’re comfortable with as early on as possible and take things from there.
+Once somebody has signed an employment contract, many companies will begin treating their new hires like fully fledged employees. Why not get them *set up with their laptop and make sure they have access to all of the accounts that they’re going to be using on a daily basis.* If you’re worried about giving somebody who isn’t settled in the building access to your entire code base, remember that it’s not an all or nothing decision. Give as much access as you’re comfortable with as early on as possible and take things from there.
 
 If you use Slack and you haven’t already invited them as part of your interview/assessment process, now is a great time to get them set up. One fun side effect of this is that every time they get a slack notification from you, you’re going to be top of mind.
 
@@ -431,7 +451,7 @@ If you use Slack and you haven’t already invited them as part of your intervie
 
 We’ve seen companies assign paid work to a new hire as soon as they begin employment. As smart as it is to dial up the engagement to 11 in the time before somebody starts at your company, you still want to be mindful of the fact that they’re potentially still legally employed somewhere else.
 
-Getting somebody to start working for you as soon as they’ve signed your contract regardless of current obligations might seem like a great way to keep a new hire engaged even before day one, however you do need to think about what problem it is that you’re trying to solve by using this approach. If you’re primarily concerned about staying top of mind, there are other way to accomplish that without potentially doubling somebody’s workload.
+Getting somebody to start working for you as soon as they’ve signed your contract regardless of current obligations might seem like a great way to keep a new hire engaged even before day one, however you do need to think about what problem it is that you’re trying to solve by using this approach. *If you’re primarily concerned about staying top of mind, there are other way to accomplish that without potentially doubling somebody’s workload.*
 
 {nbsp} +
 
