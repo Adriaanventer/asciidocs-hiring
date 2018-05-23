@@ -87,7 +87,7 @@ p {
 }
 
 img {
-  max-width: 880px;
+  width: 100%;
   padding: 24px 0px;
 }
 
@@ -101,8 +101,36 @@ strong {
 }
 
 .ulist {
+  margin-left: 20px;
   ul {
     padding-left: 15px;
+    color: #343951;
+    li {
+      p {
+        margin-bottom: 15px;
+      }
+
+      .ulist {
+        margin-left: 20px;
+        ul {
+          padding-left: 15px;
+          color: #7C7C80;
+          li {
+            p {
+              margin-bottom: 10px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  margin-bottom: 80px;
+  #footer-text {
+    display: none;
   }
 }
 
@@ -171,6 +199,7 @@ div#header {
 
   img {
    padding: 0px;
+   width: 151px;
   }
 }
 
@@ -186,6 +215,8 @@ div#header {
     img {
       margin-right: 14px;
       padding: 0px;
+      width: 44px;
+      height: 44px;
     }
    }
  }
@@ -237,22 +268,34 @@ div.quoteblock {
         line-height: 30px;
         text-transform: uppercase;
         text-decoration: none;
-        color: #231F20;
+        color: #5EA5EE;
       }
     }
     td.content {
       font-size: 18px;
-      color: #343951;
+      color: #7C7C80;
       border-left: none;
       vertical-align: top;
       padding-left: 18px;
       line-height: 30px;
 
+      strong {
+        color: #7C7C80;
+      }
+
+      .paragraph {
+        p {
+          color: #7C7C80;
+        }
+      }
+
       .ulist {
         ul {
+          color: #7C7C80;
           li {
             p {
               margin-bottom: 0px;
+              color: #7C7C80;
             }
           }
         }
@@ -344,6 +387,7 @@ ol.arabic {
     ol.loweralpha {
      color: #A6ACAF;
      font-size: 20px;
+     padding-left: 20px;
 
      li {
        padding-left: 12px;
@@ -355,11 +399,80 @@ ol.arabic {
 // Tables
 
 table.tableblock.frame-all.grid-all.stretch {
-    border: 1px solid grey;
-    padding: 20px;
 
-    caption.title {
-      text-align: left;
+  th.tableblock.halign-left.valign-top {
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 3px;
+
+  }
+
+    td.tableblock.halign-left.valign-top {
+    border-bottom: 2px solid #F5F5F5;
+    border-left: 2px solid #F5F5F5;
+    vertical-align: top;
+
+      p.tableblock {
+      padding: 12px;
+      margin: 0;
     }
+  }
+}
+
+// Responsiveness
+
+@media only screen and (max-width : 930px) {
+
+  body {
+    padding-left: 24px;
+    padding-right: 24px;
+
+  }
+
+  /* Example */
+
+  .dlist.example {
+    background: #F5F5F5;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+
+    dl {
+      dd {
+        width: 100%;
+        margin-right: 24px;
+
+        p {
+          line-height: 30px;
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width : 668px) {
+
+  .admonitionblock.tip .content {
+    text-indent: 7%;
+  }
+
+  .imageblock.logo {
+    margin-bottom: 240px;
+  }
+
+}
+
+@media only screen and (max-width : 415px) {
+
+  .admonitionblock.tip .content {
+    text-indent: 10%;
+  }
+
+  .imageblock.logo {
+    margin-bottom: 320px;
+  }
 
 }
