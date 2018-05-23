@@ -5,538 +5,10 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.6.2">
+<meta name="author" content="How to build a hiring process that helps you hire tech talent quickly">
 <title>Hiring Process Design</title>
 <style>
-
-/* Shared CSS for AsciiDoc xhtml11 and html5 backends */
-
-/* Default font. */
-body {
-  font-family: Georgia,serif;
-}
-
-/* Title font. */
-h1, h2, h3, h4, h5, h6,
-div.title, caption.title,
-thead, p.table.header,
-#toctitle,
-#author, #revnumber, #revdate, #revremark,
-#footer {
-  font-family: Arial,Helvetica,sans-serif;
-}
-
-body {
-  margin: 1em 5% 1em 5%;
-}
-
-a {
-  color: blue;
-  text-decoration: underline;
-}
-a:visited {
-  color: fuchsia;
-}
-
-em {
-  font-style: italic;
-  color: navy;
-}
-
-strong {
-  font-weight: bold;
-  color: #083194;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #527bbd;
-  margin-top: 1.2em;
-  margin-bottom: 0.5em;
-  line-height: 1.3;
-}
-
-h1, h2, h3 {
-  border-bottom: 2px solid silver;
-}
-h2 {
-  padding-top: 0.5em;
-}
-h3 {
-  float: left;
-}
-h3 + * {
-  clear: left;
-}
-h5 {
-  font-size: 1.0em;
-}
-
-div.sectionbody {
-  margin-left: 0;
-}
-
-hr {
-  border: 1px solid silver;
-}
-
-p {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-ul, ol, li > p {
-  margin-top: 0;
-}
-ul > li     { color: #aaa; }
-ul > li > * { color: black; }
-
-.monospaced, code, pre {
-  font-family: "Courier New", Courier, monospace;
-  font-size: inherit;
-  color: navy;
-  padding: 0;
-  margin: 0;
-}
-pre {
-  white-space: pre-wrap;
-}
-
-#author {
-  color: #527bbd;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-#email {
-}
-#revnumber, #revdate, #revremark {
-}
-
-#footer {
-  font-size: small;
-  border-top: 2px solid silver;
-  padding-top: 0.5em;
-  margin-top: 4.0em;
-}
-#footer-text {
-  float: left;
-  padding-bottom: 0.5em;
-}
-#footer-badges {
-  float: right;
-  padding-bottom: 0.5em;
-}
-
-#preamble {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-div.imageblock, div.exampleblock, div.verseblock,
-div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
-div.admonitionblock {
-  margin-top: 1.0em;
-  margin-bottom: 1.5em;
-}
-div.admonitionblock {
-  margin-top: 2.0em;
-  margin-bottom: 2.0em;
-  margin-right: 10%;
-  color: #606060;
-}
-
-div.content { /* Block element content. */
-  padding: 0;
-}
-
-/* Block element titles. */
-div.title, caption.title {
-  color: #527bbd;
-  font-weight: bold;
-  text-align: left;
-  margin-top: 1.0em;
-  margin-bottom: 0.5em;
-}
-div.title + * {
-  margin-top: 0;
-}
-
-td div.title:first-child {
-  margin-top: 0.0em;
-}
-div.content div.title:first-child {
-  margin-top: 0.0em;
-}
-div.content + div.title {
-  margin-top: 0.0em;
-}
-
-div.sidebarblock > div.content {
-  background: #ffffee;
-  border: 1px solid #dddddd;
-  border-left: 4px solid #f0f0f0;
-  padding: 0.5em;
-}
-
-div.listingblock > div.content {
-  border: 1px solid #dddddd;
-  border-left: 5px solid #f0f0f0;
-  background: #f8f8f8;
-  padding: 0.5em;
-}
-
-div.quoteblock, div.verseblock {
-  padding-left: 1.0em;
-  margin-left: 1.0em;
-  margin-right: 10%;
-  border-left: 5px solid #f0f0f0;
-  color: #888;
-}
-
-div.quoteblock > div.attribution {
-  padding-top: 0.5em;
-  text-align: right;
-}
-
-div.verseblock > pre.content {
-  font-family: inherit;
-  font-size: inherit;
-}
-div.verseblock > div.attribution {
-  padding-top: 0.75em;
-  text-align: left;
-}
-/* DEPRECATED: Pre version 8.2.7 verse style literal block. */
-div.verseblock + div.attribution {
-  text-align: left;
-}
-
-div.admonitionblock .icon {
-  vertical-align: top;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-decoration: underline;
-  color: #527bbd;
-  padding-right: 0.5em;
-}
-div.admonitionblock td.content {
-  padding-left: 0.5em;
-  border-left: 3px solid #dddddd;
-}
-
-div.exampleblock > div.content {
-  border-left: 3px solid #dddddd;
-  padding-left: 0.5em;
-}
-
-div.imageblock div.content { padding-left: 0; }
-span.image img { border-style: none; vertical-align: text-bottom; }
-a.image:visited { color: white; }
-
-dl {
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-}
-dt {
-  margin-top: 0.5em;
-  margin-bottom: 0;
-  font-style: normal;
-  color: navy;
-}
-dd > *:first-child {
-  margin-top: 0.1em;
-}
-
-ul, ol {
-    list-style-position: outside;
-}
-ol.arabic {
-  list-style-type: decimal;
-}
-ol.loweralpha {
-  list-style-type: lower-alpha;
-}
-ol.upperalpha {
-  list-style-type: upper-alpha;
-}
-ol.lowerroman {
-  list-style-type: lower-roman;
-}
-ol.upperroman {
-  list-style-type: upper-roman;
-}
-
-div.compact ul, div.compact ol,
-div.compact p, div.compact p,
-div.compact div, div.compact div {
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-}
-
-tfoot {
-  font-weight: bold;
-}
-td > div.verse {
-  white-space: pre;
-}
-
-div.hdlist {
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-}
-div.hdlist tr {
-  padding-bottom: 15px;
-}
-dt.hdlist1.strong, td.hdlist1.strong {
-  font-weight: bold;
-}
-td.hdlist1 {
-  vertical-align: top;
-  font-style: normal;
-  padding-right: 0.8em;
-  color: navy;
-}
-td.hdlist2 {
-  vertical-align: top;
-}
-div.hdlist.compact tr {
-  margin: 0;
-  padding-bottom: 0;
-}
-
-.comment {
-  background: yellow;
-}
-
-.footnote, .footnoteref {
-  font-size: 0.8em;
-}
-
-span.footnote, span.footnoteref {
-  vertical-align: super;
-}
-
-#footnotes {
-  margin: 20px 0 20px 0;
-  padding: 7px 0 0 0;
-}
-
-#footnotes div.footnote {
-  margin: 0 0 5px 0;
-}
-
-#footnotes hr {
-  border: none;
-  border-top: 1px solid silver;
-  height: 1px;
-  text-align: left;
-  margin-left: 0;
-  width: 20%;
-  min-width: 100px;
-}
-
-div.colist td {
-  padding-right: 0.5em;
-  padding-bottom: 0.3em;
-  vertical-align: top;
-}
-div.colist td img {
-  margin-top: 0.3em;
-}
-
-@media print {
-  #footer-badges { display: none; }
-}
-
-#toc {
-  margin-bottom: 2.5em;
-}
-
-#toctitle {
-  color: #527bbd;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-top: 1.0em;
-  margin-bottom: 0.1em;
-}
-
-div.toclevel0, div.toclevel1, div.toclevel2, div.toclevel3, div.toclevel4 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-div.toclevel2 {
-  margin-left: 2em;
-  font-size: 0.9em;
-}
-div.toclevel3 {
-  margin-left: 4em;
-  font-size: 0.9em;
-}
-div.toclevel4 {
-  margin-left: 6em;
-  font-size: 0.9em;
-}
-
-span.aqua { color: aqua; }
-span.black { color: black; }
-span.blue { color: blue; }
-span.fuchsia { color: fuchsia; }
-span.gray { color: gray; }
-span.green { color: green; }
-span.lime { color: lime; }
-span.maroon { color: maroon; }
-span.navy { color: navy; }
-span.olive { color: olive; }
-span.purple { color: purple; }
-span.red { color: red; }
-span.silver { color: silver; }
-span.teal { color: teal; }
-span.white { color: white; }
-span.yellow { color: yellow; }
-
-span.aqua-background { background: aqua; }
-span.black-background { background: black; }
-span.blue-background { background: blue; }
-span.fuchsia-background { background: fuchsia; }
-span.gray-background { background: gray; }
-span.green-background { background: green; }
-span.lime-background { background: lime; }
-span.maroon-background { background: maroon; }
-span.navy-background { background: navy; }
-span.olive-background { background: olive; }
-span.purple-background { background: purple; }
-span.red-background { background: red; }
-span.silver-background { background: silver; }
-span.teal-background { background: teal; }
-span.white-background { background: white; }
-span.yellow-background { background: yellow; }
-
-span.big { font-size: 2em; }
-span.small { font-size: 0.6em; }
-
-span.underline { text-decoration: underline; }
-span.overline { text-decoration: overline; }
-span.line-through { text-decoration: line-through; }
-
-div.unbreakable { page-break-inside: avoid; }
-
-
-/*
- * xhtml11 specific
- *
- * */
-
-div.tableblock {
-  margin-top: 1.0em;
-  margin-bottom: 1.5em;
-}
-div.tableblock > table {
-  border: 3px solid #527bbd;
-}
-thead, p.table.header {
-  font-weight: bold;
-  color: #527bbd;
-}
-p.table {
-  margin-top: 0;
-}
-/* Because the table frame attribute is overriden by CSS in most browsers. */
-div.tableblock > table[frame="void"] {
-  border-style: none;
-}
-div.tableblock > table[frame="hsides"] {
-  border-left-style: none;
-  border-right-style: none;
-}
-div.tableblock > table[frame="vsides"] {
-  border-top-style: none;
-  border-bottom-style: none;
-}
-
-
-/*
- * html5 specific
- *
- * */
-
-table.tableblock {
-  margin-top: 1.0em;
-  margin-bottom: 1.5em;
-}
-thead, p.tableblock.header {
-  font-weight: bold;
-  color: #527bbd;
-}
-p.tableblock {
-  margin-top: 0;
-}
-table.tableblock {
-  border-width: 3px;
-  border-spacing: 0px;
-  border-style: solid;
-  border-color: #527bbd;
-  border-collapse: collapse;
-}
-th.tableblock, td.tableblock {
-  border-width: 1px;
-  padding: 4px;
-  border-style: solid;
-  border-color: #527bbd;
-}
-
-table.tableblock.frame-topbot {
-  border-left-style: hidden;
-  border-right-style: hidden;
-}
-table.tableblock.frame-sides {
-  border-top-style: hidden;
-  border-bottom-style: hidden;
-}
-table.tableblock.frame-none {
-  border-style: hidden;
-}
-
-th.tableblock.halign-left, td.tableblock.halign-left {
-  text-align: left;
-}
-th.tableblock.halign-center, td.tableblock.halign-center {
-  text-align: center;
-}
-th.tableblock.halign-right, td.tableblock.halign-right {
-  text-align: right;
-}
-
-th.tableblock.valign-top, td.tableblock.valign-top {
-  vertical-align: top;
-}
-th.tableblock.valign-middle, td.tableblock.valign-middle {
-  vertical-align: middle;
-}
-th.tableblock.valign-bottom, td.tableblock.valign-bottom {
-  vertical-align: bottom;
-}
-
-
-/*
- * manpage specific
- *
- * */
-
-body.manpage h1 {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border-top: 2px solid silver;
-  border-bottom: 2px solid silver;
-}
-body.manpage h2 {
-  border-style: none;
-}
-body.manpage div.sectionbody {
-  margin-left: 3em;
-}
-
-@media print {
-  body.manpage div#toc { display: none; }
-}
-
-/* Blue themed stylesheet */
+/* Blue themed Asciidoc */
 html, body, form, fieldset, table, tr, td, img, h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -560,18 +32,20 @@ body {
   margin: 0 auto; }
 
 h1 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 52px;
   color: #231F20;
   border: none;
   margin-bottom: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  margin-top: 90px; }
 
 h2 {
   font-size: 28px;
   font-weight: bolder;
   line-height: 35px;
   color: #5598DD;
+  padding-top: 40px;
   padding-bottom: 24px;
   border: none;
   margin: 0; }
@@ -583,14 +57,15 @@ h3 {
   color: #343951;
   border: none;
   margin: 0;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+  margin-top: 40px; }
 
 h4 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 35px;
   color: #A7ACB0;
-  margin-top: 0;
+  margin-top: 12px;
   margin-bottom: 40px; }
 
 h5 {
@@ -606,38 +81,82 @@ p {
   color: #343951;
   font-size: 18px;
   line-height: 30px;
-  font-weight: lighter; }
+  font-weight: 400;
+  margin-top: 0px; }
+
+img {
+  max-width: 880px;
+  padding: 24px 0px; }
 
 hr {
   border: 1px solid #EBF1F6;
-  margin: 20px 0px 80px 0px; }
-
-img {
-  max-width: 880px; }
+  margin: 12px 0px 20px 0px; }
 
 strong {
   color: #343951; }
 
-/* Header */
-#header > h1:only-child, body.toc2 #header > h1:nth-last-child(2) {
-  border-bottom: none;
-  padding: 0; }
+.ulist ul {
+  padding-left: 15px; }
 
-#header > h1:first-child {
+div #toc {
+  position: absolute;
+  margin-top: 140px; }
+  div #toc #toctitle {
+    font-size: 18px;
+    color: #5598DD;
+    text-transform: uppercase;
+    font-weight: 700; }
+  div #toc ul {
+    padding-left: 15px;
+    color: #343951; }
+    div #toc ul li a {
+      font-size: 18px;
+      font-weight: 500;
+      color: #343951;
+      line-height: 26px; }
+    div #toc ul li ul {
+      padding-left: 24px;
+      color: #9B9B9B; }
+      div #toc ul li ul li a {
+        font-size: 18px;
+        font-weight: 300;
+        color: #343951;
+        text-decoration: none;
+        line-height: 24px; }
+
+div#header {
+  position: absolute;
+  margin-top: 40px; }
+  div#header h1 {
+    margin-top: 70px; }
+  div#header .details {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #A7ACB0;
+    margin-top: 12px;
+    margin-bottom: 40px; }
+
+.imageblock.logo {
   margin-top: 80px;
-  margin-bottom: 30px; }
+  margin-bottom: 220px; }
+  .imageblock.logo img {
+    padding: 0px; }
 
-#header .details {
-  border: none;
-  font-size: 24px;
-  font-weight: 300;
-  color: #A7ACB0;
-  font-family: "Proxima Nova"; }
-
-.paragraph {
+.author p {
   display: flex;
   align-items: center;
-  font-family: "Proxima Nova"; }
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 14px; }
+  .author p img {
+    margin-right: 14px;
+    padding: 0px; }
+
+.toc-divider {
+  margin-top: 1186px;
+  border-top: 2px solid #EBF1F6;
+  padding-top: 34px; }
 
 /* Sections */
 .sect1 + .sect1 {
@@ -656,45 +175,47 @@ div.quoteblock {
     font-weight: 500; }
 
 /* Note */
-.admonitionblock.note .icon {
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #231F20; }
-
-.admonitionblock.note .title {
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #231F20;
-  line-height: 24px;
-  font-family: "Proxima Nova"; }
-
-.admonitionblock.note td.content {
-  font-size: 18px;
-  color: #343951;
-  border-left: none;
-  vertical-align: top;
-  padding-left: 18px;
-  line-height: 24px; }
+.admonitionblock.note.note {
+  padding: 24px 0px; }
+  .admonitionblock.note.note td.icon {
+    vertical-align: top; }
+    .admonitionblock.note.note td.icon .title {
+      font-size: 16px;
+      font-weight: 700;
+      font-family: "Proxima Nova";
+      line-height: 30px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #231F20; }
+  .admonitionblock.note.note td.content {
+    font-size: 18px;
+    color: #343951;
+    border-left: none;
+    vertical-align: top;
+    padding-left: 18px;
+    line-height: 30px; }
+    .admonitionblock.note.note td.content .ulist ul li p {
+      margin-bottom: 0px; }
 
 /* Example */
 .dlist.example {
   background: #F5F5F5;
   border-radius: 4px;
-  padding: 12px; }
-  .dlist.example dt.hdlist1 {
+  padding: 12px;
+  margin-top: 24px;
+  margin-bottom: 40px; }
+  .dlist.example dl dt.hdlist1 {
     padding-left: 24px;
     font-weight: 600;
     color: #5C5C5C;
     font-size: 18px;
     padding-bottom: 12px; }
-    .dlist.example dt.hdlist1 dd {
-      margin: 0;
-      padding-left: 24px;
-      padding-right: 24px; }
-      .dlist.example dt.hdlist1 dd p {
-        line-height: 24px; }
+  .dlist.example dl dd {
+    width: 810px;
+    padding-left: 0;
+    margin-left: 24px; }
+    .dlist.example dl dd p {
+      line-height: 30px; }
 
 /* Tip */
 .admonitionblock.tip {
@@ -707,50 +228,56 @@ div.quoteblock {
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #231F20; }
+    font-weight: 600;
+    position: absolute; }
     .admonitionblock.tip .icon .title {
       color: #343951;
       text-transform: uppercase;
       text-decoration: none;
-      line-height: 24px; }
+      padding-right: 12px;
+      font-family: "Proxima Nova";
+      line-height: 30px; }
+    .admonitionblock.tip .icon .title:after {
+      content: ":"; }
   .admonitionblock.tip .content {
     font-size: 18px;
     color: #343951;
     border-left: none;
     vertical-align: top;
     padding: 0;
-    line-height: 24px; }
+    line-height: 30px;
+    text-indent: 4%; }
 
 /* Lists */
-.ulist > ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
+ol.arabic {
+  color: #5EA5EE;
+  font-size: 22px;
+  font-weight: 800; }
+  ol.arabic li {
+    padding-left: 20px; }
+    ol.arabic li ol.loweralpha {
+      color: #A6ACAF;
+      font-size: 20px; }
+      ol.arabic li ol.loweralpha li {
+        padding-left: 12px; }
 
-ul > li p {
-  margin-bottom: 24px;
-  line-height: 30px; }
-
-li {
-  margin-left: 0;
-  display: flex; }
-
-li::before {
-  content: "\002022";
-  color: #D2D8DC;
-  /* or whatever color you prefer */
-  padding-right: 20px; }
-
-/* Image */
+table.tableblock.frame-all.grid-all.stretch {
+  border: 1px solid grey;
+  padding: 20px; }
+  table.tableblock.frame-all.grid-all.stretch caption.title {
+    text-align: left; }
 
 /*# sourceMappingURL=blue.css.map */
 
 </style>
 </head>
-<body class="article toc2 toc-left">
+<body class="article">
 <div id="header">
 <h1>Hiring Process Design</h1>
-<div id="toc" class="toc2">
+<div class="details">
+<span id="author" class="author">How to build a hiring process that helps you hire tech talent quickly</span><br>
+</div>
+<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_how_to_use_this_guide">How to use this guide</a></li>
@@ -828,20 +355,23 @@ li::before {
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
-<p>&#160;<br></p>
+<div class="imageblock logo">
+<div class="content">
+<img src="./images/OfferZen_logo.png" alt="Logo" width="151" height="31">
 </div>
-<div class="paragraph">
+</div>
+<div class="paragraph author">
+<p><span class="image left"><img src="./images/AdriaanPortrait.png" alt="Adriaan" width="44" height="44"></span> Adriaan Venter</p>
+</div>
+<hr>
+<div class="paragraph toc-divider">
 <p>Hiring is not what it used to be; you’re trying to hire the best people, but so is everybody else. The melee that ensues can be tough to navigate at the best of times, and without a well thought out hiring strategy you’re going to make it much harder than it needs to be for smart people to figure out why your company is the one where they want to be working.</p>
 </div>
 <div class="paragraph">
-<p>Demand for quality tech candidates currently far outstrips supply and it’s not going to change any time soon. Now more than ever, securing a steady supply of talent is a strategic and competitive necessity. As an adaptation, we have seen a strong indicator of successful hiring as being a transformation from a <strong>filtering mindset</strong> (how can I make sure that people are good enough to work at my company), to an <strong>attraction mindset</strong> (how can I make sure that everything about my company is awesome enough so that all of the best people will want to work there).</p>
+<p>Demand for quality tech candidates currently far outstrips supply and it’s not going to change any time soon. Now more than ever, securing a steady supply of talent is a strategic and competitive necessity. As an adaptation, We have seen successful companies adapt a new mindset. <strong>Instead of filtering to ensure that people are good enough to work at the company, they ask themselves how they can attract top talent.</strong></p>
 </div>
 <div class="paragraph">
-<p>A lot has been written about how to do this most effectively and a whole bunch of companies have tried many different things. Over the last 2 years we’ve been lucky enough to not only be able to have conversations with over 700 of SA’s top tech companies about their hiring processes, but to see them play out from both the company’s and candidate’s perspectives.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>Over the last 2 years we’ve been able to have conversations with over 800 of SA’s top tech companies about their hiring processes. During these discussions we’ve been able to gather an enormous amount of data on how to design an effective hiring process while also seeing them play out from the candidate’s perspective.</p>
 </div>
 </div>
 </div>
@@ -849,23 +379,17 @@ li::before {
 <h2 id="_how_to_use_this_guide">How to use this guide</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>We’ve learned that an effective hiring process can be built from a number of basic building blocks. The goal of the following guide is to present some of the common ‘blocks’, explain their pro’s and con’s and describe when best to implement them.</p>
+<p>We’ve learned that an effective hiring process can be built from a number of basic building blocks. The goal of the following guide is to present some of the common blocks, explain their pros and cons and clarify when best to implement them.</p>
 </div>
 <div class="paragraph">
 <p>Once you’ve become acquainted with some of your options, you should be able to synthethise an approach for each of the following parts of the hiring process:</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="./images/design.png" alt="design">
 </div>
 </div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
-<div class="admonitionblock note">
+<div class="admonitionblock note note">
 <table>
 <tr>
 <td class="icon">
@@ -876,9 +400,6 @@ This is the usual order, but there is nothing preventing you from making minor c
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 </div>
@@ -891,19 +412,18 @@ This is the usual order, but there is nothing preventing you from making minor c
 <p>Try to have one person take ownership of hiring for any given role. This will help with accountability and minimise the chances of balls being dropped.</p>
 </li>
 <li>
-<p>Be extremely responsive with candidates - you should never be the bottleneck in your own hiring process.
-Optimise for speed. Your goal should be to put an offer of employment in the hands of somebody who meets your criteria as quickly as possible.</p>
+<p><strong>Be extremely responsive with candidates;</strong> you should never be the bottleneck in your own hiring process.</p>
 </li>
 <li>
-<p>Remember that drop-off will occur throughout every stage of the process, so it’s important to maintain a strong pipeline of candidates in various stages of the interview process.</p>
+<p>Optimise for speed. If somebody meets your hiring criteria, your goal should be to put an offer of employment in their hands as quickly as possible.</p>
 </li>
 <li>
-<p>The golden thread that should run through your entire process is the candidate experience. Always assume that the person you’re interviewing is going to tell their friends/community members about their experience interviewing at your company.</p>
+<p>Remember that drop-off will occur throughout every stage of the process, so it’s important to maintain a strong pipeline of candidates.</p>
+</li>
+<li>
+<p>The golden thread that should run through your entire process is the candidate experience. <strong>Always assume that the person you’re interviewing is going to tell their friends/community members about their experience interviewing at your company.</strong></p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 </div>
@@ -911,13 +431,13 @@ Optimise for speed. Your goal should be to put an offer of employment in the han
 <h2 id="_reaching_out">Reaching out</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The first step of your hiring process should be to focus inwardly and decide who is going to be running it. If you can’t settle on a single person to care about the whole process, then be sure to go into detail in terms of which people are going to take ownership of the individual parts of the process. We have found that the person closest to the role that you’re hiring for should conduct the initial outreach (IE, if you’re hiring a developer, the dev manager or head of product should be reaching out).</p>
+<p>The first step of your hiring process should be to focus inwardly and decide who is going to be running it. If you can’t settle on a single person to care about the whole process, then be sure to go into detail in terms of which people are going to take ownership of the individual parts of the process. We have found that the person closest to the role in question should conduct the initial outreach. If you’re hiring a developer, the dev manager or head of product should be reaching out if possible.</p>
 </div>
 <div class="paragraph">
-<p>Depending on how strong your brand is, this initial message could potentially be the first time the person you’re reaching out to has heard of your company, so it’s super important that you’re able to convey your employer value proposition (reasons why your company is an awesome place to work) concisely and convincingly.</p>
+<p>Depending on how strong your brand is, the initial message could potentially be the first time the person you’re reaching out to has heard of your company. This means that it’s super important for you to be able to convey your employer value proposition concisely and convincingly.</p>
 </div>
 <div class="paragraph">
-<p>There are a couple of different styles of outreach that we have seen in the wild on OfferZen, we suggest picking the one that aligns best with your culture and goals.</p>
+<p>We’ve seen companies on OfferZen reach out in a couple of different ways, namely: the super personal message, the short message and the long message. We suggest picking the one that aligns best with your culture and goals.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -949,58 +469,41 @@ Optimise for speed. Your goal should be to put an offer of employment in the han
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
 <div class="sect2">
 <h3 id="_super_personal_message">Super personal message</h3>
 <div class="paragraph">
-<p>Nothing gives a somebody the warm fuzzies like seeing a message from an interested company that addresses them as individual. Making specific references to parts of a person’s profile that you found particularly interesting is a great way to prove to somebody that you’re serious about engaging with them meaningfully.</p>
+<p><strong>Nothing gives a somebody the warm fuzzies like seeing a message from an interesting company that addresses them as an individual.</strong> Making specific references to parts of a person’s profile that you found particularly interesting is a great way to prove to somebody that you’re serious about engaging with them.</p>
 </div>
 <div class="paragraph">
-<p>Keep in mind that personalising every message can take time, so be mindful not to let that affect the number of people that you reach out to. Ultimately you should be looking to strike a balance between thoughtful, personalised outreach and building a healthy candidate pipeline. If you’re concerned about time, try creating a template or two that you partially customise for different scenarios.</p>
+<p>Keep in mind that personalising every message can take time, so be mindful not to let that affect the number of people that you reach out to. <strong>Ultimately, you should be looking to strike a balance between thoughtful, personalised outreach and building a healthy candidate pipeline.</strong> If you’re concerned about time, try creating a template or two that you partially customise for different scenarios.</p>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Tip</div>
-</td>
-<td class="content">
-<strong>Example:</strong> “Hey there. I was reading your profile and the part about wanting to be part of a smaller, more independant team really resonated with me. I’m especially interested to hear more about the raspberry pi side project that you mentioned - which model did you end up using? Would you be keen to jump on a quick call so that I can tell you more about the role?
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<div class="dlist example">
+<dl>
+<dt class="hdlist1">EXAMPLE</dt>
+<dd>
+<p>“Hey there. I was reading your profile and the part about wanting to be part of a smaller, more independant team really resonated with me. I’m especially interested to hear more about the raspberry pi side project that you mentioned - which model did you end up using? Would you be keen to jump on a quick call so that I can tell you more about the role?</p>
+</dd>
+</dl>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_short_message">Short message</h3>
 <div class="paragraph">
-<p>If you feel that your brand speaks for itself, you can sometimes get away with a really short message without too much background. While this might work some of the time, you run the risk of overestimating the reach of your fame. Some people might think twice about making time in their calendar’s to meet up for coffee with somebody from a company they’ve never heard of prior to being contacted with a cryptic one-liner.</p>
+<p><strong>If you feel that your brand speaks for itself, you can sometimes get away with a really short message without too much background.</strong> While this might work some of the time, you run the risk of overestimating the reach of your fame. Some people might think twice about making time in their calendars to meet up for coffee with somebody from a company they’ve never heard of prior to being contacted with a cryptic one-liner.</p>
 </div>
 <div class="paragraph">
-<p>If you’re going to adopt this strategy for your opening conversation, make sure that you provide other ways for candidates to find out more about you. Making sure your company’s OfferZen page is up to date is a great first step towards this. Including links to any press articles that were written about you as well as any public Github repos will be super helpful to convey to people some of the interesting stuff that you do.</p>
+<p>If you’re going to adopt this strategy for your opening conversation, <strong>make sure that you provide other ways for candidates to find out more about you.</strong> Taking time to update your company’s OfferZen page is is a great first step towards this. Including links to any press articles that were written about you as well as any public Github repos will be super helpful to convey some of the interesting stuff that you do.</p>
 </div>
 <div class="paragraph">
 <p>If you’re sending a super short message just because it’s quicker, consider if the time you’re saving is worth potentially underselling your company and losing out on hires.</p>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Tip</div>
-</td>
-<td class="content">
-<strong>Example:</strong> “Hi, I’m the head of product at OfferZen and I’d love to chat to you about an opening that we have for a senior Ruby Dev. Check out our profile and send me your contact details so that I can give you a call to tell you more if you’re interested :)”
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<div class="dlist example">
+<dl>
+<dt class="hdlist1">EXAMPLE</dt>
+<dd>
+<p>“Hi, I’m the head of product at OfferZen and I’d love to chat to you about an opening that we have for a senior Ruby Dev. Check out our profile and send me your contact details so that I can give you a call to tell you more if you’re interested 😀”</p>
+</dd>
+</dl>
 </div>
 </div>
 <div class="sect2">
@@ -1009,25 +512,18 @@ Optimise for speed. Your goal should be to put an offer of employment in the han
 <p>Your company does a lot of cool stuff and you want to tell people about all of it, in detail. While there’s nothing inherently wrong with being radically transparent about everything you do from the very beginning, it’s important that this doesn’t take the form of an impenetrable wall of text.</p>
 </div>
 <div class="paragraph">
-<p>Introductions like these can be particularly effective if you think that it’s unlikely that people will have heard of your company before or if you’re concerned that your company ‘isn’t sexy enough’. Most people are primarily interested in having the opportunity to solve interesting problems with an awesome team; selling that you’re able to provide this to somebody as early on in the process as possible can be a great way to get buy-in for the rest of the hiring process.</p>
+<p><strong>Introductions like these can be particularly effective if you think that it’s unlikely that people will have heard of your company before</strong> or if you’re concerned that your company ‘isn’t sexy enough’. Most people are primarily interested in having the opportunity to solve interesting problems with an awesome team. Being able to convey to a candidate early on in the process that you’re able to provide this can be a great way to get buy-in for the rest of the hiring process.</p>
 </div>
 <div class="paragraph">
-<p>Similar to a highly personalised message, these longer messages can take time to put together. To make it quicker it can be helpful to create one or two really high quality messages to use as templates that you can adapt to specific conversations where appropriate.</p>
+<p>Similar to a highly personalised message, these longer messages can take time to put together. <strong>To make it quicker, it can be helpful to create one or two really high quality messages to use as templates</strong> that you can adapt to specific conversations where appropriate.</p>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Tip</div>
-</td>
-<td class="content">
-<strong>Example:</strong> “Hi there, we’re in the process of rebuilding our existing e-commerce platform and think that you would be a great addition to our team. A lot of the work that my team does isn’t public facing, but we’re doing plenty of interesting things behind the scenes. We’re working on rebuilding our backend using Clojure and are looking for people who are interested in learning more about functional programming in general as this is the direction that we’re looking to take going forward. We’ve received a lot of funding recently and are looking to build a world class team, product and work environment. If you’re interested in finding out more, please respond with your contact number and email address so that I can set up some time for us to chat.”
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<div class="dlist example">
+<dl>
+<dt class="hdlist1">EXAMPLE</dt>
+<dd>
+<p>“Hi there, we’re in the process of rebuilding our existing e-commerce platform and think that you would be a great addition to our team. A lot of the work that my team does isn’t public facing, but we’re doing plenty of interesting things behind the scenes. We’re working on rebuilding our backend using Clojure and are looking for people who are interested in learning more about functional programming in general as this is the direction that we’re looking to take going forward. We’ve received a lot of funding recently and are looking to build a world class team, product and work environment. If you’re interested in finding out more, please respond with your contact number and email address so that I can set up some time for us to chat.”</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -1036,10 +532,13 @@ Optimise for speed. Your goal should be to put an offer of employment in the han
 <h2 id="_interviewing">Interviewing</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Good news; they like you, or at least they’re interesting in talking to you to find out more about what you do. At this point, all you probably know about the candidate so far is what you’ve read on their profile, and their knowledge about you is probably derived entirely from a combination of your website and OfferZen profile, which is usually not quite the full story.</p>
+<p>Good news; they like you, or at least they’re interested in talking to you to find out more about what you do. At this point, all you probably know about the candidate is what you’ve read on their profile. Conversely, most of the candidate’s knowledge about you is probably derived from a combination of your website and OfferZen profile, which is usually not quite the full story.</p>
 </div>
 <div class="paragraph">
-<p>To move forward, your goal should be to engage in a conversation where you tell the person you’re hoping to hire about your company and why it’s a great place to work, while they explain to you how they can help you with your mission. The interview stage is the most important and nuanced part of the hiring process and it will almost always be the point where the vast majority of information is shared between your company and the prospective hire, and it is this information that will determine whether a potential offer is made, or accepted.</p>
+<p>To move forward, your goal should be to engage in a conversation where you tell the person you’re hoping to hire about your company and why it’s a great place to work, while they explain to you how they can help you with your mission. <strong>The interview stage is the most important and nuanced part of the hiring process and it will almost always be the point where the vast majority of information is shared</strong> between your company and the prospective hire, and it is this information that will determine whether a potential offer is made, or accepted.</p>
+</div>
+<div class="paragraph">
+<p>We can subdivide the interview process into a few discrete phases:</p>
 </div>
 <div class="paragraph">
 <p>We can subdivide the interview process into a few discrete phases:</p>
@@ -1063,7 +562,7 @@ Optimise for speed. Your goal should be to put an offer of employment in the han
 <div class="ulist">
 <ul>
 <li>
-<p>Geoff Smart and Randy Street in their book, <strong>“Who”</strong>, popularised the concept of a scorecard. This is essentially <strong>an internal job specification that you create with the goal of giving you a more objective idea of the job entails,</strong> and what a successful applicant should look like. This tool can be really useful in organising your thoughts on just who it is you’re trying to hire and will make asking focussed interview questions a lot easier. A scorecard consists of a few key components:</p>
+<p>In their book “Who”, Geoff Smart and Randy Street popularised the concept of a scorecard. This is essentially an internal job specification that you create with the goal of giving you a more objective idea of the job entails, and what a successful applicant should look like. This tool can be really useful in organising your thoughts on just who it is you’re trying to hire and will make asking focussed interview questions a lot easier. A scorecard consists of a few key components:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1101,7 +600,7 @@ Optimise for speed. Your goal should be to put an offer of employment in the han
 </div>
 </li>
 <li>
-<p><strong>Be organised.</strong> An interview is a pretty big time investment from both sides, so make the most of it by having a structured agenda for what you’re hoping to accomplish. <strong>Everyone involved (ideally not more than 2-3 people) should know what their roles are,</strong> and the order of proceedings should be explained to interviewee at the outset.</p>
+<p><strong>Be organised.</strong> An interview is a pretty big time investment from both sides, so make the most of it by having a structured agenda for what you’re hoping to accomplish. <strong>Everyone involved should know what their roles are,</strong> and the order of proceedings should be explained to interviewee at the outset.</p>
 </li>
 </ul>
 </div>
@@ -1131,34 +630,25 @@ When considering how to structure your initial conversations with people, the me
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
 <div class="sect2">
 <h3 id="_screening_chat">Screening chat</h3>
 <div class="paragraph">
-<p>This kind of conversation typically revolves around extracting as much information from a candidate as possible with the goal of being able to qualify whether or not they should be allowed to proceed to the next stage of the interview process. The types of questions asked during this kind of interaction will usually be focussed around the candidate’s educational background, their past work experience and filling in any gaps that were left after reading their profile. It’s also very important to provide an opportunity towards the end for the person you’re talking to to ask any questions that they might have.</p>
+<p>This kind of conversation typically revolves around extracting as much information from a candidate as possible. <strong>The object of this exercise is usually enabling you to qualify whether or not they should be allowed to proceed to the next stage of the interview process.</strong> The types of questions asked during this kind of interaction will usually be focussed around the candidate’s educational background, their past work experience and filling in any gaps that were left after reading their profile. It’s also very important to <strong>provide an opportunity towards the end for the person you’re talking to to ask any questions that they might have.</strong></p>
 </div>
 <div class="paragraph">
 <p>While this approach can give you a great deal of information in a relatively short amount of time, it can easily leave candidates feeling like they’ve just sat through an interrogation and will potentially do very little to promote a positive candidate experience.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_sales_chat">Sales chat</h3>
 <div class="paragraph">
-<p>On the other end of the spectrum to the traditional screening call, we find something that is closer to a sales call. Rather than looking for reasons to filter somebody out, the goal here is to effectively sell the role, the company and its mission as well as the interview process itself.</p>
+<p>On the other end of the spectrum to the traditional screening call we find something that is closer to a sales call. <strong>Rather than looking for reasons to filter somebody out, the goal here is to effectively sell the role, the company and its mission as well as the interview process itself.</strong></p>
 </div>
 <div class="paragraph">
 <p>Getting buy-in like this is extra important if your hiring process has multiple steps. It’s pretty optimistic to assume that somebody will take time off from their current job to finish your 3 hour technical assessment and sit through an on-site panel interview with your whole management team without any work from your end to sell the idea of working at your company and being part of your team as being worth all that effort.</p>
 </div>
 <div class="paragraph">
-<p>This should generally be the strategy that you adopt if you’re trying to build a hiring process that promotes a positive candidate experience. Remember that there’s nothing wrong with asking a few questions during a chat like this, as long as you remember that it’s just as important to sell the role and your company to the person you’re talking to.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p><strong>This should generally be the strategy that you adopt if you’re trying to build a hiring process that promotes a positive candidate experience.</strong> Remember that there’s nothing wrong with asking a few questions during a chat like this, as long as you keep in mind that it’s just as important to sell the role and your company to the person you’re talking to.</p>
 </div>
 </div>
 </div>
@@ -1167,19 +657,16 @@ When considering how to structure your initial conversations with people, the me
 <h2 id="_technical_assessment">Technical Assessment</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If your goal is to build a high quality product, everybody on your team should be up to snuff from a technical perspective. Anyone who isn’t pulling their weight can be a drain on the rest of team and will severely limit your ability to move quickly, which is why an effective technical assessment process is so important.</p>
+<p>If your goal is to build a high quality product, everybody on your team should be up to snuff from a technical perspective. <strong>Anyone who isn’t pulling their weight can be a drain on the rest of team and will severely limit your ability to move quickly.</strong> That’s why an effective technical assessment process is so important.</p>
 </div>
 <div class="paragraph">
-<p>The question that you should be asking yourself when deciding on how to do this is “am I trying to filter people out, or am I assessing to find out what people’s strengths are?”. Sequencing also becomes a consideration at this point; an assessment that is administered closer to the beginning of the process should be designed to determine whether somebody possesses the baseline competencies that are necessary for them to perform well in a given role, while one that is carried out towards the end can be more focussed on confirming what a candidate’s strengths are in order to ensure that they are given work that engages them from day one.</p>
+<p>When deciding on how to do this, the question that you should be asking yourself is: <strong>“Am I trying to filter people out, or am I assessing to find out what people’s strengths are?”</strong> Sequencing also becomes a consideration at this point. An assessment that is administered closer to the beginning of the process should be designed to determine whether somebody possesses the baseline competencies that are necessary for them to perform well in a given role, while one that is carried out towards the end can be more focussed on confirming what a candidate’s strengths are in order to ensure that they are given work that engages them from day one.</p>
 </div>
 <div class="paragraph">
-<p>Something that a lot of companies often forget at this stage, is just how competitive technical hiring can be. Any candidate that you’re talking to is most likely engaging with other companies as well and having a cumbersome, poorly designed technical assessment strategy is a good way to make sure that your process finds itself at the bottom of a candidate’s to-do list as they prioritise processes that are more respectful of their time.</p>
+<p>Something that a lot of companies often forget at this stage is just how competitive technical hiring can be. <strong>Any candidate that you’re talking to is most likely engaging with other companies as well.</strong> Having a cumbersome, poorly designed technical assessment strategy is a good way to make sure that your process finds itself at the bottom of a candidate’s to-do list as they prioritise processes that are more respectful of their time.</p>
 </div>
 <div class="paragraph">
-<p>Proper briefing is also super important when conducting any kind of technical assessment. A poorly briefed assessment project that you think shouldn’t take more than 4 hours, can end taking the whole weekend to complete if you’re not clear on exactly what the deliverables and goals of the project are.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>Proper briefing is also super important when conducting any kind of technical assessment. A poorly briefed assessment project that you think shouldn’t take more than 4 hours can end up taking the whole weekend to complete if you’re not clear on exactly what the deliverables and goals of the project are.</p>
 </div>
 <div class="sect2">
 <h3 id="_technical_interview">Technical interview</h3>
@@ -1187,25 +674,19 @@ When considering how to structure your initial conversations with people, the me
 <p>This is potentially the most abstract of the options available to you when looking to assess technical ability. While it can be the most convenient from a candidate experience perspective, it’s also extremely reliant on the person running the interview being highly technical themselves.</p>
 </div>
 <div class="paragraph">
-<p>The effectiveness of a technical interview hinges entirely on the strength of the questions that you ask as assessment tools. While it might feel good to ask a trick question that somebody outside of your building might struggle to answer, you generally want to stick to questions that will allow candidates to showcase their own skill.</p>
+<p><strong>The effectiveness of a technical interview hinges entirely on the strength of the questions that you ask as assessment tools.</strong> While it might feel good to ask a trick question that somebody outside of your building might struggle to answer, you generally want to stick to questions that will allow candidates to showcase their own skill.</p>
 </div>
 <div class="paragraph">
-<p>If you decide to adopt this strategy, it’s massively important that the interviewer has a good grasp of the problem that they’re asking the interviewee to solve. Somebody who doesn’t have a solid understanding of the problem themselves will struggle to move the discussion forward which will greatly limit the amount of information that you’re able to gather about somebody’s technical abilities.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>If you decide to adopt this strategy, <strong>it’s massively important that the interviewer has a good grasp of the problem that they’re asking the interviewee to solve.</strong> Somebody who doesn’t have a solid understanding of the problem themselves will struggle to move the discussion forward which will greatly limit the amount of information that you’re able to gather about somebody’s technical abilities.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_whiteboard">Whiteboard</h3>
 <div class="paragraph">
-<p>The classic combination of whiteboard and marker can be a really useful to tool to determine somebody’s technical capabilities, as long as you make sure to be extra clear up front on what it is you’re assessing. Presenting somebody with an empty whiteboard and telling them to start designing solutions can be stressful at the best of times and will probably not result in them putting down their best work.</p>
+<p>The classic combination of whiteboard and marker can be a really useful to tool to determine somebody’s technical capabilities, as long as you <strong>make sure to be extra clear up front on what it is you’re assessing.</strong> Presenting somebody with an empty whiteboard and telling them to start designing solutions can be stressful at the best of times and will probably not result in them putting down their best work.</p>
 </div>
 <div class="paragraph">
-<p>The reality is that this kind of assessment is most effective at teasing out whether somebody can logically structure a solution to a given problem, which is something that should be made clear up front or even well in advance of the interview itself. Remember that your goal should be to assess somebody’s potential rather than ask them to showcase how well they can perform in a made-up test scenario; you’re conducting a technical assessment, not planning a technical ambush.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>The reality is that <strong>this kind of assessment is most effective at teasing out whether somebody can logically structure a solution to a given problem,</strong> which is something that should be made clear up front or even well in advance of the interview itself. Remember that your goal should be to assess somebody’s potential rather than ask them to showcase how well they can perform in a made-up test scenario; you’re conducting a technical assessment, not planning a technical ambush.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1216,14 +697,11 @@ When considering how to structure your initial conversations with people, the me
 <div class="paragraph">
 <p>It’s possible to negate these drawbacks by taking time to ask the candidate to run you through the answers that they submitted, however at this point you might as well have used a whiteboard assessment making paper based tests hard to recommend as an efficient assessment mechanism.</p>
 </div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_take_home_project">Take home project</h3>
 <div class="paragraph">
-<p>A take home project is exactly what it sounds like - a piece of work that you assign to a candidate to complete in their own time. As with all of the other types of assessment, it’s massively important to be explicit about what it is that you’re assessing, what the deliverables are and how long you expect somebody to set aside for the project.</p>
+<p>A take home project is exactly what it sounds like - a piece of work that you assign to a candidate to complete in their own time. As with all of the other types of assessment, it’s massively important to <strong>be explicit about what it is that you’re assessing, what the deliverables are and how long you expect somebody to set aside for the project.</strong></p>
 </div>
 <div class="paragraph">
 <p>A well briefed assessment project can easily be used as a jumping off point for a technical discussion during an interview. Getting somebody to talk you through their solution can be incredibly insightful and can tell you a great deal about their decision making and communication style.</p>
@@ -1231,14 +709,11 @@ When considering how to structure your initial conversations with people, the me
 <div class="paragraph">
 <p>Making sure that you assign projects that are relevant to the work your company does unlocks the additional benefit of giving the candidate a window into what to expect should they accept an offer of employment from you. If you’re trying to hire people who enjoy solving interesting problems, be sure to make the assessment you’re asking people to dedicate hours to as engaging and representative of an actual day’s work as possible.</p>
 </div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_online_test">Online test</h3>
 <div class="paragraph">
-<p>If you’re trying to optimise your hiring process to be able to handle really high volumes of people, then an online test can be a good way to accomplish that. These kinds of assessments have the advantage of being able to be administered remotely, and are usually designed to be completed in the candidates own time within a specified time limit. This makes them much easier to fit into a schedule, provides a well defined block of time within which to focus while also preventing overly meticulous candidates from taking a weekend to complete what should be a 2 hour assessment.</p>
+<p><strong>If you’re trying to optimise your hiring process to be able to handle really high volumes of people, then an online test can be a good way to accomplish that.</strong> These kinds of assessments have the advantage of being able to be administered remotely, and are usually designed to be completed in the candidates own time within a specified time limit. This makes them much easier to fit into a schedule, provides a well defined block of time within which to focus while also preventing overly meticulous candidates from taking a weekend to complete what should be a 2 hour assessment.</p>
 </div>
 <div class="paragraph">
 <p>The negative aspects of this approach are centred around the impersonal nature of the assessments and the way in which they’re deployed. If you decide to include this in your interview process, make sure that somebody takes ownership of it. It should be this person’s responsibility to maintain the integrity of the assessments (don’t send out the same test for months and years at a time, switch it up every now and then) while also moving people through the pipeline and being available as a human to talk to if the person taking the test has any questions.</p>
@@ -1246,20 +721,17 @@ When considering how to structure your initial conversations with people, the me
 <div class="paragraph">
 <p>Additionally, it’s worth mentioning that there will usually be costs involved in using an online code assessment service, either in the form of a subscription or per-use fee.</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<div class="title">Tip</div>
 </td>
 <td class="content">
-The automatic scoring systems that many of these online testing tools use often lack the ability to pick up on nuance, meaning that smart developers often don’t get results that reflect their true ability. This can be counteracted by making it part of your process for a human to review the code that gets submitted.
+&nbsp;The automatic scoring systems that many of these online testing tools use often lack the ability to pick up on nuance, meaning that smart developers often don’t get results that reflect their true ability. This can be counteracted by making it part of your process for a human to review the code that gets submitted.
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 <div class="sect2">
@@ -1268,10 +740,7 @@ The automatic scoring systems that many of these online testing tools use often 
 <p>A pair programming assessment involves assigning somebody from your existing team sitting with and collaborating (either remotely, or by physically sitting at the same workstation) to solve a single problem. This technique can an extremely effective way to gauge a number of key metrics, from technical ability and problem solving skills, through to communication ability and collaboration. It does however come at a significant cost in terms of preparation and the involvement of multiple members of your existing team, so it’s not to be undertaken lightly.</p>
 </div>
 <div class="paragraph">
-<p>A common theme so far has been that briefing is critical to an effective technical assessment, and pair programming is no different. Well executed pair programming assessments will always be explicit up-front about the differentiation between the assessors and the people that the candidate will be programming with. Poorly run pair programming sessions can easily result in a candidate being hesitant to explore all of the solutions at their disposal, which is understandable when you consider how easy it is to feel like the person sitting next to you is judging your every keystroke.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>A common theme so far has been that briefing is critical to an effective technical assessment, and pair programming is no different. <strong>Well executed pair programming assessments will always be explicit up-front about the differentiation between the assessors and the people that the candidate will be programming with.</strong> Poorly run pair programming sessions can easily result in a candidate being hesitant to explore all of the solutions at their disposal, which is understandable when you consider how easy it is to feel like the person sitting next to you is judging your every keystroke.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1280,13 +749,11 @@ The automatic scoring systems that many of these online testing tools use often 
 <p>While doing nothing is always an option, it is very seldom the most effective one. One bad hire early on can do a lot to kneecap your ability to hit product roadmap goals, not to mention the potential cascading negative effects on your company culture.</p>
 </div>
 <div class="paragraph">
-<p>You might be saving time in the short term by relying solely on your finely honed intuition, but we strongly recommend doing some form of due diligence to ensure that the person that you’re adding to your team is able to contribute meaningfully, shore up existing weakness and help you build an awesome product and team.</p>
+<p><strong>You might be saving time in the short term by relying solely on your finely honed intuition, but we strongly recommend doing some form of due diligence</strong> to ensure that the person that you’re adding to your team is able to contribute meaningfully, shore up existing weakness and help you build an awesome product and team.</p>
 </div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
+<div class="sect3">
+<h4 id="_technical_assessment_comparison">Technical assessment comparison</h4>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 1. Technical assessment comparison</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 28.5714%;">
@@ -1340,8 +807,6 @@ The automatic scoring systems that many of these online testing tools use often 
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 </div>
@@ -1350,57 +815,42 @@ The automatic scoring systems that many of these online testing tools use often 
 <h2 id="_culture_fit">Culture fit</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Performance metrics, sales figures and stock prices all fluctuate, and after all is said and done the one differentiating factor that you have as a company is your culture. Your culture is the set of (usually) unwritten rules that your company has collectively determined for how you are all going to work together.</p>
+<p>Performance metrics, sales figures and stock prices all fluctuate, but at the end of the day, the one differentiating factor that you have as a company is your culture. <strong>Your culture is the set of (usually) unwritten rules that your company has collectively determined for how you are all going to work together.</strong></p>
 </div>
 <div class="paragraph">
-<p>As companies grow, they tend to get better at explicating their own cultures, but in the beginning when you’re still figuring things out it often comes down to unwritten rules and implicit patterns of doing things. Because of this ephemeral nature, it can be hard to make sure early on that new hires align with and augment your existing culture; which is why it’s so incredibly important to have a method in place that you use to try and tease out what the values and motivations are of people you’re looking to employ. You can do this in an interview setting in a few different ways:</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>As companies grow, they tend to get better at explicating their own cultures, but in the beginning, when you’re still figuring things out, it often comes down to unwritten rules and implicit patterns of doing things. Because of this ephemeral nature, it can be hard to make sure early on that new hires align with and augment your existing culture. This is why it’s so incredibly important to have a method in place where you try and tease out the values and motivations are of people you’re looking to employ. You can do this in an interview setting in a few different ways:</p>
 </div>
 <div class="sect2">
 <h3 id="_structured_interview">Structured interview</h3>
 <div class="paragraph">
 <p>The easiest way to get answers is to ask questions, you just need to make sure that you’re asking the right ones. If cross-team collaboration is central to your culture, an effective way of determining whether somebody would tick this box would be to ask them to relate to you specific instances in their career where they collaborated across different teams. If you choose this approach, it will be super important that you clearly explicate beforehand what your culture is, and what kinds of questions you’ll be including in this interview.</p>
 </div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_meet_the_team">Meet the team</h3>
 <div class="paragraph">
-<p>The opinions of people that have been living and breathing the culture already can be a really useful barometer when assessing overall fit. Carrying this out in a structured way will usually involve some planning, where short slots are booked with a number of members of team for them to have informal discussions. These are not only useful for you, but for the candidate as well, as they give them an opportunity to pose questions that they might not feel comfortable asking in a traditional interview scenario. If you decide to go down this route, remember to take some time to debrief everyone involved and gather their feedback.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p><strong>The opinions of people that have been living and breathing the culture already can be a really useful barometer when assessing overall fit.</strong> Carrying this out in a structured way will usually involve some planning, where short slots are booked with a number of members of team for them to have informal discussions. These are not only useful for you, but for the candidate as well, as they give them an opportunity to pose questions that they might not feel comfortable asking in a traditional interview scenario. If you decide to go down this route, remember to take some time to debrief everyone involved and gather their feedback.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_simulation_day">Simulation day</h3>
 <div class="paragraph">
-<p>A simulation day involves a candidate taking time to come to your office for a full day or two to do real work with the rest of your team. Doing this can give you an insane level of insight into how they would approach solving real business problems and integrate into the rest of your team, while also giving the candidate a window into what a typical workday at your company can look like.</p>
+<p><strong>A simulation day involves a candidate taking time to come to your office for a full day or two to do real work with the rest of your team.</strong> Doing this can give you an insane level of insight into how they would approach solving real business problems and integrate into the rest of your team, while also giving the candidate a window into what a typical workday at your company can look like.</p>
 </div>
 <div class="paragraph">
 <p>This comes at a pretty steep cost in terms of both time, planning and dedicated team resources during the course of the simulation days. It can be really tricky to design a good simulation day, however we’ve run a lot of these as part of our own hiring process and would be more than happy to help you design your own.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_founder_chat">Founder chat</h3>
 <div class="paragraph">
-<p>While a company’s culture cannot be created overnight by any single person, the leaders and founders have the most influence in setting the tone and deciding on the direction that it takes. Every hire that you make shapes this fledgling culture, doubly so in a company’s early stages. In order to be able to make informed decisions about who should be allowed to influence this growth, founders should be talking to every new hire.</p>
+<p>While a company’s culture cannot be created overnight by any single person, the leaders and founders have the most influence in setting the tone and deciding on the direction that it takes. <strong>Every hire that you make shapes this fledgling culture, doubly so in a company’s early stages.</strong> In order to be able to make informed decisions about who should be allowed to influence this growth, founders should be talking to every new hire.</p>
 </div>
 <div class="paragraph">
-<p>As important as this discussion is as an assessment tool, a culture is made from the values of more than just the founders, so It’s important to be cognisant of just how much stock you’re putting in just one or two people’s opinions when doing something like this. A pretty bad situation would be one where you’ve hired a number of people and the only thing that they have in common is the shared trait of “well the founders liked them”, so if you’re able to diversify the number of people you get input from, you should definitely do so.</p>
+<p>As important as this discussion is as an assessment tool, a culture is made from the values of more than just the founders, so it’s important to <strong>be cognisant of just how much stock you’re putting in just one or two people’s opinions</strong> when doing something like this. A pretty bad situation would be one where you’ve hired a number of people and the only thing that they have in common is the shared trait of “well the founders liked them”, so if you’re able to diversify the number of people you get input from, you should definitely do so.</p>
 </div>
 <div class="paragraph">
-<p>Once your team and hiring process start to scale significantly, it can be very easy for a founder’s limited availability to become a bottleneck. We often see this happening around the 50 hire mark, however we’ve seen examples of companies where the founders personally chat with everyone well past hire number one hundred. If this situation arises, keep in mind that there are other options available outside of shepherding two people into a coffee shop booth; tools like Skype or Google Hangouts can make it a lot easier to fit meetings like these into people schedules.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p><strong>Once your team and hiring process start to scale significantly, it can be very easy for a founder’s limited availability to become a bottleneck.</strong> We often see this happening around the 50 hire mark, however we’ve seen examples of companies where the founders personally chat with everyone well past hire number one hundred. If this situation arises, keep in mind that there are other options available outside of shepherding two people into a coffee shop booth; tools like Skype or Google Hangouts can make it a lot easier to fit meetings like these into people schedules.</p>
 </div>
 </div>
 </div>
@@ -1418,21 +868,15 @@ The automatic scoring systems that many of these online testing tools use often 
 <div class="title">Tip</div>
 </td>
 <td class="content">
-<strong>Protip:</strong> You’ve spent a lot of time trying to hire the best possible team, why not show them off? Smart people tend to want to hang out and solve problems with other smart people, so showing that you can provide this kind of environment can be a super compelling reason to join a company.
+You’ve spent a lot of time trying to hire the best possible team, why not show them off? Smart people tend to want to hang out and solve problems with other smart people, so showing that you can provide this kind of environment can be a super compelling reason to join a company.
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 <div class="sect2">
 <h3 id="_onsite_chat">Onsite chat</h3>
 <div class="paragraph">
 <p>The easiest way to facilitate a team fit discussion is to literally just get the candidate in the same room as one or multiple members of the current team (this group should potentially include team leads or senior members) and get them to talk about whatever they find interesting. While getting people to talk is almost always educational, your goal in these discussions should be to drive the conversation towards what they look for in a team and how they tend to function best in a team environment.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 <div class="sect2">
@@ -1443,62 +887,49 @@ The automatic scoring systems that many of these online testing tools use often 
 <div class="paragraph">
 <p>These kinds of engagements can give you a lot of opportunities to get to know somebody, as long as you’re careful to limit the scope of what you’re assessing to things that are relevant to your company and culture. You might find it strange that somebody dips their chips in their milkshake, but it’s definitely not a reason to turn somebody down at this stage of the hiring process.</p>
 </div>
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_reference_checks">Reference checks</h2>
 <div class="sectionbody">
-<hr>
 <div class="paragraph">
 <p>The first step here should have happened before the interview process even began. You need to have a decision in place where you set out whether or not you do background checks for everyone you hire, just for some people (maybe they’re working on-site at a client) or nobody at all. Whatever you decide, it’s important that you stick to it. It’s scarily easy to get swept up in the smiles and good vibes that are in the air after interviewing somebody that really fits in with the team and seems to tick every box that you threw at them, but that’s not necessarily a good reason to short circuit your own process.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 <div class="sect2">
 <h3 id="_calling_references">Calling references</h3>
 <div class="paragraph">
-<p>Before you dial a single digit into the phone, it’s really important that you articulate just what it is that you’re hoping to achieve by contacting somebodies references. Are you looking to enlist third parties to provide you with information in order to help you make a hiring decision, or have you already made a decision and you’re doing a quick check for any serious red flags?</p>
+<p>Before you dial a single digit into the phone, it’s really important that you articulate just what it is that you’re hoping to achieve by contacting somebody’s references. <strong>Are you looking to enlist third parties to provide you with information in order to help you make a hiring decision, or have you already made a decision and you’re doing a quick check for any serious red flags?</strong></p>
 </div>
 <div class="paragraph">
-<p>In general, try to avoid calling a reference before you’ve spoken to the candidate yourself. It might feel useful to have a heads up before they’ve even come in for an interview, but remember that you’ve just potentially coloured your own first impression of this person with somebody else’s opinion.</p>
+<p>In general, <strong>try to avoid speaking to a reference before you’ve spoken to the candidate yourself.</strong> It might feel useful to have a heads up before they’ve even come in for an interview, but remember that you’ve just potentially coloured your own first impression of this person with somebody else’s opinion.</p>
 </div>
 <div class="paragraph">
 <p>Remember that when doing reference calls, your goal shouldn’t be to simply confirm what it is you’ve already learned about somebody during an interview. A useful mindset to adopt would be one of <strong>“everything we’ve heard about the candidate so far is great, but we just want to make sure that we haven’t missed anything”.</strong></p>
 </div>
 <div class="paragraph">
-<p>It should go without saying that you should always be respectful of the private nature of the candidate’s job search. <strong>NEVER</strong> phone somebody’s current workplace without their explicit permission, and don’t solicit your own personal network for information without doing your own homework. The world is a small place, even more so in tech. People can be connected in unexpected ways, so it’s advised to limit your reference checks to people that the person that you’re hiring has provided for this purpose.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>It should go without saying that you should always be respectful of the private nature of the candidate’s job search. <strong>NEVER</strong> phone somebody’s current workplace without their explicit permission, and <strong>don’t solicit your own personal network for information without doing your homework.</strong> The world is a small place, even more so in tech. People can be connected in unexpected ways, so it’s advised to limit your reference checks to people that the person that you’re hiring has provided for this purpose.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_criminal_and_credit">Criminal and credit</h3>
 <div class="paragraph">
-<p>If you’re hiring in a fintech or financial services space, you probably already know all about these kinds of checks. If you’re operating in a different space you’ll need to decide how important clear credit and police records are in your particular context.</p>
+<p>If you’re hiring in a fintech or financial services space, you probably already know something about these kinds of checks. If you’re operating in a different space you’ll need to <strong>decide how important clear credit and police records are in your particular context.</strong></p>
 </div>
 <div class="paragraph">
-<p>No matter which side of the isle you’re on, an important consideration should be how these checks impact your hiring process and the candidate experience. Be sure to give people an adequate heads up as to why you’re running these potentially invasive background checks on them, and always provide an opportunity for the other person to be up-front about any irregularities that might come up.</p>
+<p>No matter which side of the isle you’re on, an important consideration should be how these checks impact your hiring process and the candidate experience. <strong>Be sure to give people an adequate heads up as to why you’re running these potentially invasive background checks on them,</strong> and always provide an opportunity for the other person to be up-front about any irregularities that might come up.</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<div class="title">Tip</div>
 </td>
 <td class="content">
-<strong>Protip:</strong> Getting set up to do these yourself is cheaper and easier than you think. All you need to do is buy a fingerprint scanner, install some software and get somebody from your team to do a super short course from MIE.
+Getting set up to do these yourself is cheaper and easier than you think. All you need to do is buy a fingerprint scanner, install some software and get somebody from your team to do a super short course from MIE.
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 </div>
@@ -1506,29 +937,22 @@ The automatic scoring systems that many of these online testing tools use often 
 <div class="sect1">
 <h2 id="_making_an_offer">Making an offer</h2>
 <div class="sectionbody">
-<hr>
 <div class="paragraph">
-<p>In tech hiring, you should always assume that you’re competing for the attention of any given candidate with a host of other companies who are just as determined as you are to hire the best people. This means that it should be your goal throughout this whole process to set yourself up to make a hire/not-hire decision as quickly as possible.</p>
+<p><strong>In tech hiring, you should always assume that you’re competing for the attention of any given candidate with a host of other companies who are just as determined as you are to hire the best people.</strong> This means that it should be your goal throughout this whole process to set yourself up to make a hire/not-hire decision as quickly as possible.</p>
 </div>
 <div class="paragraph">
-<p>“Congratulations, we like you and want you to join our team” can be an awesome thing to hear after going through an interview process, but can also bring with it an interesting variety of follow-up questions, that if you’re not ready for can throw a rather large spanner in the works.</p>
+<p>“Congratulations, we like you and want you to join our team” can be an awesome thing to hear after going through an interview process, but can also bring with it an interesting variety of follow-up questions. If you haven’t prepared for these they can throw a rather large spanner in the works.</p>
 </div>
 <div class="paragraph">
-<p>Remember that at the end of the day, you’re asking somebody to commit a large portion of their waking hours to your company and your mission for the foreseeable future, so you should be prepared to make sure that the person has access to as much information as possible so that they can make the best possible decision.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>Remember that at the end of the day, you’re asking somebody to commit a large portion of their waking hours to your company and your mission for the foreseeable future, so you should <strong>be prepared to make sure that the person has access to as much information as possible so that they can make the best decision.</strong></p>
 </div>
 <div class="sect2">
 <h3 id="_pre_offer_call">Pre-offer call</h3>
 <div class="paragraph">
-<p>Telling somebody that you want them on your team is a big deal. Both parties have put in a lot of effort at this stage, so it makes sense to celebrate a bit - treat it like a victory lap. Like a lot of other important life events, this is news that deserves more than an email. Pick up the phone!</p>
+<p><strong>Telling somebody that you want them on your team is a big deal.</strong> Both parties have put in a lot of effort at this stage, so it makes sense to celebrate a bit - treat it like a victory lap. Like a lot of other important life events, this is news that deserves more than an email. <strong>Pick up the phone!</strong></p>
 </div>
 <div class="paragraph">
 <p>While delivering the good news, you’ll have a great opportunity to run them through the details of the offer and pre-empt any common questions: how many leave days are included, what kind of deductions can they expect on their payslip, potential start dates, etc. It’s really important to give the person a chance to ask any questions and to be very clear about when you’re expecting to receive a response.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 <div class="sect2">
@@ -1537,10 +961,7 @@ The automatic scoring systems that many of these online testing tools use often 
 <p>If for whatever reason you’re absolutely not able to contact somebody over the phone to tell them about an offer, you’ll need to adapt your strategy accordingly. Be as explicit in the email as possible about all of the information included in the offer and make sure that the person you’re making the offer to knows that you’d be more than happy to contact them to talk through the details.</p>
 </div>
 <div class="paragraph">
-<p>Lines of communication need to be wide open at this stage of the process and if you’ve had to fall back on email for an offer, be sure to keep trying the phone until you get hold of them.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p><strong>Lines of communication need to be wide open at this stage of the process</strong> and if you’ve had to fall back on email for an offer, be sure to keep trying the phone until you get hold of them.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1549,34 +970,28 @@ The automatic scoring systems that many of these online testing tools use often 
 <p>From time to time we’ll see companies sending out thinly-veiled non-offers that typically adopt the format of “If we were to make you an offer, would you accept?”. A message like this can be confusing to receive, especially if you’ve already got an offer on the table from another company and can come off as extremely non-committal</p>
 </div>
 <div class="paragraph">
-<p>While it’s understandable in the context of trying to avoid rejection, a general rule should be: if you’re in a position to make a hypothetical offer to somebody, you should also be in a position to make an actual one.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>While it’s understandable in the context of trying to avoid rejection, a general rule should be: <strong>if you’re in a position to make a hypothetical offer to somebody, you should also be in a position to make an actual one.</strong></p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_contract">Contract</h3>
 <div class="paragraph">
-<p>We’ve already established that you should be trying your best to get an offer in the hands of somebody who you want to hire in as little time as possible. Being able to do this quickly is the reason behind distinguishing between an offer letter and a contract, however if you can send somebody an actual employment contract in the same space of time as an offer, then it makes sense to do this.</p>
+<p>We’ve already established that <strong>if you want to hire somebody, you should be trying your best to make this intention known to them as soon as possible.</strong> Because contracts can take some time to be drafted, an offer letter can sometimes be used to signal this intention quickly, however if you can send somebody an actual employment contract in the same space of time as an offer, then it makes sense to do this.</p>
 </div>
 <div class="paragraph">
-<p>The motivation behind this is mostly psychological; a contract can be seen as a bigger sign of commitment from a company than an offer letter (just remember to sign it before you send it through).</p>
+<p>The motivation behind this is mostly psychological; <strong>a contract can be seen as a bigger sign of commitment from a company than an offer letter</strong> (just remember to sign it before you send it through).</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<div class="title">Tip</div>
 </td>
 <td class="content">
-<strong>Protip:</strong> If you know that you’re not going to be able to provide a contract super quickly, be upfront and say this rather than creating expectations for something that you can’t deliver.
+If you know that you’re not going to be able to provide a contract super quickly, be upfront and say this rather than creating expectations for something that you can’t deliver.
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 </div>
@@ -1585,36 +1000,27 @@ The automatic scoring systems that many of these online testing tools use often 
 <h2 id="_onboarding">Onboarding</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>It’s done. It’s in the bag. Once the offer has been signed it’s all too easy to hang up your hiring hat, pat yourself on the back and wait until the person you just hired shows up for their first day of work before you speak to them again.</p>
+<p>It’s done. It’s in the bag. Once the offer has been signed, it’s all too easy to hang up your hiring hat, pat yourself on the back and wait until the person you just hired shows up for their first day of work before you speak to them again.</p>
 </div>
 <div class="paragraph">
-<p><strong>This is an enormous mistake.</strong> In reality, your onboarding process should start the second that the contract is signed. According to our data, one third of candidates who drop out before starting their new jobs, cite a lack of communication or miscommunication as a major contributing factor. You just spent an enormous chunk of time assessing this person and convincing them to join your team, don’t leave the door open to counter offers and cold feet by leaving them out of the loop now.</p>
+<p><strong>This is an enormous mistake.</strong> In reality, your onboarding process should start the second that the contract is signed. According to our data, <strong>one third of candidates who drop out before starting their new jobs, cite a lack of communication or miscommunication as a major contributing factor.</strong> You just spent an enormous chunk of time assessing this person and convincing them to join your team, don’t leave the door open to counter offers and cold feet by leaving them out of the loop now.</p>
 </div>
 <div class="paragraph">
-<p>Your mindset at this stage of the process should be focussed on how you can keep somebody engaged in the time between them signing the employment contract and walking through the door on their first day. The best way to do this is by maintaining open and and proactive lines of</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>Your mindset at this stage of the process should be focussed on how you can keep somebody engaged in the time between them signing the employment contract and walking through the door on their first day. The best way to do this is by maintaining open and and proactive lines of communication.</p>
 </div>
 <div class="sect2">
 <h3 id="_welcome_email">Welcome email</h3>
 <div class="paragraph">
-<p>The simplest tactic here could be an email the day of or soon after they accept your offer or sign the contract. Ideally this email should come from somebody on the team that they’re going to be joining and should outline how stoked everyone is to have them on their team, as well as details like start date confirmation, what to bring with on their first day and what the best ways are to prepare so that they can hit the ground running.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>The simplest tactic here could be an email the day of or soon after they accept your offer or sign the contract. Ideally, this email should come from somebody on the team that they’re going to be joining and should <strong>outline how stoked everyone is to have them on the team,</strong> as well as details like <strong>start date confirmation, what to bring with on their first day and what the best ways are to prepare so that they can hit the ground running.</strong></p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_access_to_accounts">Access to accounts</h3>
 <div class="paragraph">
-<p>Once somebody has signed an employment contract, many companies will begin treating their new hires like fully fledged employees. Why not get them set up with their laptop and make sure they have access to all of the accounts that they’re going to be using on a daily basis. If you’re worried about giving somebody who isn’t settled in the building access to your entire code base, remember that it’s not an all or nothing decision. Give as much access as you’re comfortable with as early on as possible and take things from there.</p>
+<p>Once somebody has signed an employment contract, many companies will begin treating their new hires like fully fledged employees. Why not get them <strong>set up with their laptop and make sure they have access to all of the accounts that they’re going to be using on a daily basis.</strong> If you’re worried about giving somebody who isn’t settled in the building access to your entire code base, remember that it’s not an all or nothing decision. Give as much access as you’re comfortable with as early on as possible and take things from there.</p>
 </div>
 <div class="paragraph">
 <p>If you use Slack and you haven’t already invited them as part of your interview/assessment process, now is a great time to get them set up. One fun side effect of this is that every time they get a slack notification from you, you’re going to be top of mind.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
 </div>
 </div>
 <div class="sect2">
@@ -1623,10 +1029,7 @@ The automatic scoring systems that many of these online testing tools use often 
 <p>We’ve seen companies assign paid work to a new hire as soon as they begin employment. As smart as it is to dial up the engagement to 11 in the time before somebody starts at your company, you still want to be mindful of the fact that they’re potentially still legally employed somewhere else.</p>
 </div>
 <div class="paragraph">
-<p>Getting somebody to start working for you as soon as they’ve signed your contract regardless of current obligations might seem like a great way to keep a new hire engaged even before day one, however you do need to think about what problem it is that you’re trying to solve by using this approach. If you’re primarily concerned about staying top of mind, there are other way to accomplish that without potentially doubling somebody’s workload.</p>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<p>Getting somebody to start working for you as soon as they’ve signed your contract regardless of current obligations might seem like a great way to keep a new hire engaged even before day one, however you do need to think about what problem it is that you’re trying to solve by using this approach. <strong>If you’re primarily concerned about staying top of mind, there are other way to accomplish that without potentially doubling somebody’s workload.</strong></p>
 </div>
 </div>
 </div>
@@ -1634,9 +1037,6 @@ The automatic scoring systems that many of these online testing tools use often 
 <div class="sect1">
 <h2 id="_putting_it_all_together">Putting it all together</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>&#160;<br></p>
-</div>
 <div class="sect2">
 <h3 id="_example_hiring_process_for_smaller_startup">Example hiring process for smaller startup</h3>
 <div class="olist arabic">
@@ -1722,7 +1122,7 @@ The final phases of these two processes are quite similar. We find that regardle
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-05-18 14:11:14 SAST
+Last updated 2018-05-23 13:00:07 SAST
 </div>
 </div>
 </body>

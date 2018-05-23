@@ -1,10 +1,12 @@
-/* Blue themed stylesheet */
+/* Blue themed Asciidoc */
+
 html, body, form, fieldset, table, tr, td, img, h1, h2, h3, h4, h5, {
     margin: 0;
     padding: 0;
     font-family: 100%/150% "Proxima Nova";
 }
 
+////////// Body Styles //////////
 
 body{
    background:#fff;
@@ -25,22 +27,24 @@ body{
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 52px;
   color: #231F20;
   border: none;
   margin-bottom: 0;
   padding-bottom: 0;
+  margin-top: 90px;
 }
 
 h2 {
   font-size: 28px;
-  font-weight: bolder;
-  line-height: 35px;
-  color: #5598DD;
-  padding-bottom: 24px;
-  border: none;
-  margin: 0;
+    font-weight: bolder;
+    line-height: 35px;
+    color: #5598DD;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    border: none;
+    margin: 0;
 }
 
 h3 {
@@ -51,14 +55,15 @@ h3 {
   border: none;
   margin: 0;
   padding-bottom: 12px;
+  margin-top: 40px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 35px;
   color: #A7ACB0;
-  margin-top: 0;
+  margin-top: 12px;
   margin-bottom: 40px;
 }
 
@@ -76,47 +81,119 @@ p {
   color: #343951;
   font-size: 18px;
   line-height: 30px;
-  font-weight: lighter;
+  font-weight: 400;
+  margin-top: 0px;
 
-}
-
-hr {
-  border: 1px solid #EBF1F6;
-  margin: 20px 0px 80px 0px;
 }
 
 img {
   max-width: 880px;
+  padding: 24px 0px;
+}
+
+hr {
+  border: 1px solid #EBF1F6;
+  margin: 12px 0px 20px 0px;
 }
 
 strong {
   color: #343951;
 }
 
-/* Header */
-
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){
-   border-bottom: none;
-   padding: 0;
- }
-
-#header>h1:first-child {
-    margin-top: 80px;
-    margin-bottom:30px;
+.ulist {
+  ul {
+    padding-left: 15px;
+  }
 }
 
- #header .details {
-   border: none;
-   font-size: 24px;
-   font-weight: 300;
-   color: #A7ACB0;
-   font-family: "Proxima Nova";
- }
 
- .paragraph {
+////////// Table of Contents //////////
+
+div #toc {
+    position: absolute;
+    margin-top: 140px;
+
+  #toctitle {
+    font-size: 18px;
+    color: #5598DD;
+    text-transform: uppercase;
+    font-weight: 700;
+    }
+
+  ul{
+    padding-left: 15px;
+    color: #343951;
+    li {
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #343951;
+        line-height: 26px;
+        }
+
+        ul {
+          padding-left: 24px;
+          color: #9B9B9B;
+          li a {
+            font-size: 18px;
+            font-weight: 300;
+            color: #343951;
+            text-decoration: none;
+            line-height: 24px;
+        }
+      }
+    }
+  }
+}
+////////// Header //////////
+
+div#header {
+  position: absolute;
+  margin-top: 40px;
+
+  h1 {
+    margin-top: 70px;
+  }
+
+  .details {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #A7ACB0;
+    margin-top: 12px;
+    margin-bottom: 40px;
+  }
+}
+
+.imageblock.logo {
+  margin-top: 80px;
+  margin-bottom: 220px;
+
+  img {
+   padding: 0px;
+  }
+}
+
+// Author Image + Name
+.author {
+   p{
    display: flex;
    align-items: center;
    font-family: "Proxima Nova";
+   font-weight: 700;
+   font-size: 14px;
+
+    img {
+      margin-right: 14px;
+      padding: 0px;
+    }
+   }
+ }
+
+ .toc-divider {
+     margin-top: 1186px;
+     border-top: 2px solid #EBF1F6;
+     padding-top: 34px
  }
 
 
@@ -124,6 +201,10 @@ strong {
 .sect1+.sect1 {
   border: none;
 }
+
+////////// Tables //////////
+
+////////// Inline Elements //////////
 
 // Quoteblock
 div.quoteblock {
@@ -142,31 +223,43 @@ div.quoteblock {
 }
 
 /* Note */
-.admonitionblock.note .icon {
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #231F20;
+
+.admonitionblock.note.note {
+    padding: 24px 0px;
+
+   td.icon {
+      vertical-align: top;
+
+      .title {
+        font-size: 16px;
+        font-weight: 700;
+        font-family: "Proxima Nova";
+        line-height: 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #231F20;
+      }
+    }
+    td.content {
+      font-size: 18px;
+      color: #343951;
+      border-left: none;
+      vertical-align: top;
+      padding-left: 18px;
+      line-height: 30px;
+
+      .ulist {
+        ul {
+          li {
+            p {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+  }
 }
 
-.admonitionblock.note .title {
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #231F20;
-  line-height: 24px;
-  font-family: "Proxima Nova";
-}
-
-.admonitionblock.note td.content {
-  font-size: 18px;
-  color: #343951;
-  border-left: none;
-  vertical-align: top;
-  padding-left: 18px;
-  line-height: 24px;
-
-}
 
 /* Example */
 
@@ -174,6 +267,10 @@ div.quoteblock {
   background: #F5F5F5;
   border-radius: 4px;
   padding: 12px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+
+  dl {
 
   dt.hdlist1 {
       padding-left: 24px;
@@ -181,20 +278,18 @@ div.quoteblock {
       color: #5C5C5C;
       font-size: 18px;
       padding-bottom: 12px;
+    }
+    dd {
+      width: 810px;
+      padding-left: 0;
+      margin-left: 24px;
 
-      dd {
-        margin: 0;
-        padding-left: 24px;
-        padding-right: 24px;
-
-        p {
-          line-height: 24px;
-        }
+      p {
+        line-height: 30px;
       }
-   }
+    }
+  }
 }
-
-
 
 /* Tip */
 .admonitionblock.tip {
@@ -208,13 +303,19 @@ div.quoteblock {
       font-size: 18px;
       text-transform: uppercase;
       text-decoration: none;
-      color: #231F20;
+      font-weight: 600;
+      position: absolute;
 
       .title {
         color: #343951;
         text-transform: uppercase;
         text-decoration: none;
-        line-height: 24px;
+        padding-right: 12px;
+        font-family: "Proxima Nova";
+        line-height: 30px;
+      }
+      .title:after {
+        content: ":";
       }
     }
 
@@ -224,31 +325,41 @@ div.quoteblock {
       border-left: none;
       vertical-align: top;
       padding: 0;
-      line-height: 24px;
-    }
+      line-height: 30px;
+      text-indent: 4%;
+  }
 }
 
 /* Lists */
-.ulist>ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
+// Ordered lists
+ol.arabic {
+  color: #5EA5EE;
+  font-size: 22px;
+  font-weight: 800;
+
+  li {
+    padding-left: 20px;
+
+    ol.loweralpha {
+     color: #A6ACAF;
+     font-size: 20px;
+
+     li {
+       padding-left: 12px;
+     }
+    }
+  }
 }
 
-ul>li p {
-  margin-bottom: 24px;
-  line-height: 30px;
-}
+// Tables
 
-li {
-  margin-left: 0;
-  display: flex;
-}
+table.tableblock.frame-all.grid-all.stretch {
+    border: 1px solid grey;
+    padding: 20px;
 
-li::before {
-  content: "\002022";
-  color: #D2D8DC; /* or whatever color you prefer */
-  padding-right: 20px;
-}
+    caption.title {
+      text-align: left; 
+    }
 
-/* Image */
+}
