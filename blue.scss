@@ -22,7 +22,7 @@ body{
    tab-size:4;
    -moz-osx-font-smoothing:grayscale;
    -webkit-font-smoothing:antialiased;
-   width: 880px;
+   max-width: 880px;
    margin: 0 auto;
 }
 
@@ -59,12 +59,12 @@ h3 {
 }
 
 h4 {
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 35px;
-  color: #A7ACB0;
+  color: #4A4A4A;
   margin-top: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 12px;
 }
 
 h5 {
@@ -359,7 +359,7 @@ table.tableblock.frame-all.grid-all.stretch {
     padding: 20px;
 
     caption.title {
-      text-align: left; 
+      text-align: left;
     }
 
 }
