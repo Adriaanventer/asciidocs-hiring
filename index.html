@@ -28,7 +28,7 @@ body {
   tab-size: 4;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto; }
 
 h1 {
@@ -61,12 +61,12 @@ h3 {
   margin-top: 40px; }
 
 h4 {
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 35px;
-  color: #A7ACB0;
+  color: #4A4A4A;
   margin-top: 12px;
-  margin-bottom: 40px; }
+  margin-bottom: 12px; }
 
 h5 {
   font-size: 18px;
@@ -85,7 +85,7 @@ p {
   margin-top: 0px; }
 
 img {
-  max-width: 880px;
+  width: 100%;
   padding: 24px 0px; }
 
 hr {
@@ -95,8 +95,26 @@ hr {
 strong {
   color: #343951; }
 
-.ulist ul {
-  padding-left: 15px; }
+.ulist {
+  margin-left: 20px; }
+  .ulist ul {
+    padding-left: 15px;
+    color: #343951; }
+    .ulist ul li p {
+      margin-bottom: 15px; }
+    .ulist ul li .ulist {
+      margin-left: 20px; }
+      .ulist ul li .ulist ul {
+        padding-left: 15px;
+        color: #7C7C80; }
+        .ulist ul li .ulist ul li p {
+          margin-bottom: 10px;
+          font-weight: 300; }
+
+#footer {
+  margin-bottom: 80px; }
+  #footer #footer-text {
+    display: none; }
 
 div #toc {
   position: absolute;
@@ -141,7 +159,8 @@ div#header {
   margin-top: 80px;
   margin-bottom: 220px; }
   .imageblock.logo img {
-    padding: 0px; }
+    padding: 0px;
+    width: 151px; }
 
 .author p {
   display: flex;
@@ -151,7 +170,9 @@ div#header {
   font-size: 14px; }
   .author p img {
     margin-right: 14px;
-    padding: 0px; }
+    padding: 0px;
+    width: 44px;
+    height: 44px; }
 
 .toc-divider {
   margin-top: 1186px;
@@ -186,16 +207,23 @@ div.quoteblock {
       line-height: 30px;
       text-transform: uppercase;
       text-decoration: none;
-      color: #231F20; }
+      color: #5EA5EE; }
   .admonitionblock.note.note td.content {
     font-size: 18px;
-    color: #343951;
+    color: #7C7C80;
     border-left: none;
     vertical-align: top;
     padding-left: 18px;
     line-height: 30px; }
-    .admonitionblock.note.note td.content .ulist ul li p {
-      margin-bottom: 0px; }
+    .admonitionblock.note.note td.content strong {
+      color: #7C7C80; }
+    .admonitionblock.note.note td.content .paragraph p {
+      color: #7C7C80; }
+    .admonitionblock.note.note td.content .ulist ul {
+      color: #7C7C80; }
+      .admonitionblock.note.note td.content .ulist ul li p {
+        margin-bottom: 0px;
+        color: #7C7C80; }
 
 /* Example */
 .dlist.example {
@@ -246,7 +274,7 @@ div.quoteblock {
     vertical-align: top;
     padding: 0;
     line-height: 30px;
-    text-indent: 4%; }
+    text-indent: 5%; }
 
 /* Lists */
 ol.arabic {
@@ -257,15 +285,53 @@ ol.arabic {
     padding-left: 20px; }
     ol.arabic li ol.loweralpha {
       color: #A6ACAF;
-      font-size: 20px; }
+      font-size: 20px;
+      padding-left: 20px; }
       ol.arabic li ol.loweralpha li {
         padding-left: 12px; }
 
-table.tableblock.frame-all.grid-all.stretch {
-  border: 1px solid grey;
-  padding: 20px; }
-  table.tableblock.frame-all.grid-all.stretch caption.title {
-    text-align: left; }
+table.tableblock.frame-all.grid-all.stretch th.tableblock.halign-left.valign-top {
+  padding: 20px;
+  background-color: #F5F5F5;
+  border-radius: 3px; }
+table.tableblock.frame-all.grid-all.stretch td.tableblock.halign-left.valign-top {
+  border-bottom: 2px solid #F5F5F5;
+  border-left: 2px solid #F5F5F5;
+  vertical-align: top; }
+  table.tableblock.frame-all.grid-all.stretch td.tableblock.halign-left.valign-top p.tableblock {
+    padding: 12px;
+    margin: 0; }
+
+@media only screen and (max-width: 930px) {
+  body {
+    padding-left: 24px;
+    padding-right: 24px; }
+
+  /* Example */
+  .dlist.example {
+    background: #F5F5F5;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 24px;
+    margin-bottom: 40px; }
+    .dlist.example dl dd {
+      width: 100%;
+      margin-right: 24px; }
+      .dlist.example dl dd p {
+        line-height: 30px;
+        padding-right: 40px; } }
+@media only screen and (max-width: 668px) {
+  .admonitionblock.tip .content {
+    text-indent: 7%; }
+
+  .imageblock.logo {
+    margin-bottom: 240px; } }
+@media only screen and (max-width: 415px) {
+  .admonitionblock.tip .content {
+    text-indent: 10%; }
+
+  .imageblock.logo {
+    margin-bottom: 320px; } }
 
 /*# sourceMappingURL=blue.css.map */
 
@@ -365,7 +431,7 @@ table.tableblock.frame-all.grid-all.stretch {
 </div>
 <hr>
 <div class="paragraph toc-divider">
-<p>Hiring is not what it used to be; you’re trying to hire the best people, but so is everybody else. The melee that ensues can be tough to navigate at the best of times, and without a well thought out hiring strategy you’re going to make it much harder than it needs to be for smart people to figure out why your company is the one where they want to be working.</p>
+<p><strong>Hiring is hard;</strong> you’re trying to get the best people, but so is everybody else. The melee that ensues can be tough to navigate at the best of times, and having a well thought out hiring strategy is critical to success.</p>
 </div>
 <div class="paragraph">
 <p>Demand for quality tech candidates currently far outstrips supply and it’s not going to change any time soon. Now more than ever, securing a steady supply of talent is a strategic and competitive necessity. As an adaptation, We have seen successful companies adapt a new mindset. <strong>Instead of filtering to ensure that people are good enough to work at the company, they ask themselves how they can attract top talent.</strong></p>
@@ -379,7 +445,7 @@ table.tableblock.frame-all.grid-all.stretch {
 <h2 id="_how_to_use_this_guide">How to use this guide</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>We’ve learned that an effective hiring process can be built from a number of basic building blocks. The goal of the following guide is to present some of the common blocks, explain their pros and cons and clarify when best to implement them.</p>
+<p>We’ve learned that an effective hiring process can be built from a number of basic building blocks. <strong>The goal of the following guide is to present some of the common blocks, explain their pros and cons and clarify when best to implement them.</strong></p>
 </div>
 <div class="paragraph">
 <p>Once you’ve become acquainted with some of your options, you should be able to synthethise an approach for each of the following parts of the hiring process:</p>
@@ -431,10 +497,10 @@ This is the usual order, but there is nothing preventing you from making minor c
 <h2 id="_reaching_out">Reaching out</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The first step of your hiring process should be to focus inwardly and decide who is going to be running it. If you can’t settle on a single person to care about the whole process, then be sure to go into detail in terms of which people are going to take ownership of the individual parts of the process. We have found that the person closest to the role in question should conduct the initial outreach. If you’re hiring a developer, the dev manager or head of product should be reaching out if possible.</p>
+<p>The first step of your hiring process should be to focus inwardly and <strong>decide who is going to be running it.</strong> If you can’t settle on a single person to care about the whole process, then be sure to go into detail in terms of which people are going to take ownership of the individual parts of the process. We have found that the person closest to the role in question should conduct the initial outreach. If you’re hiring a developer, the dev manager or head of product should be reaching out.</p>
 </div>
 <div class="paragraph">
-<p>Depending on how strong your brand is, the initial message could potentially be the first time the person you’re reaching out to has heard of your company. This means that it’s super important for you to be able to convey your employer value proposition concisely and convincingly.</p>
+<p>Depending on how strong your brand is, the initial message could potentially be the first time the person you’re reaching out to has heard of your company. This means that it’s super important for you to be able to convey your <strong>employer value proposition</strong> concisely and convincingly.</p>
 </div>
 <div class="paragraph">
 <p>We’ve seen companies on OfferZen reach out in a couple of different ways, namely: the super personal message, the short message and the long message. We suggest picking the one that aligns best with your culture and goals.</p>
@@ -447,7 +513,7 @@ This is the usual order, but there is nothing preventing you from making minor c
 </td>
 <td class="content">
 <div class="paragraph">
-<p>An employer value proposition is the name given to a broad category of things describing the reasons why somebody would work for your company rather than another one. It is explicitly different to your actual product, meaning you can have an awesome offering but a terrible employer value proposition if you don’t make an effort to provide people with a great place to work. Components of your employee value proposition include:</p>
+<p>An <strong>employer value proposition</strong> is the name given to a broad category of things describing the reasons why somebody would work for your company rather than another one. It is explicitly different to your actual product, meaning you can have an awesome offering but a terrible employer value proposition if you don’t make an effort to provide people with a great place to work. Components of your employee value proposition include:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -538,10 +604,12 @@ This is the usual order, but there is nothing preventing you from making minor c
 <p>To move forward, your goal should be to engage in a conversation where you tell the person you’re hoping to hire about your company and why it’s a great place to work, while they explain to you how they can help you with your mission. <strong>The interview stage is the most important and nuanced part of the hiring process and it will almost always be the point where the vast majority of information is shared</strong> between your company and the prospective hire, and it is this information that will determine whether a potential offer is made, or accepted.</p>
 </div>
 <div class="paragraph">
-<p>We can subdivide the interview process into a few discrete phases:</p>
+<p><strong>We can subdivide the interview process into a few discrete phases:</strong></p>
 </div>
-<div class="paragraph">
-<p>We can subdivide the interview process into a few discrete phases:</p>
+<div class="imageblock">
+<div class="content">
+<img src="./images/coffeepaperpuzzle.png" alt="coffeepaperpuzzle">
+</div>
 </div>
 <div class="ulist">
 <ul>
@@ -613,10 +681,10 @@ This is the usual order, but there is nothing preventing you from making minor c
 <p>How you approach this part of the hiring process will fall somewhere on a spectrum, with you trying to filter out people who ‘aren’t good enough’ on one end and ‘convincing people that your company is the best’ on the other.</p>
 </div>
 <div class="paragraph">
-<p>If you consider this in the broader context of tech hiring in its current state, it should be obvious that your goal ought to be trying to adopt more of a selling mindset. <strong>There are potentially a host of other competing organisations all trying to tap into the same talent pool as you are and if you’re not making an effort to convince candidates why they should choose to work with you, you’ll quickly start losing out to companies who are.</strong></p>
+<p>Considering this in the broader context of tech hiring in its current state, your aim should be to adopt more of a selling mindset. <strong>There are potentially a host of other competing organisations all trying to tap into the same talent pool as you are. If you’re not making an effort to convince candidates of why they should choose to work with you, you’ll quickly start losing out to companies who are.</strong></p>
 </div>
 <div class="paragraph">
-<p>Your goal at this point in the hiring process should be to maximise knowledge on both sides of the table; candidates should know as much about the work that you do, and you need to know as much as you can about them so as to be able to figure out whether or not they’ll be able to make an impact in your team.</p>
+<p>Your goal at this point in the hiring process should be to maximise knowledge on both sides of the table; candidates should know as much as possible about the work that you do, and you need to know as much as you can about them so as to be able to figure out whether or not they’ll be able to make an impact in your team.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -667,6 +735,11 @@ When considering how to structure your initial conversations with people, the me
 </div>
 <div class="paragraph">
 <p>Proper briefing is also super important when conducting any kind of technical assessment. A poorly briefed assessment project that you think shouldn’t take more than 4 hours can end up taking the whole weekend to complete if you’re not clear on exactly what the deliverables and goals of the project are.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/papervs.png" alt="papervs">
+</div>
 </div>
 <div class="sect2">
 <h3 id="_technical_interview">Technical interview</h3>
@@ -728,7 +801,7 @@ When considering how to structure your initial conversations with people, the me
 <div class="title">Tip</div>
 </td>
 <td class="content">
-&nbsp;The automatic scoring systems that many of these online testing tools use often lack the ability to pick up on nuance, meaning that smart developers often don’t get results that reflect their true ability. This can be counteracted by making it part of your process for a human to review the code that gets submitted.
+The automatic scoring systems that many of these online testing tools use often lack the ability to pick up on nuance, meaning that smart developers often don’t get results that reflect their true ability. This can be counteracted by making it part of your process for a human to review the code that gets submitted.
 </td>
 </tr>
 </table>
@@ -820,6 +893,11 @@ When considering how to structure your initial conversations with people, the me
 <div class="paragraph">
 <p>As companies grow, they tend to get better at explicating their own cultures, but in the beginning, when you’re still figuring things out, it often comes down to unwritten rules and implicit patterns of doing things. Because of this ephemeral nature, it can be hard to make sure early on that new hires align with and augment your existing culture. This is why it’s so incredibly important to have a method in place where you try and tease out the values and motivations are of people you’re looking to employ. You can do this in an interview setting in a few different ways:</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/culturefit.png" alt="culturefit">
+</div>
+</div>
 <div class="sect2">
 <h3 id="_structured_interview">Structured interview</h3>
 <div class="paragraph">
@@ -910,6 +988,11 @@ You’ve spent a lot of time trying to hire the best possible team, why not show
 <div class="paragraph">
 <p>It should go without saying that you should always be respectful of the private nature of the candidate’s job search. <strong>NEVER</strong> phone somebody’s current workplace without their explicit permission, and <strong>don’t solicit your own personal network for information without doing your homework.</strong> The world is a small place, even more so in tech. People can be connected in unexpected ways, so it’s advised to limit your reference checks to people that the person that you’re hiring has provided for this purpose.</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/mugshot.png" alt="mugshot">
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_criminal_and_credit">Criminal and credit</h3>
@@ -945,6 +1028,11 @@ Getting set up to do these yourself is cheaper and easier than you think. All yo
 </div>
 <div class="paragraph">
 <p>Remember that at the end of the day, you’re asking somebody to commit a large portion of their waking hours to your company and your mission for the foreseeable future, so you should <strong>be prepared to make sure that the person has access to as much information as possible so that they can make the best decision.</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/emailmessage.png" alt="emailmessage">
+</div>
 </div>
 <div class="sect2">
 <h3 id="_pre_offer_call">Pre-offer call</h3>
@@ -1008,6 +1096,11 @@ If you know that you’re not going to be able to provide a contract super quick
 <div class="paragraph">
 <p>Your mindset at this stage of the process should be focussed on how you can keep somebody engaged in the time between them signing the employment contract and walking through the door on their first day. The best way to do this is by maintaining open and and proactive lines of communication.</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/setuptalk.png" alt="setuptalk">
+</div>
+</div>
 <div class="sect2">
 <h3 id="_welcome_email">Welcome email</h3>
 <div class="paragraph">
@@ -1037,6 +1130,11 @@ If you know that you’re not going to be able to provide a contract super quick
 <div class="sect1">
 <h2 id="_putting_it_all_together">Putting it all together</h2>
 <div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="./images/startupprocess.png" alt="startupprocess">
+</div>
+</div>
 <div class="sect2">
 <h3 id="_example_hiring_process_for_smaller_startup">Example hiring process for smaller startup</h3>
 <div class="olist arabic">
@@ -1067,6 +1165,11 @@ If you know that you’re not going to be able to provide a contract super quick
 <p>As soon as the candidate accepts the offer and a start date has been agreed on, <strong>their future team-lead should give them a call to discuss how they can start preparing for day one.</strong> This includes <strong>getting set up with a laptop</strong> and <strong>access for accounts</strong> they’re going to be using. This person is now part of the team, so it’s the team lead’s responsibility to make sure that they’re invited to any team events that are scheduled prior to their start date.</p>
 </li>
 </ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./images/largecompanyprocess.png" alt="largecompanyprocess">
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1122,7 +1225,7 @@ The final phases of these two processes are quite similar. We find that regardle
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-05-23 13:00:07 SAST
+Last updated 2018-05-24 16:26:33 SAST
 </div>
 </div>
 </body>
